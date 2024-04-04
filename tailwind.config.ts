@@ -13,10 +13,6 @@ const config: Config = {
       xl: '1440px',
     },
     extend: {
-      fontFamily: {
-        poppins: ['Poppins', 'sans-serif'],
-        ls: ['League Spartan', 'sans-serif'],
-      },
       colors: {
         primary: '#E5E4E2',
       },
