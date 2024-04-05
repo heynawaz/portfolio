@@ -8,7 +8,7 @@ export default function Header() {
       <Link href={'#'} className="text-3xl text-black font-bold tracking-tight">
         nawaz<span className="text-indigo-400">.</span>
       </Link>
-      <nav className="flex gap-12 items-center text-black h-fit font-medium text-[16px] tracking-wide">
+      <nav className="flex gap-12 items-center text-black h-fit pt-2 text-[16px] tracking-wide">
         <Link href={'#'} className="hover:underline underline-offset-8 decoration-1">
           Home
         </Link>

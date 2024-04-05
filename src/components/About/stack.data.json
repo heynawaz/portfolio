@@ -1,0 +1,27 @@
+{
+  "Frontend": {
+    "Basics": ["HTML", "CSS", "JavaScript", "TypeScript"],
+    "Frameworks": ["React JS", "Next JS"],
+    "State Managers": ["Redux", "Zustand", "Context API"],
+    "Network Utilities": ["Axios", "React Query", "SWR", "Apollo Client", "WebRTC"],
+    "Styles": ["Tailwind", "Ant Design", "Material UI", "Shadcn UI", "Semantic UI", "Chakra UI", "Storybook", "Styled Components", "Bootstrap", "SASS/SCSS"]
+  },
+  "Backend": {
+    "Technology": ["Node JS", "Express JS", "Nest JS", "REST", "GraphQL"],
+    "Authentication": ["Passport JS", "JWT", "SSO", "OAuth 2.0"],
+    "Caching": ["Redis"],
+    "ORM": ["Prisma", "Drizzle", "Sequelize"],
+    "Template Engine": ["EJS", "Pug", "Handlebars"],
+    "OS": ["Linux", "Kali", "Parrot OS", "Windows"]
+  },
+  "Database": {
+    "RDBMS": ["PostgreSQL", "MySQL", "Maria DB", "MS-SQL Server"],
+    "NoSQL": ["Mongo DB"],
+    "Message Queues": ["Kafka", "SQS"]
+  },
+  "DevOps": {
+    "Infrastructure": ["AWS", "GitLab", "GitHub", "Nginx"],
+    "Virtualization": ["Docker", "VMWare", "Oracle VirtualBox"],
+    "Automation": ["Cypress JS", "Katalon Studio", "Postman Scripting", "Cucumber"]
+  }
+}

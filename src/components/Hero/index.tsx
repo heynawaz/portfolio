@@ -39,8 +39,8 @@ export default function Hero(props: Props) {
       </div>
       <div className="flex flex-col justify-center w-[20%] items-end">
         <div className="flex flex-col gap-8">
-          <div className="w-[220px] h-[70px] rounded-[4px] shadow-[0px_3px_4px_0px_rgb(0,0,0,0.2)] flex items-center bg-neutral-100 cursor-pointer hover:shadow-[0px_2px_2px_0px_rgb(0,0,0,0.2)] transition-all ease-out duration-100">
-            <div className="flex justify-center items-center flex-col leading-none bg-white h-[45px] w-[52px] ml-5 rounded-[4px] shadow-[inset_1px_1px_2px_2px_rgba(0,0,0,0.1)]">
+          <div className="w-[220px] h-[70px] rounded-[4px] shadow-[0px_3px_4px_0px_rgb(0,0,0,0.2)] flex items-center bg-neutral-100/90 cursor-pointer hover:shadow-[0px_2px_2px_0px_rgb(0,0,0,0.2)] transition-all ease-out duration-100">
+            <div className="flex justify-center items-center flex-col leading-none bg-white h-[45px] w-[52px] ml-4 rounded-[4px] shadow-[inset_1px_1px_2px_2px_rgba(0,0,0,0.1)]">
               <p className="text-center text-[13px] font-light pt-[2px] mb-[2px]">{getCurrentMonth}</p>
               <h4 className="text-center font-bold text-gray-700 text-[15px]">{getCurrentDate}</h4>
             </div>
