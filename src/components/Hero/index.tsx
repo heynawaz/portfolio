@@ -4,13 +4,13 @@ import Link from 'next/link';
 import { HeroHighlight, Highlight } from '../ui/hero-highlight';
 type Props = {};
 
-export default function Hero(props: Props) {
+export function Hero(props: Props) {
   const getCurrentMonth = new Date().toLocaleDateString('en-US', { month: 'short' });
   const getCurrentDate = new Date().toLocaleDateString('en-US', { day: '2-digit' });
   const getCurrentDay = new Date().toLocaleDateString('en-US', { weekday: 'long' });
 
   return (
-    <div className="flex justify-between items-center h-[90dvh] w-[70%]">
+    <section className="flex justify-between items-center h-[100dvh] w-[70%]">
       <div>
         <HeroHighlight>
           <motion.h1
@@ -51,6 +51,6 @@ export default function Hero(props: Props) {
           </Link>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
