@@ -8,7 +8,7 @@
   },
   "Backend": {
     "Technology": ["Node JS", "Express JS", "Nest JS", "REST", "GraphQL"],
-    "Authentication": ["Passport JS", "JWT", "SSO", "OAuth 2.0"],
+    "Authentication": ["Passport JS", "Next Auth", "JWT", "SSO", "OAuth 2.0"],
     "Caching": ["Redis"],
     "ORM": ["Prisma", "Drizzle", "Sequelize"],
     "Template Engine": ["EJS", "Pug", "Handlebars"],

@@ -16,16 +16,19 @@ export function About() {
           <div className="flex gap-12 tracking-wide">
             {Object.entries(stackData)?.map(([stack, details], index) => (
               <div key={index}>
-                <div key={`stack${index}`} className="px-[60px] py-[30px] bg-gradient-to-r from-violet-500 to-purple-500 text-xl font-medium text-white rounded-lg">
+                <div key={`stack${index}`} className="px-[60px] py-[30px] bg-gradient-to-r from-violet-200 to-purple-200 text-xl font-bold text-gray-700 rounded-lg">
                   {stack}
                 </div>
-                <div key={`details${index}`} className="mt-8 rounded-md shadow-[0px_1px_4px_2px_rgb(0,0,0,0.1)]">
+                <div key={`details${index}`} className="mt-8 rounded-md shadow-md">
                   {Object.entries(details)?.map(([keys, list], subIndex) => (
                     <div key={subIndex}>
-                      <div key={`section${subIndex}`} className={`${subIndex === 0 && 'rounded-t-md'} flex items-center justify-center px-3 pt-[2px] h-10 font-semibold text-[16px] text-gray-800 bg-gradient-to-r from-violet-200 to-purple-200`}>
+                      <div
+                        key={`section${subIndex}`}
+                        className={`${subIndex === 0 && 'rounded-t-md'} flex items-center justify-center px-3 pt-[2px] h-10 font-semibold text-[16px] text-gray-800 bg-gradient-to-r from-violet-100 to-purple-100 shadow-md`}
+                      >
                         {keys}
                       </div>
-                      <ul key={`data${subIndex}`} className="list-inside list-disc py-3 pl-3 bg-purple-200/30 text-gray-600 leading-relaxed text-[15px]">
+                      <ul key={`data${subIndex}`} className="list-inside list-disc py-3 pl-3 bg-purple-200/15 text-gray-600 leading-relaxed text-[15px]">
                         {list?.map((data, index) => <li key={index}>{data}</li>)}
                       </ul>
                     </div>
