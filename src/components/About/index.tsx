@@ -68,11 +68,11 @@ export function About() {
               me bring my wealth of experience and technical prowess to your next project.
             </p>
             <div className="mt-10">
-              <h3 className="text-2xl text-secondary font-bold">Work Experience</h3>
+              <h3 className="text-2xl text-secondary-platform font-bold">Work Experience</h3>
               <div className="flex gap-6 mt-6">
                 <IoBriefcaseOutline size={50} color="purple" />
                 <div className="w-full">
-                  <h3 className="text-xl font-semibold text-secondary">Cloud Analogy</h3>
+                  <h3 className="text-xl font-semibold text-secondary-platform">Cloud Analogy</h3>
                   <div className="flex justify-between items-center mb-2">
                     <h3 className="text-lg font-medium text-gray-700">Developer II</h3>
                     <p className="text-gray-600 text-sm">Jan, 2024 - Present</p>
@@ -96,11 +96,11 @@ export function About() {
             </div>
 
             <div className="mt-8">
-              <h3 className="text-2xl text-secondary font-bold">Education</h3>
+              <h3 className="text-2xl text-secondary-platform font-bold">Education</h3>
               <div className="flex gap-6 mt-6">
                 <LuGraduationCap size={50} color="purple" />
                 <div className="w-full">
-                  <h3 className="text-xl font-semibold text-secondary">Master of Computer Applications</h3>
+                  <h3 className="text-xl font-semibold text-secondary-platform">Master of Computer Applications</h3>
                   <div className="flex justify-between items-center mb-2">
                     <h3 className="text-md font-normal text-gray-600">Integral University</h3>
                     <p className="text-gray-600 text-sm">July, 2017 - June, 2020</p>
@@ -110,7 +110,7 @@ export function About() {
               <div className="flex gap-6 mt-6">
                 <LuGraduationCap size={50} color="purple" />
                 <div className="w-full">
-                  <h3 className="text-xl font-semibold text-secondary">Bachelor of Computer Applications</h3>
+                  <h3 className="text-xl font-semibold text-secondary-platform">Bachelor of Computer Applications</h3>
                   <div className="flex justify-between items-center mb-2">
                     <h3 className="text-md font-normal text-gray-600">Integral University</h3>
                     <p className="text-gray-600 text-sm">July, 2014 - June, 2017</p>
