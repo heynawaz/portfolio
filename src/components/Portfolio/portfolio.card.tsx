@@ -12,7 +12,7 @@ export default function PortfolioCard(props: IPortfolioCard) {
   return (
     <>
       {cardDetails?.map((element, index) => (
-        <div key={index} className="w-[340px] shadow-xl shadow-violet-100 border border-gray-200 rounded-xl break-inside-avoid mb-6 mx-3 p-5 bg-purple-50/10">
+        <div key={index} className="w-[340px] shadow-md shadow-violet-100 border border-gray-200 rounded-xl break-inside-avoid mb-6 mx-3 p-5 bg-white bg-opacity-90">
           <Image src={element?.screenshotUrl} width={200} height={100} alt={element?.projectTitle} className="w-full shadow-sm rounded-lg transition-all duration-300 ease-in" />
           <div className="w-full leading-[22px]">
             <h1 className="mt-4 font-semibold text-xl text-secondary-platform">{element?.projectTitle}</h1>

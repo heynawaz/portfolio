@@ -4,8 +4,8 @@ export default function Home() {
     <>
       <Header />
       <Hero />
-      <Skills />
       <About />
+      <Skills />
       <Portfolio />
     </>
   );
