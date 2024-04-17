@@ -21,7 +21,7 @@ export default function PortfolioCard(props: IPortfolioCard) {
             <Button variant={'outline'} size={'sm'} className="pt-[2px] text-gray-700 bg-purple-50/70 font-normal border-violet-200/75">
               Live Demo
             </Button>
-            <Button variant={'outline'} size={'sm'} className="pt-[2px] font-normal text-gray-700">
+            <Button variant={'default'} size={'sm'} className="pt-[2px] font-normal text-gray-700">
               GitHub
             </Button>
           </div>
