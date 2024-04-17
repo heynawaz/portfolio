@@ -76,7 +76,7 @@ export function Portfolio() {
     <section id="portfolio" className="mt-36 flex justify-center flex-col w-full items-center mb-36 pt-28">
       <SectionHeader heading="Portfolio" description="Here you'll discover a selection of personal and client projects, each accompanied by its own comprehensive case study." />
       <div className="flex">
-        <div className="mt-16 mx-auto w-full columns-3">
+        <div className="mt-16 mx-auto w-full columns-4">
           <PortfolioCard cardDetails={cardDetails} />
         </div>
       </div>
