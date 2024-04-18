@@ -1,6 +1,7 @@
 'use client';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import { useEffect } from 'react';
 import { HeroHighlight, Highlight } from '../ui/hero-highlight';
 type Props = {};
 
@@ -8,6 +9,24 @@ export function Hero(props: Props) {
   const getCurrentMonth = new Date().toLocaleDateString('en-US', { month: 'short' });
   const getCurrentDate = new Date().toLocaleDateString('en-US', { day: '2-digit' });
   const getCurrentDay = new Date().toLocaleDateString('en-US', { weekday: 'long' });
+
+  // Download resume on key press
+  useEffect(() => {
+    const handleKeyPress = (e: KeyboardEvent) => {
+      if (e.key.toLowerCase() === 'd') {
+        const link = document.createElement('a');
+        link.href = '/assets/pdf/Shah Nawaz - Resume.pdf';
+        link.download = 'Shah Nawaz - Resume.pdf';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+      }
+    };
+
+    document.addEventListener('keydown', handleKeyPress);
+
+    return () => document.removeEventListener('keydown', handleKeyPress);
+  }, []);
 
   return (
     <section className="flex justify-between items-center h-[100dvh] w-[70%]">
@@ -31,8 +50,9 @@ export function Hero(props: Props) {
               digital experiences.
             </Highlight>
             <br />
-            <Link href={'#'} className="text-black transition-all ease-in duration-100 font-normal text-[16px] tracking-wide underline underline-offset-8 decoration-1">
-              Download <span className="font-extralight">CV</span>
+            <Link href={''} onKeyDown={e => {}} className="text-black transition-all ease-in duration-100 font-normal text-[16px] tracking-wide">
+              {/* Download <span className="font-extralight">CV</span> */}
+              Press <span className="font-extralight">D</span> to Download CV
             </Link>
           </motion.h1>
         </HeroHighlight>

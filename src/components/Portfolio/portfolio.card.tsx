@@ -15,7 +15,7 @@ export default function PortfolioCard(props: IPortfolioCard) {
         <div key={index} className="w-[340px] shadow-md shadow-violet-100 border border-gray-200 rounded-xl break-inside-avoid mb-6 mx-3 p-5 bg-white bg-opacity-90">
           <Image src={element?.screenshotUrl} width={200} height={100} alt={element?.projectTitle} className="w-full shadow-sm rounded-lg transition-all duration-300 ease-in" />
           <div className="w-full leading-[22px]">
-            <h1 className="mt-4 font-semibold text-xl text-secondary-platform">{element?.projectTitle}</h1>
+            <h1 className="mt-4 font-bold text-xl text-secondary-platform">{element?.projectTitle}</h1>
             <p className="mt-1 font-medium text-sm text-gray-500">{element?.techStack}</p>
             <p className="w-full mt-2 text-md text-gray-400 font-light">{element?.projectDescription}</p>
           </div>
