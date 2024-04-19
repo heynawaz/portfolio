@@ -1,4 +1,5 @@
-import { About, FooterNote, Header, Hero, Portfolio, Skills, Solutions } from '@/components';
+import { About, Footer, FooterNote, Header, Hero, Portfolio, Skills, Solutions } from '@/components';
+
 export default function Home() {
   return (
     <>
@@ -9,6 +10,7 @@ export default function Home() {
       <Portfolio />
       <Solutions />
       <FooterNote />
+      <Footer />
     </>
   );
 }

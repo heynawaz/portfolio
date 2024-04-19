@@ -46,8 +46,8 @@ export function Header() {
           <Link href={'#portfolio'} className="hover:underline underline-offset-8 decoration-1">
             Portfolio
           </Link>
-          <Link href={'#services'} className="hover:underline underline-offset-8 decoration-1">
-            Services
+          <Link href={'#solutions'} className="hover:underline underline-offset-8 decoration-1">
+            Solutions
           </Link>
         </nav>
       </div>

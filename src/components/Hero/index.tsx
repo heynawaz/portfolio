@@ -52,7 +52,7 @@ export function Hero(props: Props) {
             </Highlight>
             <br />
             <Link href={'/assets/pdf/Shah Nawaz - Resume.pdf'} download={fileName} target="_blank" className="text-black transition-all ease-in duration-100 font-normal text-[17px] tracking-wide hover:underline hover:underline-offset-8">
-              Press <span className=" bg-gray-200 border border-gray-400 rounded-[3px] px-[4px] pt-[3px]">D</span> to Download CV
+              Press <span className=" bg-gray-100 border border-gray-300 rounded-[3px] px-[4px] pt-[3px]">D</span> to Download CV
             </Link>
           </motion.h1>
         </HeroHighlight>
