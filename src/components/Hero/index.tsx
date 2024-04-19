@@ -9,6 +9,7 @@ export function Hero(props: Props) {
   const getCurrentMonth = new Date().toLocaleDateString('en-US', { month: 'short' });
   const getCurrentDate = new Date().toLocaleDateString('en-US', { day: '2-digit' });
   const getCurrentDay = new Date().toLocaleDateString('en-US', { weekday: 'long' });
+  const fileName = 'Shah Nawaz - Resume.pdf';
 
   // Download resume on key press
   useEffect(() => {
@@ -16,7 +17,7 @@ export function Hero(props: Props) {
       if (e.key.toLowerCase() === 'd') {
         const link = document.createElement('a');
         link.href = '/assets/pdf/Shah Nawaz - Resume.pdf';
-        link.download = 'Shah Nawaz - Resume.pdf';
+        link.download = fileName;
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
@@ -50,9 +51,8 @@ export function Hero(props: Props) {
               digital experiences.
             </Highlight>
             <br />
-            <Link href={''} onKeyDown={e => {}} className="text-black transition-all ease-in duration-100 font-normal text-[16px] tracking-wide">
-              {/* Download <span className="font-extralight">CV</span> */}
-              Press <span className="font-extralight">D</span> to Download CV
+            <Link href={'/assets/pdf/Shah Nawaz - Resume.pdf'} download={fileName} target="_blank" className="text-black transition-all ease-in duration-100 font-normal text-[17px] tracking-wide hover:underline hover:underline-offset-8">
+              Press <span className=" bg-gray-200 border border-gray-400 rounded-[3px] px-[4px] pt-[3px]">D</span> to Download CV
             </Link>
           </motion.h1>
         </HeroHighlight>
