@@ -9,7 +9,7 @@ export function Footer() {
         <p className="flex borderjustify-center">Made with ❤️ in India</p>
         <div className="flex flex-row gap-8">
           <Link href={'https://www.linkedin.com/in/shahnawazz/'} target="_blank" className=" hover:underline">
-            LinkedIn
+            Linkedin
           </Link>
           <Link href={'https://twitter.com/yoursnawaz'} target="_blank" className=" hover:underline">
             Twitter/X
