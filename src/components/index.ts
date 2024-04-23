@@ -6,3 +6,4 @@ export * from '@/components/Hero';
 export * from '@/components/Portfolio';
 export * from '@/components/Skills';
 export * from '@/components/Solutions';
+
