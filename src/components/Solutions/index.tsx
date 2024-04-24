@@ -5,7 +5,7 @@ export function Solutions() {
   return (
     <section
       id="solutions"
-      className="mt-36 flex justify-center flex-col w-full items-center mb-36 pt-28"
+      className="mt-6 flex justify-center flex-col w-full items-center mb-36 pt-28"
     >
       <SectionHeader
         heading="Solutions"

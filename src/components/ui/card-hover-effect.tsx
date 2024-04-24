@@ -11,41 +11,49 @@ export const HoverEffect = ({
     title: string;
     description: string;
     link: string;
+    newTab?: boolean;
+    icon: React.ReactNode;
   }[];
   className?: string;
 }) => {
   let [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   return (
-    <div className={cn('grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3  py-10', className)}>
+    <div className={cn('grid grid-cols-1 w-full md:grid-cols-2 lg:grid-cols-2 py-10', className)}>
       {items.map((item, idx) => (
         <Link
           href={item?.link}
           key={item?.link}
-          className="relative group  block p-2 h-full w-full"
+          className="relative group block p-2 h-full w-full"
           onMouseEnter={() => setHoveredIndex(idx)}
           onMouseLeave={() => setHoveredIndex(null)}
+          target={`${item?.newTab ? '_blank' : '_self'}`}
         >
           <AnimatePresence>
             {hoveredIndex === idx && (
               <motion.span
-                className="absolute inset-0 h-full w-full bg-neutral-200  block rounded-3xl"
+                className="absolute inset-0 h-full w-full bg-gradient-to-br from-purple-100 from-40% to-indigo-100 block rounded-2xl"
                 layoutId="hoverBackground"
                 initial={{ opacity: 0 }}
                 animate={{
                   opacity: 1,
-                  transition: { duration: 0.15 },
+                  transition: { duration: 0.2 },
                 }}
                 exit={{
                   opacity: 0,
-                  transition: { duration: 0.15, delay: 0.2 },
+                  transition: { duration: 0.2, delay: 0.2 },
                 }}
               />
             )}
           </AnimatePresence>
-          <Card>
-            <CardTitle>{item.title}</CardTitle>
-            <CardDescription>{item.description}</CardDescription>
+          <Card
+            className={`${idx === 0 && 'bg-gradient-to-br from-purple-50 from-40% to-indigo-50 hover:bg-white'}`}
+          >
+            <div className="flex flex-row gap-4 items-center">
+              {item?.icon}
+              <CardTitle>{item?.title}</CardTitle>
+            </div>
+            <CardDescription>{item?.description}</CardDescription>
           </Card>
         </Link>
       ))}
@@ -63,7 +71,7 @@ export const Card = ({
   return (
     <div
       className={cn(
-        'rounded-2xl h-full w-full p-4 overflow-hidden border border-transparent relative z-20',
+        'rounded-xl h-full p-4 overflow-hidden border border-gray-200 hover:border-transparent relative z-20 bg-white w-[24rem]',
         className,
       )}
     >
@@ -81,7 +89,9 @@ export const CardTitle = ({
   children: React.ReactNode;
 }) => {
   return (
-    <h4 className={cn('text-zinc-100 font-bold tracking-wide mt-4', className)}>{children}</h4>
+    <h4 className={cn('text-purple-900 text-lg font-bold tracking-wide mt-1', className)}>
+      {children}
+    </h4>
   );
 };
 export const CardDescription = ({
@@ -92,7 +102,12 @@ export const CardDescription = ({
   children: React.ReactNode;
 }) => {
   return (
-    <p className={cn('mt-8 text-zinc-400 tracking-wide leading-relaxed text-sm', className)}>
+    <p
+      className={cn(
+        'mt-6 text-zinc-700 tracking-wide leading-relaxed font-normal text-sm',
+        className,
+      )}
+    >
       {children}
     </p>
   );
