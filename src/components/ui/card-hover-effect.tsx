@@ -10,19 +10,19 @@ export const HoverEffect = ({
   items: {
     title: string;
     description: string;
-    link: string;
+    link?: string;
     newTab?: boolean;
     icon: React.ReactNode;
+    button: React.ReactNode;
   }[];
   className?: string;
 }) => {
   let [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
-
   return (
     <div className={cn('grid grid-cols-1 w-full md:grid-cols-2 lg:grid-cols-2 py-10', className)}>
       {items.map((item, idx) => (
         <Link
-          href={item?.link}
+          href={item?.link || '#'}
           key={item?.link}
           className="relative group block p-2 h-full w-full"
           onMouseEnter={() => setHoveredIndex(idx)}
@@ -47,13 +47,14 @@ export const HoverEffect = ({
             )}
           </AnimatePresence>
           <Card
-            className={`${idx === 0 && 'bg-gradient-to-br from-purple-50 from-40% to-indigo-50 hover:bg-white'}`}
+            className={`${idx === 0 && 'bg-gradient-to-br from-purple-50 from-40% to-indigo-50 hover:bg-white'} h-full`}
           >
             <div className="flex flex-row gap-4 items-center">
               {item?.icon}
               <CardTitle>{item?.title}</CardTitle>
             </div>
             <CardDescription>{item?.description}</CardDescription>
+            {item?.button}
           </Card>
         </Link>
       ))}
@@ -75,8 +76,8 @@ export const Card = ({
         className,
       )}
     >
-      <div className="relative z-50">
-        <div className="p-4">{children}</div>
+      <div className="relative z-50 h-full">
+        <div className="p-4 h-full">{children}</div>
       </div>
     </div>
   );
@@ -104,7 +105,7 @@ export const CardDescription = ({
   return (
     <p
       className={cn(
-        'mt-6 text-zinc-700 tracking-wide leading-relaxed font-normal text-sm',
+        'mt-6 mb-12 text-zinc-700 tracking-wide leading-relaxed font-normal text-sm',
         className,
       )}
     >

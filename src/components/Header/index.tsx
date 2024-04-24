@@ -30,7 +30,9 @@ export function Header() {
         <Link href={'#'} className="text-3xl text-black font-bold tracking-tight">
           nawaz<span className="text-indigo-400">.</span>
         </Link>
-        <nav className={`flex gap-12 items-center text-black h-fit pt-2 text-[16px] tracking-wide font-medium`}>
+        <nav
+          className={`flex gap-12 items-center text-purple-950 h-fit pt-2 text-[17px] tracking-wide font-semibold`}
+        >
           <Link
             href={'#'}
             onClick={() => {
