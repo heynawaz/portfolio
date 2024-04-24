@@ -1,10 +1,10 @@
 'use client';
+import { Button } from '@/components/ui/button';
+import { HoverEffect } from '@/components/ui/card-hover-effect';
+import { HeroHighlight, Highlight } from '@/components/ui/hero-highlight';
 import { motion } from 'framer-motion';
 import { BsCalendar2Date } from 'react-icons/bs';
 import { FaRegFilePdf } from 'react-icons/fa';
-import { Button } from '../ui/button';
-import { HoverEffect } from '../ui/card-hover-effect';
-import { HeroHighlight, Highlight } from '../ui/hero-highlight';
 
 export function FooterNote() {
   return (
