@@ -43,7 +43,7 @@ export const projects = [
     button: (
       <div className="absolute bottom-2 z-50">
         <Button size={'default'} className="bg-purple-900 hover:bg-purple-800 px-5 tracking-wider">
-          <p className="pt-[3px]">Schedule call</p>
+          <p className="pt-[3px]">Schedule Call</p>
         </Button>
       </div>
     ),

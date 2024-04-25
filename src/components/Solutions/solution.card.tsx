@@ -10,7 +10,7 @@ export function SolutionsCard(props: ISolutionsProps) {
   return (
     <div
       className={cn(
-        'grid place-items-center text-center text-black leading-5 w-[310px] border border-gray-200 rounded-xl shadow-md hover:shadow-none py-12 pt-16 hover:scale-105 transition ease-in duration-150',
+        'grid place-items-center text-center text-black leading-5 w-[310px] rounded-xl shadow-md hover:shadow-none py-12 pt-16 hover:scale-105 transition ease-in duration-150',
         className,
       )}
     >

@@ -49,8 +49,15 @@ export function About() {
               </div>
             ))}
           </div>
-          <div className="w-[670px] bg-purple-100/10 shadow-md p-8 px-6 rounded-lg">
-            <div className="flex justify-between w-full ">
+          <div className="w-[670px]">
+            <div className="flex w-full gap-8 bg-neutral-50/70 shadow-md px-5 py-5 rounded-lg">
+              <Image
+                src={'/assets/Shah Nawaz.png'}
+                className="rounded-full border border-gray-300"
+                alt="Shah Nawaz's Photo"
+                width={120}
+                height={100}
+              />
               <div className="">
                 <h1 className="text-2xl font-semibold text-gray-600 mt-3">Mohammad Shah Nawaz</h1>
                 <p className="font-light text-gray-500 text-md">Developer II at Cloud Analogy</p>
@@ -72,13 +79,6 @@ export function About() {
                   </Link>
                 </div>
               </div>
-              <Image
-                src={'/assets/Shah Nawaz.png'}
-                className="rounded-full border border-gray-300"
-                alt="Shah Nawaz's Photo"
-                width={120}
-                height={100}
-              />
             </div>
             <p className="mt-6 text-lg leading-normal text-gray-600">
               I am a seasoned Full Stack Web Developer with a proven track record of over 3 years,

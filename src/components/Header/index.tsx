@@ -24,7 +24,7 @@ export function Header() {
 
   return (
     <header
-      className={`fixed top-0 z-50 flex justify-center items-center h-28 w-full transition-all ease-in duration-150 ${hasScrolled && 'shadow-[0px_1px_5px_1px_rgb(0,0,0,0.06)] h-[5rem] bg-gradient-to-r from-purple-100 via-violet-50 to-purple-50'}`}
+      className={`fixed top-0 z-50 flex justify-center items-center h-28 w-full transition-all ease-in duration-150 ${hasScrolled && 'shadow-[0px_1px_5px_1px_rgb(0,0,0,0.06)] h-[5rem] bg-gradient-to-r from-purple-100 via-violet-50 to-purple-100'}`}
     >
       <div className={`w-[70%] flex justify-between`}>
         <Link href={'#'} className="text-3xl text-black font-bold tracking-tight">
