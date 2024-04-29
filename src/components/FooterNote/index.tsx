@@ -8,7 +8,7 @@ import { FaRegFilePdf } from 'react-icons/fa';
 
 export function FooterNote() {
   return (
-    <section className="flex justify-center flex-col w-full items-center mt-64 mb-52 h-full">
+    <section className="flex justify-center flex-col w-full items-center mt-64 mb-36 h-full">
       <HeroHighlight className="w-full pb-0">
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
@@ -17,11 +17,9 @@ export function FooterNote() {
           className="text-2xl font-semibold text-center text-purple-900 leading-[70px]"
         >
           <Highlight className="py-5 px-5 bg-gradient-to-r from-purple-100 to-indigo-100 rounded-none">
-            &quot;From elegant user interfaces to robust backend systems, I thrive on solving design
-            challenges.&nbsp;&nbsp;&nbsp;
+            &quot;From elegant user interfaces to robust backend systems, I thrive on solving design challenges.&nbsp;&nbsp;&nbsp;
             <br />
-            &nbsp;&nbsp;&nbsp;Let&apos;s collaborate to bring your vision to life with dynamic web
-            applications and intuitive interfaces.&quot;
+            &nbsp;&nbsp;&nbsp;Let&apos;s collaborate to bring your vision to life with dynamic web applications and intuitive interfaces.&quot;
           </Highlight>
           <br />
         </motion.h1>

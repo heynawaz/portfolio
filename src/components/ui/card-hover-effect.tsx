@@ -18,6 +18,7 @@ export const HoverEffect = ({
   className?: string;
 }) => {
   let [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+
   return (
     <div className={cn('grid grid-cols-1 w-full md:grid-cols-2 lg:grid-cols-2 py-10', className)}>
       {items.map((item, idx) => (
@@ -46,9 +47,7 @@ export const HoverEffect = ({
               />
             )}
           </AnimatePresence>
-          <Card
-            className={`${idx === 0 && 'bg-gradient-to-br from-purple-50 from-40% to-indigo-50 hover:bg-white'} h-full`}
-          >
+          <Card className={`${idx === 0 && 'bg-gradient-to-br from-purple-50 from-40% to-indigo-50 hover:bg-white'} h-full`}>
             <div className="flex flex-row gap-4 items-center">
               {item?.icon}
               <CardTitle>{item?.title}</CardTitle>
@@ -62,54 +61,20 @@ export const HoverEffect = ({
   );
 };
 
-export const Card = ({
-  className,
-  children,
-}: {
-  className?: string;
-  children: React.ReactNode;
-}) => {
+export const Card = ({ className, children }: { className?: string; children: React.ReactNode }) => {
   return (
-    <div
-      className={cn(
-        'rounded-xl h-full p-4 overflow-hidden border border-gray-200 hover:border-transparent relative z-20 bg-white w-[440px]',
-        className,
-      )}
-    >
+    <div className={cn('rounded-xl h-full p-4 overflow-hidden border border-gray-200 hover:border-transparent relative z-20 bg-white w-[25rem]', className)}>
       <div className="relative z-50 h-full">
         <div className="p-4 h-full">{children}</div>
       </div>
     </div>
   );
 };
-export const CardTitle = ({
-  className,
-  children,
-}: {
-  className?: string;
-  children: React.ReactNode;
-}) => {
-  return (
-    <h4 className={cn('text-purple-900 text-lg font-bold tracking-wide mt-1', className)}>
-      {children}
-    </h4>
-  );
+
+export const CardTitle = ({ className, children }: { className?: string; children: React.ReactNode }) => {
+  return <h4 className={cn('text-purple-900 text-lg font-bold tracking-wide mt-1', className)}>{children}</h4>;
 };
-export const CardDescription = ({
-  className,
-  children,
-}: {
-  className?: string;
-  children: React.ReactNode;
-}) => {
-  return (
-    <p
-      className={cn(
-        'mt-6 mb-12 text-zinc-700 tracking-wide leading-relaxed font-normal text-sm',
-        className,
-      )}
-    >
-      {children}
-    </p>
-  );
+
+export const CardDescription = ({ className, children }: { className?: string; children: React.ReactNode }) => {
+  return <p className={cn('mt-6 mb-12 text-zinc-700 tracking-wide leading-relaxed font-normal text-sm', className)}>{children}</p>;
 };
