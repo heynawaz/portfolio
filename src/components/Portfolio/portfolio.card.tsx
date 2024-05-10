@@ -18,8 +18,14 @@ export default function PortfolioCard(props: IPortfolioCard) {
           <Image src={element?.screenshotUrl} width={2000} height={100} alt={element?.projectTitle} className="w-full shadow-sm rounded-lg" />
           <div className="w-full leading-[22px] mt-4">
             <h1 className="font-bold text-xl text-secondary-platform">{element?.projectTitle}</h1>
-            <p className="mt-1 font-medium text-sm text-gray-500">{element?.techStack}</p>
-            <p className="w-full mt-2 text-md text-gray-400 font-light">{element?.projectDescription}</p>
+            <div className="flex gap-[7px] flex-wrap mt-2">
+              {element?.techStack?.split(',').map((tech, index) => (
+                <span key={index} className="font-medium text-xs text-gray-600 bg-gray-100/60 border border-gray-900/5 px-[5px] pt-[4px] pb-1 rounded-sm">
+                  <p>{tech}</p>
+                </span>
+              ))}
+            </div>
+            <p className="w-full mt-3 text-md text-gray-400 font-light">{element?.projectDescription}</p>
           </div>
           <div className="flex gap-3 mt-5">
             <Button variant={'outline'} size={'sm'} className="text-gray-700 bg-purple-50 hover:bg-purple-100 font-medium border-violet-200/75">
