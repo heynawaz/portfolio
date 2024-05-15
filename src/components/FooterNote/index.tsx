@@ -7,6 +7,36 @@ import { BsCalendar2Date } from 'react-icons/bs';
 import { FaRegFilePdf } from 'react-icons/fa';
 
 export function FooterNote() {
+
+  const projects = [
+    {
+      title: 'Book a free consultation',
+      description: "Whether you're seeking advice, brainstorming ideas, or discussing potential projects, I'm here to offer my expertise. Schedule a complimentary call at your convenience.",
+      link: 'https://cal.com/shah-nawaz/15min',
+      newTab: true,
+      icon: <BsCalendar2Date size={30} className="text-purple-900" />,
+      button: (
+        <div className="absolute bottom-2 z-50">
+          <Button size={'default'} className="bg-purple-900 hover:bg-purple-800 px-5 tracking-wider">
+            <div className="pt-[3px]">Schedule Call</div>
+          </Button>
+        </div>
+      ),
+    },
+    {
+      title: 'Download CV',
+      description: 'Curious about my background, skills, and accomplishments? Download my comprehensive CV to learn more about what I bring to the table.',
+      icon: <FaRegFilePdf size={30} className="text-purple-900" />,
+      button: (
+        <div className="absolute bottom-2 z-50">
+          <Button size={'default'} variant={'outline'} className="hover:bg-purple-100 px-5 tracking-wider" onClick={() => window.open('/assets/pdf/Shah Nawaz - Resume.pdf', '_blank')}>
+            <p className="pt-[3px]">Download</p>
+          </Button>
+        </div>
+      ),
+    },
+  ];
+
   return (
     <section className="flex justify-center flex-col w-full items-center mt-64 mb-36 h-full">
       <HeroHighlight className="w-full pb-0">
@@ -31,37 +61,4 @@ export function FooterNote() {
   );
 }
 
-export const projects = [
-  {
-    title: 'Book a free consultation',
-    description:
-      "Whether you're seeking advice, brainstorming ideas, or discussing potential projects, I'm here to offer my expertise. Schedule a complimentary call at your convenience.",
-    link: '#',
-    icon: <BsCalendar2Date size={30} className="text-purple-900" />,
-    button: (
-      <div className="absolute bottom-2 z-50">
-        <Button size={'default'} className="bg-purple-900 hover:bg-purple-800 px-5 tracking-wider">
-          <p className="pt-[3px]">Schedule Call</p>
-        </Button>
-      </div>
-    ),
-  },
-  {
-    title: 'Download CV',
-    description:
-      'Curious about my background, skills, and accomplishments? Download my comprehensive CV to learn more about what I bring to the table.',
-    icon: <FaRegFilePdf size={30} className="text-purple-900" />,
-    button: (
-      <div className="absolute bottom-2 z-50">
-        <Button
-          size={'default'}
-          variant={'outline'}
-          className="hover:bg-purple-100 px-5 tracking-wider"
-          onClick={() => window.open('/assets/pdf/Shah Nawaz - Resume.pdf', '_blank')}
-        >
-          <p className="pt-[3px]">Download</p>
-        </Button>
-      </div>
-    ),
-  },
-];
+

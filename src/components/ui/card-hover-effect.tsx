@@ -1,3 +1,4 @@
+'use client';
 import { cn } from '@/utils/cn';
 import { AnimatePresence, motion } from 'framer-motion';
 import Link from 'next/link';
@@ -24,7 +25,7 @@ export const HoverEffect = ({
       {items.map((item, idx) => (
         <Link
           href={item?.link || '#'}
-          key={item?.link}
+          key={idx}
           className="relative group block p-2 h-full w-full"
           onMouseEnter={() => setHoveredIndex(idx)}
           onMouseLeave={() => setHoveredIndex(null)}

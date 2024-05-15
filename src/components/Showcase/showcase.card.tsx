@@ -4,11 +4,11 @@ import Image from 'next/image';
 import { FaGithub } from 'react-icons/fa6';
 import { IoNavigate } from 'react-icons/io5';
 
-interface IPortfolioCard {
+interface IShowcaseCard {
   cardDetails: Record<string, string>[];
 }
 
-export default function PortfolioCard(props: IPortfolioCard) {
+export default function ShowcaseCard(props: IShowcaseCard) {
   const { cardDetails } = props;
 
   return (

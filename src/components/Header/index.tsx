@@ -31,20 +31,14 @@ export function Header() {
           nawaz<span className="text-indigo-400">.</span>
         </Link>
         <nav className={`flex gap-12 items-center text-purple-950 h-fit pt-2 text-[17px] tracking-wide font-semibold`}>
-          <Link
-            href={'#'}
-            onClick={() => {
-              document.body.scrollTop = 0;
-            }}
-            className="hover:underline underline-offset-8 decoration-1"
-          >
+          <Link href={'#'} onClick={() => (document.body.scrollTop = 0)} className="hover:underline underline-offset-8 decoration-1">
             Home
           </Link>
           <Link href={'#about'} className="hover:underline underline-offset-8 decoration-1">
             About
           </Link>
-          <Link href={'#portfolio'} className="hover:underline underline-offset-8 decoration-1">
-            Portfolio
+          <Link href={'#showcase'} className="hover:underline underline-offset-8 decoration-1">
+            Showcase
           </Link>
           <Link href={'#solutions'} className="hover:underline underline-offset-8 decoration-1">
             Solutions
