@@ -10,6 +10,7 @@ interface ICalendarProps {
 
 export function Calendar(props: ICalendarProps) {
   const { className, children } = props;
+
   useEffect(() => {
     (async function () {
       const cal = await getCalApi({});
