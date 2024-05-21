@@ -24,9 +24,10 @@ export function Header() {
 
   return (
     <header
-      className={`fixed top-0 z-50 flex justify-center items-center h-28 w-full transition-all ease-in duration-150 ${hasScrolled && 'shadow-[0px_1px_5px_1px_rgb(0,0,0,0.06)] h-[5rem] bg-gradient-to-r from-purple-100 via-violet-50 to-purple-100'}`}
+      className={`fixed top-0 z-50 flex justify-center items-center h-28 w-full transition-all ease-in duration-300 
+      ${hasScrolled && 'rounded-full w-[36%] backdrop-filter backdrop-blur-lg top-5 shadow-[0px_2px_3px_-1px_rgb(0,0,0,0.2)] h-[5rem] bg-gradient-to-r from-purple-100/40 via-violet-50/40 to-purple-100/40'}`}
     >
-      <div className={`xl:w-[70%] 2xl:w-[70%] lg:w-full flex justify-between`}>
+      <div className={`w-[70%] flex justify-between transition-all ease-in duration-200 ${hasScrolled && 'w-[90%]'}`}>
         <Link href={'#'} className="text-3xl text-black font-bold tracking-tight">
           nawaz<span className="text-indigo-400">.</span>
         </Link>
