@@ -5,6 +5,10 @@ const config = {
   darkMode: 'class',
   prefix: '',
   theme: {
+    fontFamily: {
+      pacifico: ['var(--font-pacifico)', 'sans-serif'],
+      ls: ['var(--font-ls)', 'sans-serif'],
+    },
     container: {
       center: true,
       padding: '2rem',
@@ -18,6 +22,16 @@ const config = {
       },
     },
     extend: {
+      animation: {
+        scroll: 'scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite',
+      },
+      keyframes: {
+        scroll: {
+          to: {
+            transform: 'translate(calc(-50% - 0.5rem))',
+          },
+        },
+      },
       colors: {
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
@@ -60,16 +74,6 @@ const config = {
         md: 'calc(var(--radius) - 2px)',
         sm: 'calc(var(--radius) - 4px)',
       },
-      keyframes: {
-        'accordion-down': {
-          from: { height: '0' },
-          to: { height: 'var(--radix-accordion-content-height)' },
-        },
-        'accordion-up': {
-          from: { height: 'var(--radix-accordion-content-height)' },
-          to: { height: '0' },
-        },
-      },
       borderWidth: {
         DEFAULT: '1px',
         '0': '0',
@@ -78,10 +82,6 @@ const config = {
         '4': '4px',
         '6': '6px',
         '8': '8px',
-      },
-      animation: {
-        'accordion-down': 'accordion-down 0.2s ease-out',
-        'accordion-up': 'accordion-up 0.2s ease-out',
       },
     },
   },

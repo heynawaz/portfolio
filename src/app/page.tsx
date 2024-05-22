@@ -1,12 +1,15 @@
-import { About, Footer, FooterNote, Header, Hero, Skills, Solutions } from '@/components';
+import { About, Footer, FooterNote, NewHeader, Skills, Solutions } from '@/components';
+import NewHero from '@/components/NewHero';
 import { Showcase } from '@/components/Showcase';
 
 export default function Home() {
   return (
     <>
-      <Header />
-      {/* <NewHero /> */}
-      <Hero />
+      <NewHeader />
+      {/* <Header /> */}
+      <NewHero />
+      {/* <Hero /> */}
+      {/* <Testimonials /> */}
       <About />
       <Skills />
       <Showcase />

@@ -10,7 +10,7 @@ import stackData from './stack.data.json';
 export function About() {
   return (
     <>
-      <section id="about" className="mt-36 flex justify-center flex-col w-full items-center mb-36 pt-28">
+      <section id="about" className="flex justify-center flex-col w-full items-center mb-36 pt-28">
         <SectionHeader
           heading="Who am I?"
           description="Here you'll discover additional insights about me, my expertise, and a comprehensive overview of my current programming and technological skills."

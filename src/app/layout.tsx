@@ -1,8 +1,6 @@
+import { ls } from '@/styles/fonts';
 import type { Metadata } from 'next';
-import { League_Spartan } from 'next/font/google';
 import './globals.css';
-
-const ls = League_Spartan({ weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'], subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Shah Nawaz',
