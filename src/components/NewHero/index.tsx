@@ -1,5 +1,6 @@
 'use client';
 
+import { Calendar } from '../Calendar';
 import { Testimonials } from '../Testimonials';
 import { Button } from '../ui/button';
 
@@ -11,11 +12,11 @@ const NewHero = () => {
   //     })();
   //   }, []);
   return (
-    <section className="flex items-center justify-center flex-col text-center pt-40 pb-20 w-full bg-[url('/assets/img/hero-bg-3.jpg')] bg-no-repeat bg-cover bg-fixed">
+    <section className="flex items-center justify-center flex-col text-center pt-40 pb-20 w-full bg-[url('/assets/img/hero-bg-6.jpg')] bg-no-repeat bg-cover">
       {/* <section className="flex items-center justify-center flex-col text-center pt-40 pb-20 w-full bg-gradient-to-b from-purple-200 from-20% to-white"> */}
       <div className="w-full flex flex-col justify-center items-center">
         <p className="border border-gray-300 bg-slate-100 w-fit px-4 py-1 rounded-full">👋 Hey, I&apos;m Shah Nawaz</p>
-        <h1 className="leading-snug text-[3vw] font-bold mt-8 tracking-tight text-purple-950">
+        <h1 className="leading-snug text-[3vw] font-bold mt-6 tracking-tight text-purple-950">
           I build pixel perfect, engaging and
           <br />
           accessible digital experiences.
@@ -26,9 +27,11 @@ const NewHero = () => {
         {/* <Cal calLink="shah-nawaz/15min" style={{ width: '100%', height: '100%', overflow: 'scroll' }} config={{ layout: 'month_view', theme: 'light' }} /> */}
       </div>
       <div className="flex gap-6 mt-16">
-        <Button size={'default'} className="bg-purple-900 text-white border border-gray-200 hover:bg-purple-800 px-9 py-6 tracking-wider rounded-md">
-          <div className="pt-[3px]">Book a free call</div>
-        </Button>
+        <Calendar>
+          <Button size={'default'} className="bg-purple-900 text-white border border-gray-200 hover:bg-purple-800 px-9 py-6 tracking-wider rounded-md">
+            <div className="pt-[3px]">Book a free call</div>
+          </Button>
+        </Calendar>
         {/* <Button
           size={'default'}
           variant={'outline'}
