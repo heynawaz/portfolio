@@ -20,7 +20,7 @@ export function NewHero() {
       </div>
       <div className="flex gap-6 mt-10">
         <Calendar>
-          <div className="flex items-center gap-3 bg-purple-800 text-white font-medium hover:bg-purple-800 px-7 py-3 tracking-wide rounded-lg">
+          <div className="flex items-center gap-3 bg-purple-800 text-white font-medium hover:bg-purple-900 px-7 py-3 tracking-wide rounded-lg">
             {/* <Image src={'/assets/Shah Nawaz.jpg'} className="rounded-full" alt="Shah Nawaz's Photo" width={30} height={40} /> */}
             <div className="flex items-center gap-4 pt-[4px]">Book a free call</div>
           </div>
@@ -28,7 +28,7 @@ export function NewHero() {
         <Button
           size={'default'}
           variant={'outline'}
-          className="bg-transparent hover:bg-purple-900 border border-purple-800 text-purple-800 font-medium hover:text-white px-9 py-[13px] h-full tracking-wide rounded-lg"
+          className="bg-transparent hover:bg-purple-800 border border-purple-800 text-purple-800 font-medium hover:text-white px-9 py-[13px] h-full tracking-wide rounded-lg"
           onClick={() => window.open('/assets/pdf/Shah Nawaz - Resume.pdf', '_blank')}
         >
           <p className="pt-[3px]">Download CV</p>
