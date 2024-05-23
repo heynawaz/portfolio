@@ -5,7 +5,7 @@ import Link from 'next/link';
 export function Skills() {
   return (
     <>
-      <section className="flex justify-center flex-col w-full items-center py-28">
+      <section className="flex justify-center flex-col w-full items-center h-[80vh] pb-72 bg-[url('/assets/img/hero-bg-9.jpg')] bg-no-repeat bg-cover">
         <SectionHeader
           heading="What I love doing?"
           description="Crafting sophisticated small to medium-scale web applications, dynamic features, captivating animations, and designing interactive layouts through advanced coding techniques."

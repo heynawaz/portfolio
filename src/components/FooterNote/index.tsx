@@ -38,7 +38,7 @@ export function FooterNote() {
   ];
 
   return (
-    <section className="flex justify-center flex-col w-full items-center mt-64 mb-36 h-full">
+    <section className="flex justify-center flex-col w-full items-center mt-40 mb-36 h-full">
       <HeroHighlight className="w-full pb-0">
         <motion.h1
           initial={{ opacity: 0, y: 20 }}

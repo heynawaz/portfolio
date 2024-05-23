@@ -45,7 +45,7 @@ export function About() {
               <Image src={'/assets/Shah Nawaz.jpg'} className="rounded-full border border-gray-300" alt="Shah Nawaz's Photo" width={120} height={100} />
               <div className="">
                 <h1 className="text-2xl font-semibold text-gray-600 mt-3">Mohammad Shah Nawaz</h1>
-                <p className="font-light text-gray-500 text-md">Developer II at Cloud Analogy</p>
+                <p className="font-light text-gray-500 text-md">Software Engineer</p>
                 <div className="flex items-center flex-row gap-5 mt-5">
                   <Link href={'https://github.com/yoursnawaz'} target="_blank">
                     <FaGithub className="fill-gray-600 hover:fill-purple-700" size={18} />
