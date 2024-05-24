@@ -1,25 +1,25 @@
-import React, { Suspense } from 'react';
+import dynamic from 'next/dynamic';
+import { Suspense } from 'react';
+import Loading from './loading';
 
-const About = React.lazy(() => import('@/components/About').then(module => ({ default: module.About })));
-const Footer = React.lazy(() => import('@/components/Footer').then(module => ({ default: module.Footer })));
-const FooterNote = React.lazy(() => import('@/components/FooterNote').then(module => ({ default: module.FooterNote })));
-const NewHeader = React.lazy(() => import('@/components/NewHeader').then(module => ({ default: module.NewHeader })));
-const Header = React.lazy(() => import('@/components/Header').then(module => ({ default: module.Header })));
-const Skills = React.lazy(() => import('@/components/Skills').then(module => ({ default: module.Skills })));
-const Hero = React.lazy(() => import('@/components/Hero').then(module => ({ default: module.Hero })));
-const NewHero = React.lazy(() => import('@/components/NewHero').then(module => ({ default: module.NewHero })));
-const Showcase = React.lazy(() => import('@/components/Showcase').then(module => ({ default: module.Showcase })));
-const Solutions = React.lazy(() => import('@/components/Solutions').then(module => ({ default: module.Solutions })));
-const Testimonials = React.lazy(() => import('@/components/Testimonials').then(module => ({ default: module.Testimonials })));
+const About = dynamic(() => import('@/components/About').then(module => ({ default: module.About })));
+const Footer = dynamic(() => import('@/components/Footer').then(module => ({ default: module.Footer })));
+const FooterNote = dynamic(() => import('@/components/FooterNote').then(module => ({ default: module.FooterNote })));
+const NewHeader = dynamic(() => import('@/components/NewHeader').then(module => ({ default: module.NewHeader })));
+const Header = dynamic(() => import('@/components/Header').then(module => ({ default: module.Header })));
+const Skills = dynamic(() => import('@/components/Skills').then(module => ({ default: module.Skills })));
+const Hero = dynamic(() => import('@/components/Hero').then(module => ({ default: module.Hero })));
+const NewHero = dynamic(() => import('@/components/NewHero').then(module => ({ default: module.NewHero })));
+const Showcase = dynamic(() => import('@/components/Showcase').then(module => ({ default: module.Showcase })));
+const Solutions = dynamic(() => import('@/components/Solutions').then(module => ({ default: module.Solutions })));
 
 export default function Home() {
   return (
-    <Suspense fallback={<div>Loading...</div>}>
+    <Suspense fallback={<Loading />}>
       <NewHeader />
       {/* <Header /> */}
       <NewHero />
       {/* <Hero /> */}
-      {/* <Testimonials /> */}
       <About />
       <Skills />
       <Showcase />

@@ -5,11 +5,11 @@ import { Button } from '../ui/button';
 
 export function NewHero() {
   return (
-    <section className="flex items-center justify-center flex-col text-center pt-36 pb-10 w-full bg-[url('/assets/img/hero-bg-9.jpg')] bg-no-repeat bg-cover">
+    <section className="flex items-center justify-center flex-col text-center pt-36 pb-10 w-full bg-[url('/assets/img/hero-bg-8.jpg')] bg-no-repeat bg-cover">
       {/* <section className="flex items-center justify-center flex-col text-center pt-40 pb-20 w-full bg-gradient-to-b from-purple-200 from-20% to-white"> */}
       <div className="w-full flex flex-col justify-center items-center">
         <p className="border border-gray-300 bg-slate-100 w-fit px-4 py-1 rounded-full pt-[6px]">👋 Hey, I&apos;m Shah Nawaz</p>
-        <h1 className="leading-snug text-[3vw] font-bold mt-6 tracking-tight bg-gradient-to-r from-purple-700 from-30% to-indigo-900 text-transparent bg-clip-text">
+        <h1 className="leading-snug text-[3.1vw] font-bold mt-6 tracking-tight bg-gradient-to-r from-purple-700 from-30% to-indigo-900 text-transparent bg-clip-text">
           I build pixel perfect, engaging and
           <br />
           accessible digital experiences.
