@@ -95,7 +95,7 @@ export function NewHeader() {
       <div className={`w-[55%] flex justify-between items-center transition-all ease-in-out duration-500 ${hasScrolled && 'w-[90%]'}`}>
         {!hasScrolled && (
           <Link href={'#'} className="text-3xl text-slate-800 font-bold tracking-tight">
-            nawaz<span className="text-indigo-400">.</span>
+            nawaz<span className="text-purple-500">.</span>
           </Link>
         )}
         <nav
