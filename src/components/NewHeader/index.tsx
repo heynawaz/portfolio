@@ -109,8 +109,8 @@ export function NewHeader() {
             About
           </Link>
           {hasScrolled && (
-            <Link href={'#'} className="w-48 pb-[3px] text-center text-3xl text-black font-bold tracking-tight">
-              nawaz<span className="text-indigo-400">.</span>
+            <Link href={'#'} className="w-48 pb-[3px] text-center text-3xl text-slate-800 font-bold tracking-tight">
+              nawaz<span className="text-purple-500">.</span>
             </Link>
           )}
           <Link href={'#showcase'} className="hover:underline underline-offset-8 decoration-1">
