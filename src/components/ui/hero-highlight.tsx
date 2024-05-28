@@ -69,7 +69,7 @@ export const Highlight = ({ children, className }: { children: React.ReactNode; 
       transition={{
         duration: 2,
         ease: 'linear',
-        delay: 0.5,
+        delay: 0.4,
       }}
       style={{
         backgroundRepeat: 'no-repeat',
