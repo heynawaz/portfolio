@@ -18,9 +18,9 @@ export function NewHero() {
         >
           <div className="w-full flex flex-col justify-center items-center">
             <p className="border border-gray-300 bg-slate-100 w-fit px-4 py-1 rounded-full pt-[6px]">👋 Hey, I&apos;m Shah Nawaz</p>
-            <h1 className="leading-snug text-[3.1vw] font-bold mt-6 tracking-tight bg-gradient-to-r from-purple-900 from-30% to-violet-950 text-transparent bg-clip-text">
-              <span className="">I build</span>{' '}
-              <Highlight className="text-black">
+            <h1 className="leading-snug text-[3.3vw] font-bold mt-6 tracking-tight bg-gradient-to-r from-purple-300 to-60% to-indigo-900 text-transparent bg-clip-text">
+              I build{' '}
+              <Highlight className="text-purple-900">
                 pixel-perfect, engaging,
                 <br />
                 and accessible digital experiences.
@@ -32,7 +32,7 @@ export function NewHero() {
           </div>
           <div className="flex gap-6 justify-center items-center mt-10 ">
             <Calendar>
-              <div className="flex items-center gap-3 bg-gradient-to-br from-purple-500 from-20% to-violet-700 text-white font-medium hover:opacity-90 px-7 py-3 tracking-wide rounded-lg">
+              <div className="flex items-center gap-3 bg-gradient-to-br from-purple-400 from-20% to-indigo-500 text-white font-medium hover:opacity-90 px-7 py-3 tracking-wide rounded-lg">
                 {/* <Image src={'/assets/Shah Nawaz.jpg'} className="rounded-full" alt="Shah Nawaz's Photo" width={30} height={40} /> */}
                 <div className="flex items-center gap-4 pt-[4px]">Book a free call</div>
               </div>

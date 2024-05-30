@@ -11,7 +11,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html lang="en" className="scroll-smooth">
       <body className={ls.className}>
-        <main className="w-full">{children}</main>
+        <main className="w-full flex flex-col items-center">{children}</main>
       </body>
     </html>
   );
