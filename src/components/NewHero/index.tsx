@@ -7,7 +7,7 @@ import { HeroHighlight, Highlight } from '../ui/hero-highlight';
 
 export function NewHero() {
   return (
-    <section className="w-full text-center pt-36 pb-10 bg-[url('/assets/img/hero-bg-9.jpg')] bg-no-repeat bg-cover">
+    <section className="min-w-full text-center pt-36 pb-10 bg-[linear-gradient(to_right_bottom,rgba(0,0,0,0.27),rgba(0,0,0,0.5)),url('/assets/img/my-bg.jpg')] bg-no-repeat bg-center bg-cover">
       {/* <section className="flex items-center justify-center flex-col text-center pt-40 pb-20 w-full bg-gradient-to-b from-purple-200 from-20% to-white"> */}
       <HeroHighlight>
         <motion.h1
