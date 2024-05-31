@@ -1,38 +1,37 @@
 'use client';
 import { motion } from 'framer-motion';
 import { Calendar } from '../Calendar';
-import { Testimonials } from '../Testimonials';
 import { Button } from '../ui/button';
 import { HeroHighlight, Highlight } from '../ui/hero-highlight';
 
 export function NewHero() {
   return (
-    <section className="min-w-full text-center pt-36 pb-10 bg-[linear-gradient(to_right_bottom,rgba(0,0,0,0.27),rgba(0,0,0,0.5)),url('/assets/img/my-bg.jpg')] bg-no-repeat bg-center bg-cover">
-      {/* <section className="flex items-center justify-center flex-col text-center pt-40 pb-20 w-full bg-gradient-to-b from-purple-200 from-20% to-white"> */}
-      <HeroHighlight>
+    <section className="min-w-full pt-36 pb-44 bg-[linear-gradient(to_top,rgba(255,255,255,0),rgba(0,0,0,0),rgba(0,0,0,0)),url('/assets/img/my-bg.jpg')] bg-no-repeat bg-center bg-cover bg-fixed">
+      {/* <section className="flex items-center justify-center flex-col text-center pt-40 pb-20 w-full bg-gradient-t-b from-purple-200 from-20% to-white"> */}
+      <HeroHighlight className="w-[90%]">
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: [20, -5, 0] }}
           transition={{ duration: 0.5, ease: [0.4, 0.0, 0.2, 1] }}
           // className="text-3xl md:text-5xl lg:text-[2rem] xl:text-[3.3rem] font-bold text-gray-700 max-w-4xl leading-relaxed lg:leading-snug mx-auto"
         >
-          <div className="w-full flex flex-col justify-center items-center">
+          <div className="w-full flex flex-col">
             <p className="border border-gray-300 bg-slate-100 w-fit px-4 py-1 rounded-full pt-[6px]">👋 Hey, I&apos;m Shah Nawaz</p>
-            <h1 className="leading-snug text-[3.3vw] font-bold mt-6 tracking-tight bg-gradient-to-r from-purple-300 to-60% to-indigo-900 text-transparent bg-clip-text">
+            <h1 className="leading-snug text-[3.3vw] text-purple-900 font-bold mt-6 tracking-tight">
               I build{' '}
-              <Highlight className="text-purple-900">
+              <Highlight className="text-black">
                 pixel-perfect, engaging,
                 <br />
                 and accessible digital experiences.
               </Highlight>
             </h1>
-            <p className="text-lg text-gray-800 mt-6 w-[50rem]">
+            <p className="text-lg text-gray-800 mt-4 w-[50rem]">
               Transform your online presence into an engaging showcase that captivates visitors, turning interest into action and building your brand around the clock.
             </p>
           </div>
-          <div className="flex gap-6 justify-center items-center mt-10 ">
+          <div className="flex gap-6 mt-10">
             <Calendar>
-              <div className="flex items-center gap-3 bg-gradient-to-br from-purple-400 from-20% to-indigo-500 text-white font-medium hover:opacity-90 px-7 py-3 tracking-wide rounded-lg">
+              <div className="flex items-center gap-3 bg-purple-900 text-white font-medium hover:opacity-90 px-7 py-3 tracking-wide rounded-lg">
                 {/* <Image src={'/assets/Shah Nawaz.jpg'} className="rounded-full" alt="Shah Nawaz's Photo" width={30} height={40} /> */}
                 <div className="flex items-center gap-4 pt-[4px]">Book a free call</div>
               </div>
@@ -46,7 +45,7 @@ export function NewHero() {
               <p className="pt-[3px]">Download CV</p>
             </Button>
           </div>
-          <Testimonials />
+          {/* <Testimonials /> */}
         </motion.h1>
       </HeroHighlight>
       {/* <Image src={'/assets/img/circle-globe.png'} alt="globe" height={900} width={900} className="mix-blend-luminosity opacity-50" /> */}
