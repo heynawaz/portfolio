@@ -17,7 +17,7 @@ export function NewHero() {
         >
           <div className="w-full flex flex-col">
             <p className="border border-gray-300 bg-slate-100 w-fit px-4 py-1 rounded-full pt-[6px]">👋 Hey, I&apos;m Shah Nawaz</p>
-            <h1 className="leading-snug text-[4rem] text-black font-bold mt-6 tracking-tight">
+            <h1 className="leading-snug text-[4rem] text-purple-900 font-bold mt-6 tracking-tight">
               I build{' '}
               <Highlight className="text-black">
                 pixel-perfect, engaging,
