@@ -17,7 +17,7 @@ export function NewHero() {
         >
           <div className="w-full flex flex-col">
             <p className="border border-gray-300 bg-slate-100 w-fit px-4 py-1 rounded-full pt-[6px]">👋 Hey, I&apos;m Shah Nawaz</p>
-            <h1 className="leading-snug text-[3.3vw] text-purple-900 font-bold mt-6 tracking-tight">
+            <h1 className="leading-snug text-[4rem] text-black font-bold mt-6 tracking-tight">
               I build{' '}
               <Highlight className="text-black">
                 pixel-perfect, engaging,
@@ -39,7 +39,7 @@ export function NewHero() {
             <Button
               size={'default'}
               variant={'outline'}
-              className="bg-transparent hover:bg-violet-100/50 border border-slate-900/10 text-slate-700 font-medium hover:text-purple-900 px-9 py-[14px] h-full tracking-wide rounded-lg"
+              className="bg-transparent hover:bg-white/50 border border-slate-900/10 text-slate-700 font-medium hover:text-purple-900 px-9 py-[14px] h-full tracking-wide rounded-lg"
               onClick={() => window.open('/assets/pdf/Shah Nawaz - Resume.pdf', '_blank')}
             >
               <p className="pt-[3px]">Download CV</p>
