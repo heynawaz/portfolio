@@ -25,7 +25,7 @@ export function NewHero() {
                 and accessible digital experiences.
               </Highlight>
             </h1>
-            <p className="text-lg text-gray-800 mt-4 w-[50rem]">
+            <p className="text-lg text-gray-800 mt-2 w-[50rem]">
               Transform your online presence into an engaging showcase that captivates visitors, turning interest into action and building your brand around the clock.
             </p>
           </div>
