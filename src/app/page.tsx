@@ -18,13 +18,15 @@ export default function Home() {
     <Suspense fallback={<Loading />}>
       <NewHeader />
       {/* <Header /> */}
-      <NewHero />
-      {/* <Hero /> */}
-      <About />
-      <Skills />
-      <Showcase />
-      <Solutions />
-      <FooterNote />
+      <main className="w-full flex flex-col items-center">
+        <NewHero />
+        {/* <Hero /> */}
+        <About />
+        <Skills />
+        <Showcase />
+        <Solutions />
+        <FooterNote />
+      </main>
       <Footer />
     </Suspense>
   );
