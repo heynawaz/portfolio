@@ -18,7 +18,7 @@ export function Skills() {
           for more details.
         </p>
         <div>
-          <Image src={'/assets/svg/logos.svg'} alt="logos" width={1000} height={1000} />
+          <Image src={'/assets/svg/logos.svg'} alt="logos" draggable={false} width={1000} height={1000} />
         </div>
       </section>
     </>

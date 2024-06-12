@@ -1,13 +1,15 @@
 'use client';
+import { cn } from '@/lib/utils';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { Calendar } from '../Calendar';
+import AnimatedGradientText from '../ui/animated-gradient-text';
 import { Button } from '../ui/button';
 import { HeroHighlight, Highlight } from '../ui/hero-highlight';
 
 export function NewHero() {
   return (
-    <section className="min-w-full grid place-items-center pt-36 pb-8 bg-[linear-gradient(to_bottom,rgba(255,255,255,0),rgba(0,0,0,0),rgba(0,0,0,0)),url('/assets/svg/polygon-bg-element.svg')] bg-no-repeat bg-center bg-cover">
+    <section className="min-w-full grid place-items-center pt-36 pb-8 bg-[linear-gradient(to_top,rgba(255,255,255,1),rgba(255,255,255,0)),url('/assets/img/hero-bg-6.jpg')] bg-no-repeat bg-center bg-cover">
       {/* <section className="flex items-center justify-center flex-col text-center pt-40 pb-20 w-full bg-gradient-t-b from-purple-200 from-20% to-white"> */}
       <HeroHighlight className="w-[90%]">
         <motion.h1
@@ -17,7 +19,15 @@ export function NewHero() {
           // className="text-3xl md:text-5xl lg:text-[2rem] xl:text-[3.3rem] font-bold text-gray-700 max-w-4xl leading-relaxed lg:leading-snug mx-auto"
         >
           <div className="w-full flex flex-col justify-center items-center text-center">
-            <p className="border border-gray-300 bg-slate-100 w-fit px-4 py-1 rounded-full pt-[6px]">👋 Hey, I&apos;m Shah Nawaz</p>
+            {/* <p className="border border-gray-300 bg-slate-100 w-fit px-4 py-1 rounded-full pt-[6px]">👋 Hey, I&apos;m Shah Nawaz</p> */}
+            <AnimatedGradientText>
+              👋&nbsp;
+              {/* <hr className="mx-2 h-4 w-[1px] shrink-0 bg-gray-300" />{' '} */}
+              <span className={cn(`inline animate-gradient bg-gradient-to-r from-[#ffaa40] via-[#9c40ff] to-[#ffaa40] bg-[length:var(--bg-size)_100%] bg-clip-text text-transparent`)}>
+                Hey, I&apos;m Shah Nawaz
+              </span>
+              {/* <ChevronRight className="ml-1 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5" /> */}
+            </AnimatedGradientText>
             <h1 className="relative leading-snug text-[4rem] text-purple-900 font-bold mt-6 tracking-tight">
               I build{' '}
               <Highlight className="text-black">
@@ -25,7 +35,7 @@ export function NewHero() {
                 <br />
                 and accessible digital experiences.
               </Highlight>
-              <Image src={'/assets/svg/scribble.svg'} alt="scribble" height={400} width={400} className="absolute  right-0 top-16 opacity-5 rotate-[50deg]" />
+              {/* <Image src={'/assets/svg/scribble.svg'} alt="scribble" draggable={false} height={400} width={3000} className="absolute right-0 opacity-[0.03] rotate-[40deg]" /> */}
             </h1>
             <p className="text-lg text-gray-800 mt-2 w-[50rem]">
               Transform your online presence into an engaging showcase that captivates visitors, turning interest into action and building your brand around the clock.
@@ -51,9 +61,9 @@ export function NewHero() {
         </motion.h1>
       </HeroHighlight>
       <div className="flex justify-between w-full overflow-hidden">
-        <Image src={'/assets/svg/bg-side-3.svg'} alt="arrow" height={400} width={500} className="ml-[-230px] opacity-10" />
-        <Image src={'/assets/svg/arrow-leaf.svg'} alt="arrow" height={400} width={200} className="mt-32 opacity-50 rotate-[270deg] scale-x-[-1]" />
-        <Image src={'/assets/svg/bg-side-4.svg'} alt="arrow" height={400} width={500} className="mr-[-170px] opacity-10" />
+        <Image src={'/assets/svg/bg-side-3.svg'} alt="arrow" draggable={false} height={400} width={500} className="ml-[-230px] opacity-30" />
+        <Image src={'/assets/svg/arrow-leaf.svg'} alt="arrow" draggable={false} height={400} width={200} className="mt-32 opacity-70 rotate-[270deg] scale-x-[-1]" />
+        <Image src={'/assets/svg/bg-side-4.svg'} alt="arrow" draggable={false} height={400} width={500} className="mr-[-170px] opacity-30" />
       </div>
     </section>
   );

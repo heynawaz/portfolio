@@ -24,11 +24,17 @@ const config = {
     extend: {
       animation: {
         scroll: 'scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite',
+        gradient: 'gradient 8s linear infinite',
       },
       keyframes: {
         scroll: {
           to: {
             transform: 'translate(calc(-50% - 0.5rem))',
+          },
+        },
+        gradient: {
+          to: {
+            backgroundPosition: 'var(--bg-size) 0',
           },
         },
       },

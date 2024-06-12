@@ -39,7 +39,7 @@ export function About() {
           </div>
           <div className="w-[670px]">
             <div className="flex w-full gap-8 bg-neutral-50/70 shadow-md px-5 py-5 rounded-lg">
-              <Image src={'/assets/Shah Nawaz.jpg'} className="rounded-full border border-gray-300" alt="Shah Nawaz's Photo" width={120} height={100} />
+              <Image src={'/assets/Shah Nawaz.jpg'} draggable={false} className="rounded-full border border-gray-300" alt="Shah Nawaz's Photo" width={120} height={100} />
               <div className="">
                 <h1 className="text-2xl font-semibold text-gray-600 mt-3">Mohammad Shah Nawaz</h1>
                 <p className="font-light text-gray-500 text-md">Software Engineer</p>

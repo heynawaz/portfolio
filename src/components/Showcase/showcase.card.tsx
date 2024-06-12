@@ -15,7 +15,7 @@ export default function ShowcaseCard(props: IShowcaseCard) {
     <>
       {cardDetails?.map((element, index) => (
         <div key={index} className={`p-5 w-[340px] transition-all duration-150 shadow-md shadow-violet-100 border border-gray-200 rounded-xl break-inside-avoid mb-6 mx-3 bg-white bg-opacity-90`}>
-          <Image src={element?.screenshotUrl} width={2000} height={100} alt={element?.projectTitle} className="w-full shadow-sm rounded-lg" />
+          <Image src={element?.screenshotUrl} draggable={false} width={2000} height={100} alt={element?.projectTitle} className="w-full shadow-sm rounded-lg" />
           <div className="w-full leading-[22px] mt-4">
             <h1 className="font-bold text-xl text-secondary-platform">{element?.projectTitle}</h1>
             <div className="flex gap-[7px] flex-wrap mt-2">

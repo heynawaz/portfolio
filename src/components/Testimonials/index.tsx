@@ -35,7 +35,7 @@ const testimonials = [
 
 export function Testimonials({ className }: { className?: HTMLProps<HTMLElement>['className'] }) {
   return (
-    <section id="testimonials" className={cn(className, 'w-full flex flex-col justify-start items-start mt-16')}>
+    <section id="testimonials" className={cn(className, 'w-full flex flex-col justify-center items-center mt-16')}>
       {/* <SectionHeader heading="Wall of love" description="Look what my partners have said to my work." /> */}
       {/* <h1 className={`${pacifico.className} text-3xl bg-gradient-to-r from-purple-700 from-20% to-indigo-700 text-transparent h-16 bg-clip-text`}>Wall of love</h1> */}
       <div className="h-fit rounded-md flex flex-col text-left antialiased dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
