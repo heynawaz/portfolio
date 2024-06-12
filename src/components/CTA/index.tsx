@@ -6,7 +6,7 @@ import IconCloud from '../ui/icon-cloud';
 
 type Props = {};
 
-function CTA({}: Props) {
+export default function CTA({}: Props) {
   const slugs = [
     'typescript',
     'javascript',
@@ -35,7 +35,7 @@ function CTA({}: Props) {
   ];
 
   return (
-    <section className="grid place-items-center py-10">
+    <section className="grid place-items-center py-10 my-20">
       <div className="flex items-center justify-center gap-20 shadow-xl rounded-2xl h-[50rem] px-20 bg-zinc-50">
         <div className="h-full flex flex-col items-start justify-center">
           <h1 className="text-[4.2rem] tracking-tight leading-[5rem] text-zinc-800">
@@ -67,5 +67,3 @@ function CTA({}: Props) {
     </section>
   );
 }
-
-export default CTA;
