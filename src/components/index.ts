@@ -1,5 +1,6 @@
 export * from '@/components/About';
 export * from '@/components/Calendar';
+export * from '@/components/CTA';
 export * from '@/components/Footer';
 export * from '@/components/FooterNote';
 export * from '@/components/Header';

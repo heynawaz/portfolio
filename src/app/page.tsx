@@ -1,3 +1,5 @@
+import { Testimonials } from '@/components';
+import CTA from '@/components/CTA';
 import dynamic from 'next/dynamic';
 import { Suspense } from 'react';
 import Loading from './loading';
@@ -22,10 +24,12 @@ export default function Home() {
         <NewHero />
         {/* <Hero /> */}
         <About />
+        <Testimonials />
         <Skills />
         <Showcase />
         <Solutions />
-        <FooterNote />
+        <CTA />
+        {/* <FooterNote /> */}
       </main>
       <Footer />
     </Suspense>
