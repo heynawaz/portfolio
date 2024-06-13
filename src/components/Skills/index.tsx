@@ -14,7 +14,7 @@ export function Skills() {
               <br />
               Rich Web Experiences
             </h1>
-            <p className="mt-3 mb-10 text-lg leading-relaxed text-gray-500">
+            <p className="mt-5 mb-16 text-lg leading-relaxed text-gray-500">
               Crafting sophisticated small to medium-scale web applications, developing dynamic features,
               <br />
               creating captivating animations, and designing interactive layouts using advanced coding techniques.

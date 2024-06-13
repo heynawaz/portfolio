@@ -1,4 +1,5 @@
 import CTA from '@/components/CTA';
+import CTA2 from '@/components/CTA2';
 import dynamic from 'next/dynamic';
 import { Suspense } from 'react';
 import Loading from './loading';
@@ -26,6 +27,7 @@ export default function Home() {
         <About />
         <Skills />
         <Solutions />
+        <CTA2 />
         <Showcase />
         <CTA />
         {/* <FooterNote /> */}
