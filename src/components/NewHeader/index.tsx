@@ -44,7 +44,7 @@ export function NewHeader() {
   return (
     <header
       className={`fixed top-0 z-50 flex justify-center items-center h-28 w-full transition-all ease-in-out duration-500
-      ${hasScrolled && 'rounded-full !px-6 !max-w-fit !h-[70px] backdrop-filter backdrop-blur-md top-5 shadow-[0px_1px_6px_-1px_rgb(0,0,0,0.1)] bg-gradient-to-r from-purple-100/40 via-violet-50/40 to-purple-100/40'}`}
+      ${hasScrolled && 'rounded-full !px-6 !max-w-fit !h-[70px] backdrop-filter backdrop-blur-md top-5 shadow-[0px_1px_6px_-1px_rgb(0,0,0,0.1)] bg-gradient-to-r from-gray-100/40 to-gray-100/40'}`}
     >
       <div className={`w-[55%] flex justify-between items-center transition-all ease-in-out duration-500 ${hasScrolled && 'w-[90%]'}`}>
         {!hasScrolled && (

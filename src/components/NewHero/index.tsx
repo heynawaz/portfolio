@@ -9,7 +9,7 @@ import { HeroHighlight, Highlight } from '../ui/hero-highlight';
 
 export function NewHero() {
   return (
-    <section className="min-w-full grid place-items-center pt-36 pb-8 bg-[linear-gradient(to_top,rgba(255,255,255,1),rgba(255,255,255,0)),url('/assets/img/hero-bg-6.jpg')] bg-no-repeat bg-center bg-cover">
+    <section className="min-w-full grid place-items-center pt-36 pb-14 bg-[linear-gradient(to_top,rgba(255,255,255,1),rgba(255,255,255,0)),url('/assets/img/hero-bg-7.jpg')] bg-no-repeat bg-center bg-cover">
       {/* <section className="flex items-center justify-center flex-col text-center pt-40 pb-20 w-full bg-gradient-t-b from-purple-200 from-20% to-white"> */}
       <HeroHighlight className="w-[90%]">
         <motion.h1
@@ -60,10 +60,10 @@ export function NewHero() {
           {/* <Testimonials /> */}
         </motion.h1>
       </HeroHighlight>
-      <div className="flex justify-between w-full overflow-hidden">
-        <Image src={'/assets/svg/bg-side-3.svg'} alt="arrow" draggable={false} height={400} width={500} className="ml-[-230px] opacity-30" />
+      <div className="flex justify-center">
+        {/* <Image src={'/assets/svg/bg-side-3.svg'} alt="arrow" draggable={false} height={400} width={500} className="ml-[-230px] opacity-30" /> */}
         <Image src={'/assets/svg/arrow-leaf.svg'} alt="arrow" draggable={false} height={400} width={200} className="mt-32 opacity-70 rotate-[270deg] scale-x-[-1]" />
-        <Image src={'/assets/svg/bg-side-4.svg'} alt="arrow" draggable={false} height={400} width={500} className="mr-[-170px] opacity-30" />
+        {/* <Image src={'/assets/svg/bg-side-4.svg'} alt="arrow" draggable={false} height={400} width={500} className="mr-[-170px] opacity-30" /> */}
       </div>
     </section>
   );

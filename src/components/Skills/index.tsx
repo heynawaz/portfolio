@@ -9,7 +9,7 @@ export function Skills() {
       <section className="w-full my-32 flex justify-center">
         <div className="flex items-center justify-center gap-48 shadow-sm w-full h-[50rem] px-20 bg-zinc-50">
           <div className="flex flex-col">
-            <h1 className="text-[4.2rem] tracking-tight leading-[5rem] text-zinc-800">
+            <h1 className={`${dm_serif.className} text-[4.2rem] tracking-tight leading-[5rem] text-zinc-800`}>
               <span className={`${dm_serif.className} text-purple-900`}>Transforming </span>Ideas into
               <br />
               Rich Web Experiences

@@ -22,11 +22,11 @@ export default function Home() {
       <main className="w-full flex flex-col items-center">
         <NewHero />
         {/* <Hero /> */}
-        <About />
         {/* <Testimonials /> */}
+        <About />
         <Skills />
-        <Showcase />
         <Solutions />
+        <Showcase />
         <CTA />
         {/* <FooterNote /> */}
       </main>
