@@ -1,4 +1,3 @@
-import { Testimonials } from '@/components';
 import CTA from '@/components/CTA';
 import dynamic from 'next/dynamic';
 import { Suspense } from 'react';
@@ -24,7 +23,7 @@ export default function Home() {
         <NewHero />
         {/* <Hero /> */}
         <About />
-        <Testimonials />
+        {/* <Testimonials /> */}
         <Skills />
         <Showcase />
         <Solutions />
