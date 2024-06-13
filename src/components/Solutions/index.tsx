@@ -3,7 +3,7 @@ import { SolutionsCard } from './solution.card';
 
 export function Solutions() {
   return (
-    <section id="solutions" className="flex justify-center flex-col w-full items-center py-28">
+    <section id="solutions" className="flex mt-20 justify-center flex-col w-full items-center py-28">
       <SectionHeader
         heading="Solutions"
         description="Unlock a world of exceptional services tailored to your needs, ranging from full-stack wizardry to mesmerizing frontend design and powerhouse backend development."

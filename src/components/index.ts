@@ -1,4 +1,5 @@
 export * from '@/components/About';
+export * from '@/components/AnimatedList';
 export * from '@/components/Calendar';
 export * from '@/components/CTA';
 export * from '@/components/CTA2';

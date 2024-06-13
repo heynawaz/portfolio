@@ -6,10 +6,10 @@ import { BsArrowRight } from 'react-icons/bs';
 export function Skills() {
   return (
     <>
-      <section className="w-full my-32 flex justify-center">
+      <section className="w-full mt-28 flex justify-center">
         <div className="flex items-center justify-center gap-48 shadow-sm w-full h-[50rem] px-20 bg-zinc-50">
           <div className="flex flex-col">
-            <h1 className={`${dm_serif.className} text-[4.2rem] tracking-tight leading-[5rem] text-zinc-800`}>
+            <h1 className={`${dm_serif.className} text-[4rem] tracking-tight leading-[5rem] text-zinc-800`}>
               <span className={`${dm_serif.className} text-purple-900`}>Transforming </span>Ideas into
               <br />
               Rich Web Experiences
@@ -26,7 +26,7 @@ export function Skills() {
           </div>
           <div className="flex">
             {/* <Image src={'/assets/svg/logos.svg'} alt="Technology" draggable={false} width={700} height={700} /> */}
-            <Image src={'/assets/svg/bg-side-4.svg'} alt="svg" draggable={false} height={400} width={500} />
+            <Image src={'/assets/svg/bg-side-4.svg'} alt="svg" draggable={false} height={400} width={400} />
           </div>
         </div>
       </section>
