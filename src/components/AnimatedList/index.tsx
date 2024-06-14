@@ -11,7 +11,7 @@ interface Item {
   time: string;
 }
 
-export function AnimatedList({ notifications }: { notifications: any }) {
+export function AnimatedList({ notifications }: { notifications: Record<string, any>[] }) {
   notifications = Array.from({ length: 10 }, () => notifications).flat();
 
   const Notification = ({ name, description, icon, color, time }: Item) => {

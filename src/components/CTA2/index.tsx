@@ -5,7 +5,7 @@ import IconCloud from '../ui/icon-cloud';
 
 type Props = {};
 
-export default function CTA2({}: Props) {
+export function CTA2({}: Props) {
   const slugs = [
     'typescript',
     'javascript',

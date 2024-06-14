@@ -1,5 +1,4 @@
-import CTA from '@/components/CTA';
-import CTA2 from '@/components/CTA2';
+import { CTA, CTA2, Testimonials } from '@/components';
 import dynamic from 'next/dynamic';
 import { Suspense } from 'react';
 import Loading from './loading';
@@ -23,12 +22,12 @@ export default function Home() {
       <main className="w-full flex flex-col items-center">
         <NewHero />
         {/* <Hero /> */}
-        {/* <Testimonials /> */}
         <About />
         <Skills />
         <Solutions />
         <CTA2 />
         <Showcase />
+        <Testimonials />
         <CTA />
         {/* <FooterNote /> */}
       </main>

@@ -75,12 +75,26 @@
     }
   }
 
-  ::-moz-selection { 
-    color: #fff;
-    background: #581c87;
-  }
-  
-  ::selection {
-    color: #fff;
-    background: #581c87;
-  }
+::-moz-selection { 
+  color: #fff;
+  background: #581c87;
+}
+
+::selection {
+  color: #fff;
+  background: #581c87;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+
+::-webkit-scrollbar-track {
+  background: transparent;;
+}
+ 
+
+::-webkit-scrollbar-thumb {
+  background: #581c87; 
+}

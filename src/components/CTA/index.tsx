@@ -5,9 +5,9 @@ import { Calendar } from '../Calendar';
 
 type Props = {};
 
-export default function CTA({}: Props) {
+export function CTA({}: Props) {
   return (
-    <section className="grid place-items-center mb-40">
+    <section className="grid place-items-center my-40">
       <div className="flex items-center justify-center gap-20 shadow-xl rounded-2xl h-[45rem] px-20 bg-zinc-50">
         <div className="h-full flex flex-col items-start justify-center">
           <h1 className={`${dm_serif.className} text-[4.2rem] tracking-tight leading-[5rem] text-zinc-800`}>
@@ -31,7 +31,7 @@ export default function CTA({}: Props) {
           </Calendar>
         </div>
         <div className="flex justify-center">
-          <Image src={'/assets/svg/bg-side-7.svg'} alt="svg" draggable={false} height={400} width={400} />
+          <Image src={'/assets/svg/bg-side-7.svg'} alt="svg" draggable={false} height={400} width={500} />
         </div>
       </div>
     </section>
