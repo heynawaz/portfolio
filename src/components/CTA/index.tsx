@@ -13,7 +13,7 @@ export function CTA({}: Props) {
           <h1 className={`${dm_serif.className} text-[4.2rem] tracking-tight leading-[5rem] text-zinc-800`}>
             <span className={`text-purple-900`}>Supercharge </span> your awesome
             <br />
-            journey with me <span className="text-[3rem]">🚀</span>
+            journey together <span className="text-[3rem]">🚀</span>
           </h1>
           <p className="mt-6 mb-10 text-lg leading-relaxed text-gray-500">
             Ready to take the next step? Get in touch today to schedule a consultation.
