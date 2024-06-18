@@ -20,7 +20,7 @@ export function SolutionsCard({ servicesData }: { servicesData: ISolutionsProps[
         )}
       >
         <Image src={element?.image} draggable={false} height={100} width={150} alt={'Frontend logo'} />
-        <h1 className="w-[180px] mt-12 text-xl tracking-wide font-semibold leading-6">{element?.title}</h1>
+        <h1 className="w-[180px] mt-12 text-[20px] tracking-wide font-semibold leading-6">{element?.title}</h1>
         {/* <p className="w-[180px] mt-6 text-[15px]">{element?.description}</p> */}
         <ul className="mt-10 text-gray-800 text-[16px] bg-white/10 rounded-t-3xl p-6 w-full">
           {element?.details?.map((item: string, index: number) => (

@@ -12,7 +12,9 @@ export function Footer() {
             <Link href={'#'} className="text-3xl text-black font-bold tracking-tight">
               nawaz<span className="text-purple-900">.</span>
             </Link>
-            <p className="tracking-wide text-xs pt-[4px] text-gray-600">&copy; msnawaz {new Date().getFullYear()}. All rights reserved.</p>
+            <p className="tracking-wide text-xs pt-[4px] text-gray-600">
+              <span className="text-[9px]">&copy;</span> msnawaz {new Date().getFullYear()}. All rights reserved.
+            </p>
           </div>
           <div className="flex flex-row gap-8">
             <Link href={'https://www.linkedin.com/in/shahnawazz/'} target="_blank">

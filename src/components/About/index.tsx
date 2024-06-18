@@ -5,6 +5,7 @@ import { FaFacebookF, FaGithub, FaInstagram, FaLinkedinIn, FaXTwitter } from 're
 import { IoBriefcaseOutline } from 'react-icons/io5';
 import { LuGraduationCap } from 'react-icons/lu';
 import { SectionHeader } from '../common';
+import { LinkPreview } from '../ui/link-preview';
 import stackData from './stack.data.json';
 
 export function About() {
@@ -75,9 +76,11 @@ export function About() {
               <div className="flex gap-6 mt-6">
                 <IoBriefcaseOutline size={50} color="#581c87" />
                 <div className="w-full">
-                  <Link href={'https://www.cloudanalogy.com/'} target="_blank" className="text-xl font-semibold text-purple-900 hover:underline">
-                    Cloud Analogy
-                  </Link>
+                  <LinkPreview url="https://www.cloudanalogy.com/">
+                    <Link href={'https://www.cloudanalogy.com/'} target="_blank" className="text-xl font-semibold text-purple-900 hover:underline">
+                      Cloud Analogy
+                    </Link>
+                  </LinkPreview>
                   <div className="flex justify-between items-center mb-2">
                     <h3 className="text-lg font-medium text-gray-700">Developer II</h3>
                     <p className="text-gray-600 text-sm">Jan, 2024 - Present</p>

@@ -40,7 +40,7 @@ export function Testimonials({ className }: { className?: HTMLProps<HTMLElement>
       id="testimonials"
       className={cn(
         className,
-        `w-full flex flex-col justify-center items-center py-36 bg-[linear-gradient(to_top,rgba(255,255,255,1),rgba(255,255,255,0.3),rgba(255,255,255,1)),url('/assets/img/hero-bg-6.jpg')] bg-no-repeat bg-center bg-cover'`,
+        `w-full flex flex-col justify-center items-center my-48 bg-[linear-gradient(to_top,rgba(255,255,255,1),rgba(255,255,255,0.3),rgba(255,255,255,1)),url('/assets/img/hero-bg-6.jpg')] bg-no-repeat bg-center bg-cover'`,
       )}
     >
       <SectionHeader heading="Wall of love" description="Real people. Real Results." />
