@@ -16,7 +16,7 @@ export default function ShowcaseCard(props: IShowcaseCard) {
       {cardDetails?.map((element, index) => (
         <div
           key={index}
-          className={`p-5 w-[340px] transition-all duration-150 shadow-xl shadow-purple-900/10 hover:shadow-sm border border-purple-950/5 rounded-xl break-inside-avoid mb-6 mx-3 bg-white`}
+          className={`p-5 w-[340px] transition-all duration-150 shadow-lg shadow-purple-900/10 hover:shadow-sm border border-purple-950/5 rounded-xl break-inside-avoid mb-6 mx-3 bg-white`}
         >
           <Image src={element?.screenshotUrl} draggable={false} width={2000} height={100} alt={element?.projectTitle} className="w-full shadow-sm rounded-lg" />
           <div className="w-full leading-[22px] mt-4">
