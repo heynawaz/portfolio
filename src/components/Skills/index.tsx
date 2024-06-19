@@ -7,14 +7,14 @@ export function Skills() {
   return (
     <>
       <section className="w-full mt-28 flex justify-center">
-        <div className="flex items-center justify-center gap-48 shadow-sm w-full h-[50rem] px-20 bg-zinc-50">
+        <div className="flex items-center justify-center gap-48 shadow-sm w-full h-[46rem] px-20 bg-zinc-50">
           <div className="flex flex-col">
-            <h1 className={`${dm_serif.className} text-[4rem] tracking-tight leading-[5rem] text-zinc-800`}>
+            <h1 className={`${dm_serif.className} text-[3.8rem] tracking-tight leading-[5rem] text-zinc-800`}>
               <span className={`${dm_serif.className} text-purple-900`}>Transforming </span>Ideas into
               <br />
               Rich Web Experiences
             </h1>
-            <p className="mt-5 mb-16 text-lg leading-relaxed text-gray-500">
+            <p className="mt-5 mb-16 text-[1.1rem] leading-relaxed text-gray-500">
               Crafting sophisticated small to medium-scale web applications, developing dynamic features,
               <br />
               creating captivating animations, and designing interactive layouts using advanced coding techniques.

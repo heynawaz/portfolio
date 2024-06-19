@@ -28,7 +28,7 @@ export default function ShowcaseCard(props: IShowcaseCard) {
                 </span>
               ))}
             </div>
-            <p className="w-full mt-3 text-[15px] text-gray-400 font-light">{element?.projectDescription}</p>
+            <p className="w-full mt-3 text-[.9rem] leading-relaxed text-gray-400 font-light">{element?.projectDescription}</p>
           </div>
           <div className="flex gap-3 mt-5">
             <Button variant={'outline'} size={'sm'} className="text-white bg-purple-900 hover:bg-purple-900/90 hover:text-white font-medium">

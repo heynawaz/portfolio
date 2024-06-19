@@ -10,7 +10,7 @@ export function CTA({}: Props) {
     <section className="grid place-items-center my-40">
       <div className="flex items-center justify-center gap-20 shadow-xl rounded-2xl h-[45rem] px-20 bg-zinc-50">
         <div className="h-full flex flex-col items-start justify-center">
-          <h1 className={`${dm_serif.className} text-[4.2rem] tracking-tight leading-[5rem] text-zinc-800`}>
+          <h1 className={`${dm_serif.className} text-[3.8rem] tracking-tight leading-[5rem] text-zinc-800`}>
             <span className={`text-purple-900`}>Supercharge </span> your awesome
             <br />
             journey together <span className="text-[3rem]">🚀</span>

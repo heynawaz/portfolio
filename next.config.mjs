@@ -12,6 +12,11 @@ const nextConfig = {
         hostname: 'api.microlink.io',
         pathname: '**',
       },
+      {
+        protocol: 'https',
+        hostname: 'picsum.photos',
+        pathname: '**',
+      },
     ],
   },
 };
