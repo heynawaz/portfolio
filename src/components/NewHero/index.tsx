@@ -51,7 +51,7 @@ export function NewHero() {
             <Button
               size={'default'}
               variant={'outline'}
-              className="bg-transparent hover:bg-white/50 border border-slate-900/10 text-slate-700 font-medium hover:text-purple-900 px-9 py-[14px] h-full tracking-wide rounded-lg"
+              className="bg-transparent hover:bg-white border border-purple-900/20 text-purple-950 font-medium hover:text-purple-900 px-9 py-[14px] h-full tracking-wide rounded-lg"
               onClick={() => window.open('/assets/pdf/Shah Nawaz - Resume.pdf', '_blank')}
             >
               <p className="pt-[3px]">Download CV</p>

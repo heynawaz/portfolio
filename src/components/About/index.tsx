@@ -5,7 +5,6 @@ import { FaFacebookF, FaGithub, FaInstagram, FaLinkedinIn, FaXTwitter } from 're
 import { IoBriefcaseOutline } from 'react-icons/io5';
 import { LuGraduationCap } from 'react-icons/lu';
 import { SectionHeader } from '../common';
-import { LinkPreview } from '../ui/link-preview';
 import stackData from './stack.data.json';
 
 export function About() {
@@ -21,7 +20,7 @@ export function About() {
                   {/* <div key={`stack${index}`} className={`px-[60px] py-[30px] bg-gradient-to-t from-white to-zinc-100 border-t border-gray-300 text-lg font-bold text-purple-900 rounded-lg`}> */}
                   {stack}
                 </div>
-                <div key={`details${index}`} className="mt-8 rounded-md shadow-md">
+                <div key={`details${index}`} className="mt-6 rounded-md shadow-md">
                   {Object.entries(details)?.map(([keys, list], subIndex) => (
                     <div key={subIndex}>
                       <div
@@ -76,11 +75,9 @@ export function About() {
               <div className="flex gap-6 mt-6">
                 <IoBriefcaseOutline size={50} color="#581c87" />
                 <div className="w-full">
-                  <LinkPreview url="https://www.cloudanalogy.com/">
-                    <Link href={'https://www.cloudanalogy.com/'} target="_blank" className="text-xl font-semibold text-purple-900 hover:underline">
-                      Cloud Analogy
-                    </Link>
-                  </LinkPreview>
+                  <Link href={'https://www.cloudanalogy.com/'} target="_blank" className="text-xl font-semibold text-purple-900 hover:underline">
+                    Cloud Analogy
+                  </Link>
                   <div className="flex justify-between items-center mb-2">
                     <h3 className="text-lg font-medium text-gray-700">Developer II</h3>
                     <p className="text-gray-600 text-sm">Jan, 2024 - Present</p>
