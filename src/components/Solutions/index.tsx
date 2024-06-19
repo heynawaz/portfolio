@@ -35,7 +35,7 @@ export function Solutions() {
         heading="Solutions"
         description="Unlock a world of exceptional services tailored to your needs, ranging from full-stack wizardry to mesmerizing frontend design and powerhouse backend development."
       />
-      <div className="flex flex-row justify-center gap-16 mt-20">
+      <div className="flex flex-row justify-center gap-16 mt-24">
         <SolutionsCard servicesData={servicesData} />
       </div>
     </section>
