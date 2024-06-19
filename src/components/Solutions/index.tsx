@@ -8,7 +8,7 @@ export function Solutions() {
       description: 'Beautiful and responsive user interfaces',
       image: '/assets/svg/frontend.svg',
       details: ['Responsive Design', 'HTML/CSS', 'JavaScript', 'Frameworks and Libraries', 'Performance Optimization', 'Cross-Browser Compatibility', 'Accessibility'],
-      className: 'bg-gradient-to-b from-zinc-50 text-gray-700',
+      className: 'bg-gradient-to-b from-slate-50 text-gray-700',
       // className: 'bg-gradient-to-br from-green-200 to-lime-200',
     },
     {
@@ -24,7 +24,7 @@ export function Solutions() {
       description: 'Scalable and complex backend systems',
       image: '/assets/svg/backend.svg',
       details: ['Server-Side Logic', 'Database Design', 'API Development', 'Authentication and Authorization', 'Performance Tuning', 'Scalability', 'Cloud Services'],
-      className: 'bg-gradient-to-b from-zinc-50 text-gray-700',
+      className: 'bg-gradient-to-b from-slate-50 text-gray-700',
       // className: 'bg-gradient-to-br from-cyan-200 to-sky-400',
     },
   ];
