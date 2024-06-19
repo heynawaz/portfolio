@@ -21,7 +21,7 @@ export function CTA({}: Props) {
             Together, we can turn your vision into a reality.
           </p>
           <Calendar>
-            <div className="flex items-center gap-3 bg-purple-900 text-white shadow-lg font-medium hover:opacity-90 px-5 py-3 tracking-wide rounded-full">
+            <div className="flex items-center gap-3 bg-purple-900 text-white shadow-lg font-medium hover:opacity-90 px-4 py-3 tracking-wide rounded-full">
               <Image src={'/assets/Shah Nawaz.jpg'} className="rounded-full" alt="Shah Nawaz's Photo" width={30} height={40} />
               <div className="flex items-center gap-4 pt-[3px]">
                 Schedule a free call

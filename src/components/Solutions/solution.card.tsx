@@ -10,11 +10,7 @@ interface ISolutionsProps {
 }
 
 export function SolutionsCard({ servicesData }: { servicesData: ISolutionsProps[] }) {
-  const getTagline: Record<number, string> = {
-    0: 'MOST POPULAR',
-    1: 'MOST DEMANDED',
-    2: 'MOST PREFERRED',
-  };
+  const getTagline = ['MOST POPULAR', 'MOST DEMANDED', 'MOST PREFERRED'];
   return servicesData?.map((element: any, index: number) => (
     <>
       <div key={index} className={cn('text-black leading-5 p-7 w-[380px] rounded-xl hover:shadow-md hover:scale-105 transition ease-in duration-150', element?.className)}>
