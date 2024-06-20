@@ -38,12 +38,12 @@ export function About() {
             ))}
           </div>
           <div className="flex flex-col max-w-[670px] order-2 2xl:order-1 mx-8">
-            <div className="flex w-full gap-8 bg-neutral-50/70 shadow-md px-5 py-5 rounded-lg">
+            <div className="flex sm:flex-col sm:justify-center sm:items-center sm:text-center sm:py-10 w-full gap-8 bg-neutral-50/70 shadow-md px-5 py-5 rounded-lg">
               <Image src={'/assets/Shah Nawaz.jpg'} draggable={false} className="rounded-full border border-gray-300" alt="Shah Nawaz's Photo" width={120} height={100} />
               <div className="">
-                <h1 className="text-2xl font-semibold text-gray-600 mt-3">Mohammad Shah Nawaz</h1>
+                <h1 className="text-2xl font-semibold text-gray-600 mt-3 sm:mt-0">Mohammad Shah Nawaz</h1>
                 <p className="font-light text-gray-500 text-md">Software Engineer</p>
-                <div className="flex items-center flex-row gap-5 mt-5">
+                <div className="flex items-center flex-row sm:justify-center gap-5 mt-5">
                   <Link href={'https://github.com/yoursnawaz'} target="_blank">
                     <FaGithub className="fill-gray-600 hover:fill-purple-900" size={18} />
                   </Link>
@@ -68,9 +68,9 @@ export function About() {
               crafting dynamic and scalable full-stack applications that meet the evolving needs of modern businesses. Let me bring my wealth of experience and technical prowess to your next project.
             </p>
             <div className="mt-10">
-              <h3 className="text-2xl text-purple-900 font-bold">Work Experience</h3>
-              <div className="flex gap-6 mt-6">
-                <IoBriefcaseOutline size={50} color="#581c87" />
+              <h3 className="text-2xl text-purple-900 font-bold sm:underline">Work Experience</h3>
+              <div className="flex gap-6 mt-6 sm:mt-3">
+                <IoBriefcaseOutline size={50} color="#581c87" className="sm:hidden" />
                 <div className="w-full">
                   <Link href={'https://www.cloudanalogy.com/'} target="_blank" className="text-xl font-semibold text-purple-900 hover:underline">
                     Cloud Analogy
@@ -98,9 +98,9 @@ export function About() {
             </div>
 
             <div className="mt-8">
-              <h3 className="text-2xl text-purple-900 font-bold">Education</h3>
-              <div className="flex gap-6 mt-6">
-                <LuGraduationCap size={50} color="#581c87" />
+              <h3 className="text-2xl text-purple-900 font-bold sm:underline">Education</h3>
+              <div className="flex gap-6 mt-6 sm:mt-3">
+                <LuGraduationCap size={50} color="#581c87" className="sm:hidden" />
                 <div className="w-full">
                   <Link href={'https://www.iul.ac.in/Program/PG/PG_mca.aspx'} target="_blank" className="text-xl font-semibold text-purple-900 hover:underline">
                     Master of Computer Applications
@@ -114,7 +114,7 @@ export function About() {
                 </div>
               </div>
               <div className="flex gap-6 mt-6">
-                <LuGraduationCap size={50} color="#581c87" />
+                <LuGraduationCap size={50} color="#581c87" className="sm:hidden" />
                 <div className="w-full">
                   <Link href={'https://www.iul.ac.in/Program/UG/UG_BCA.aspx'} target="_blank" className="text-xl font-semibold text-purple-900 hover:underline">
                     Bachelor of Computer Applications

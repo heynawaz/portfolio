@@ -35,7 +35,7 @@ export function Solutions() {
         heading="Solutions"
         description="Unlock a world of exceptional services tailored to your needs, ranging from full-stack wizardry to mesmerizing frontend design and powerhouse backend development."
       />
-      <div className="grid 2xl:grid-cols-3 place-items-center gap-16 mt-24">
+      <div className="grid grid-cols-3 xl:grid-cols-1 place-items-center gap-16 xl:gap-y-28 mt-24">
         <SolutionsCard servicesData={servicesData} />
       </div>
     </section>

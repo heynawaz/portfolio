@@ -10,16 +10,22 @@ interface ISolutionsProps {
 }
 
 export function SolutionsCard({ servicesData }: { servicesData: ISolutionsProps[] }) {
-  const getTagline = ['MOST POPULAR', 'MOST DEMANDED', 'MOST PREFERRED'];
+  const tagline = ['MOST POPULAR', 'MOST DEMANDED', 'MOST PREFERRED'];
   return servicesData?.map((element: any, index: number) => (
     <>
-      <div key={index} className={cn('text-black leading-5 p-7 w-[400px] 2xl:w-[380px] rounded-xl hover:shadow-md hover:scale-105 transition ease-in duration-150', element?.className)}>
+      <div
+        key={index}
+        className={cn(
+          'text-black leading-5 p-7 xl:p-10 w-[400px] sm:!w-[10px] xl:!w-[500px] 2xl:w-[380px] rounded-xl xl:shadow-md hover:shadow-md hover:scale-105 transition ease-in duration-150',
+          element?.className,
+        )}
+      >
         <Image src={element?.image} draggable={false} height={100} width={60} alt={element?.title} />
-        <p className="text-xs mt-8 mb-1 text-gray-400 font-medium tracking-wider">{getTagline[index]}</p>
-        <h1 className="w-[180px] text-[2rem] font-bold leading-tight">{element?.title}</h1>
-        <ul className="mt-4 text-[16px] w-full text-gray-700">
+        <p className="text-xs xl:text-sm mt-8 mb-1 text-gray-400 font-medium tracking-wider">{tagline[index]}</p>
+        <h1 className="w-[180px] text-[2rem] xl:text-[2.6rem] font-bold leading-tight">{element?.title}</h1>
+        <ul className="mt-4 xl:mt-5 text-[16px] xl:text-[19px] w-full text-gray-700">
           {element?.details?.map((item: string, index: number) => (
-            <li key={index} className="[&:not(:last-child)]:border-b h-[3rem] w-full border-black/5 flex items-center">
+            <li key={index} className="[&:not(:last-child)]:border-b h-[3rem] xl:h-[4rem] w-full border-black/5 flex items-center">
               <Check className="mr-2" size={20} color="#00B200" />
               {item}
             </li>

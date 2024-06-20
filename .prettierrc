@@ -4,6 +4,6 @@
   "singleQuote": true,
   "trailingComma": "all",
   "tabWidth": 2,
-  "plugins": ["prettier-plugin-organize-imports"],
+  "plugins": ["prettier-plugin-tailwindcss", "prettier-plugin-organize-imports"],
   "organizeImportsSkipDestructiveCodeActions": true
 }
