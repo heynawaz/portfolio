@@ -54,7 +54,7 @@ export function CTA2({}: Props) {
             {/* <Image src={'/assets/svg/logos.svg'} alt="Technology" draggable={false} width={700} height={700} /> */}
             {/* <Image src={'/assets/svg/bg-side-7.svg'} alt="svg" draggable={false} height={400} width={500} /> */}
             {/* <AnimatedList notifications={notifications} /> */}
-            <div className="relative flex h-full w-full max-w-[37rem] items-center justify-center overflow-hidden rounded-lg bg-transparent px-20 pb-20 pt-8 ">
+            <div className="relative flex h-full w-full min-w-[200px] items-center justify-center overflow-hidden rounded-lg bg-transparent px-20 pb-20 pt-8 ">
               <IconCloud iconSlugs={slugs} />
             </div>
           </div>

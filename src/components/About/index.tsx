@@ -12,11 +12,11 @@ export function About() {
     <>
       <section id="about" className="flex justify-center flex-col w-full items-center mb-36 pt-28">
         <SectionHeader heading="Who am I?" description="Discover additional insights about me, my expertise, and a comprehensive overview of my current programming and technological skills." />
-        <div className="grid 2xl:grid-cols-2 gap-20 w-full mt-20">
-          <div className="flex gap-12 tracking-wide">
+        <div className="flex flex-col justify-center 2xl:flex-row gap-8 w-full mt-20">
+          <div className="grid grid-cols-4 mx-8 gap-8 tracking-wide order-1 2xl:order-2">
             {Object.entries(stackData)?.map(([stack, details], index) => (
               <div key={index}>
-                <div key={`stack${index}`} className="px-[60px] py-[30px] bg-gradient-to-r from-violet-200 to-purple-200 text-xl font-bold text-purple-900 rounded-lg">
+                <div key={`stack${index}`} className="px-[60px] py-[30px] text-center bg-gradient-to-r from-violet-200 to-purple-200 text-xl font-bold text-purple-900 rounded-lg">
                   {/* <div key={`stack${index}`} className={`px-[60px] py-[30px] bg-gradient-to-t from-white to-zinc-100 border-t border-gray-300 text-lg font-bold text-purple-900 rounded-lg`}> */}
                   {stack}
                 </div>
@@ -40,7 +40,7 @@ export function About() {
               </div>
             ))}
           </div>
-          <div className="w-[670px]">
+          <div className="flex flex-col max-w-[670px] order-2 2xl:order-1 mx-8">
             <div className="flex w-full gap-8 bg-neutral-50/70 shadow-md px-5 py-5 rounded-lg">
               <Image src={'/assets/Shah Nawaz.jpg'} draggable={false} className="rounded-full border border-gray-300" alt="Shah Nawaz's Photo" width={120} height={100} />
               <div className="">

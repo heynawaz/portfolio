@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={`${ls.className} flex flex-col justify-center items-center`}>{children}</body>
+      <body className={`container flex flex-col items-center p-0 m-0 box-border ${ls.className}`}>{children}</body>
     </html>
   );
 }

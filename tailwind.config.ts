@@ -1,25 +1,24 @@
 import type { Config } from 'tailwindcss';
 
 const config = {
-  content: ['./src/pages/**/*.{js,ts,jsx,tsx,mdx}', './src/components/**/*.{js,ts,jsx,tsx,mdx}', './src/app/**/*.{js,ts,jsx,tsx,mdx}', './src/**/*.{js,ts,jsx,tsx,mdx}'],
-  darkMode: 'class',
-  prefix: '',
+  content: ['./src/**/*.{html,js,ts,jsx,tsx,mdx}'],
+  // content: ['./src/pages/**/*.{js,ts,jsx,tsx,mdx}', './src/components/**/*.{js,ts,jsx,tsx,mdx}', './src/app/**/*.{js,ts,jsx,tsx,mdx}', './src/**/*.{js,ts,jsx,tsx,mdx}'],
   theme: {
+    screens: {
+      xs: { max: '480px' },
+      sm: { max: '640px' },
+      md: { max: '768px' },
+      lg: { max: '1024px' },
+      xl: { max: '1280px' },
+      '2xl': { max: '1536px' },
+      '3xl': { max: '1910px' },
+    },
     fontFamily: {
       pacifico: ['var(--font-pacifico)', 'sans-serif'],
       ls: ['var(--font-ls)', 'sans-serif'],
     },
     container: {
       center: true,
-      screens: {
-        xs: '480px',
-        sm: '640px',
-        md: '768px',
-        lg: '1024px',
-        xl: '1280px',
-        '2xl': '1536px',
-        '3xl': '1910px',
-      },
     },
     extend: {
       animation: {
