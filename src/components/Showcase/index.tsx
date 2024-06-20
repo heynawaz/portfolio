@@ -77,7 +77,7 @@ export function Showcase() {
       <SectionHeader heading="Showcase" description="Discover a selection of personal and client projects, each accompanied by its own comprehensive case study." />
       <div className="flex bg-[length:1900px_2200px]">
         <div className="bg-white bg-opacity-95">
-          <div className="mt-16 mx-auto w-full columns-4">
+          <div className="mt-16 mx-auto w-full 3xl:columns-4 2xl:columns-4 xl:columns-3 md:columns-2">
             <ShowcaseCard cardDetails={cardDetails} />
           </div>
         </div>

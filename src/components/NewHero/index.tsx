@@ -9,7 +9,7 @@ import { HeroHighlight, Highlight } from '../ui/hero-highlight';
 
 export function NewHero() {
   return (
-    <section className="min-w-full grid place-items-center pt-36 pb-14 bg-[linear-gradient(to_top,rgba(255,255,255,1),rgba(255,255,255,0)),url('/assets/img/hero-bg-7.jpg')] bg-no-repeat bg-center bg-cover">
+    <section className="min-w-full grid place-items-center pt-36 pb-14 bg-[linear-gradient(to_top,rgba(255,255,255,1),rgba(255,255,255,0)),url('/assets/img/hero-bg-6.jpg')] bg-no-repeat bg-center bg-cover">
       {/* <section className="flex items-center justify-center flex-col text-center pt-40 pb-20 w-full bg-gradient-t-b from-purple-200 from-20% to-white"> */}
       <HeroHighlight className="w-[90%]">
         <motion.h1
@@ -37,11 +37,11 @@ export function NewHero() {
               </Highlight>
               {/* <Image src={'/assets/svg/scribble.svg'} alt="scribble" draggable={false} height={400} width={3000} className="absolute right-0 opacity-[0.03] rotate-[40deg]" /> */}
             </h1>
-            <p className="text-lg text-gray-800 mt-2 w-[50rem]">
+            <p className="text-lg text-gray-800 mt-3 w-[50rem]">
               Transform your online presence into an engaging showcase that captivates visitors, turning interest into action and building your brand around the clock.
             </p>
           </div>
-          <div className="flex gap-6 mt-10 items-center justify-center">
+          <div className="flex gap-6 mt-11 items-center justify-center">
             <Calendar>
               <div className="flex items-center gap-3 bg-purple-900 text-white font-medium hover:opacity-90 px-7 py-3 tracking-wide rounded-lg">
                 {/* <Image src={'/assets/Shah Nawaz.jpg'} className="rounded-full" alt="Shah Nawaz's Photo" width={30} height={40} /> */}
@@ -60,10 +60,10 @@ export function NewHero() {
           {/* <Testimonials /> */}
         </motion.h1>
       </HeroHighlight>
-      <div className="flex justify-center">
-        {/* <Image src={'/assets/svg/bg-side-3.svg'} alt="arrow" draggable={false} height={400} width={500} className="ml-[-230px] opacity-30" /> */}
+      <div className="flex justify-between w-full overflow-hidden">
+        <Image src={'/assets/svg/bg-side-3.svg'} alt="arrow" draggable={false} height={400} width={500} className="ml-[-230px] opacity-20" />
         <Image src={'/assets/svg/arrow-leaf.svg'} alt="arrow" draggable={false} height={400} width={200} className="mt-32 opacity-70 rotate-[270deg] scale-x-[-1]" />
-        {/* <Image src={'/assets/svg/bg-side-4.svg'} alt="arrow" draggable={false} height={400} width={500} className="mr-[-170px] opacity-30" /> */}
+        <Image src={'/assets/svg/bg-side-1.svg'} alt="arrow" draggable={false} height={400} width={500} className="mr-[-170px] opacity-20" />
       </div>
     </section>
   );

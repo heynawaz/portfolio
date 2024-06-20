@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={`${ls.className} grid place-items-center`}>{children}</body>
+      <body className={`${ls.className} flex flex-col justify-center items-center`}>{children}</body>
     </html>
   );
 }
