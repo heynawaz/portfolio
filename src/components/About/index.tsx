@@ -12,26 +12,23 @@ export function About() {
     <>
       <section id="about" className="flex justify-center flex-col w-full items-center mb-36 pt-28">
         <SectionHeader heading="Who am I?" description="Discover additional insights about me, my expertise, and a comprehensive overview of my current programming and technological skills." />
-        <div className="flex flex-col justify-center 2xl:flex-row gap-8 w-full mt-20">
-          <div className="grid grid-cols-4 mx-8 gap-8 tracking-wide order-1 2xl:order-2">
+        <div className="flex justify-center 2xl:items-center 2xl:flex-col 2xl:gap-28 w-full mt-20">
+          <div className="grid grid-cols-4 xs:!grid-cols-1 md:grid-cols-2 mx-8 gap-8 tracking-wide order-1 2xl:order-2">
             {Object.entries(stackData)?.map(([stack, details], index) => (
               <div key={index}>
-                <div key={`stack${index}`} className="px-[60px] py-[30px] text-center bg-gradient-to-r from-violet-200 to-purple-200 text-xl font-bold text-purple-900 rounded-lg">
-                  {/* <div key={`stack${index}`} className={`px-[60px] py-[30px] bg-gradient-to-t from-white to-zinc-100 border-t border-gray-300 text-lg font-bold text-purple-900 rounded-lg`}> */}
+                <div key={`stack${index}`} className="min-h-[5.8rem] grid place-items-center min-w-48 bg-gradient-to-r from-violet-200 to-purple-200 text-xl font-bold text-purple-900 rounded-lg">
                   {stack}
                 </div>
-                <div key={`details${index}`} className="mt-6 rounded-md shadow-md">
+                <div key={`details${index}`} className="min-w-48 mt-6 rounded-md shadow-md">
                   {Object.entries(details)?.map(([keys, list], subIndex) => (
                     <div key={subIndex}>
                       <div
                         key={`section${subIndex}`}
                         className={`${subIndex === 0 && 'rounded-t-md'} flex items-center justify-center px-3 pt-[2px] h-10 font-semibold text-[16px] text-purple-950 bg-gradient-to-r from-violet-100 to-purple-100 shadow-md`}
-                        // className={`${subIndex === 0 && 'rounded-t-md'} flex items-center justify-center px-3 pt-[2px] h-10 font-semibold text-[16px] text-gray-950 bg-gradient-to-r from-zinc-100 via-zinc-100/60 to-zinc-100 shadow-md`}
                       >
                         {keys}
                       </div>
                       <ul key={`data${subIndex}`} className="list-inside list-disc py-3 pl-3 bg-purple-200/15 text-gray-600 leading-relaxed text-[15px]">
-                        {/* <ul key={`data${subIndex}`} className="list-inside list-disc py-3 pl-3 bg-gray-200/10 text-gray-600 leading-relaxed text-[15px]"> */}
                         {list?.map((data, index) => <li key={index}>{data}</li>)}
                       </ul>
                     </div>

@@ -44,7 +44,7 @@ export function Testimonials({ className }: { className?: HTMLProps<HTMLElement>
       )}
     >
       <SectionHeader heading="Wall of love" description="Real people. Real Results." />
-      <div className="h-fit mt-16 rounded-md flex flex-col text-left antialiased dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
+      <div className="h-fit mt-16 rounded-md flex flex-col text-left antialiased items-center justify-center relative overflow-hidden">
         <InfiniteMovingCards items={testimonials} direction="left" speed="slow" />
       </div>
     </section>

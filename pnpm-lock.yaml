@@ -68,7 +68,7 @@ devDependencies:
     specifier: ^18
     version: 18.2.23
   autoprefixer:
-    specifier: ^10.0.1
+    specifier: ^10.4.19
     version: 10.4.19(postcss@8.4.38)
   eslint:
     specifier: ^8
@@ -77,13 +77,13 @@ devDependencies:
     specifier: 14.1.4
     version: 14.1.4(eslint@8.57.0)(typescript@5.4.3)
   postcss:
-    specifier: ^8
+    specifier: ^8.4.38
     version: 8.4.38
   prettier-plugin-organize-imports:
     specifier: ^3.2.4
     version: 3.2.4(prettier@3.2.5)(typescript@5.4.3)
   tailwindcss:
-    specifier: ^3.3.0
+    specifier: ^3.4.3
     version: 3.4.3
   typescript:
     specifier: ^5

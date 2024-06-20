@@ -25,10 +25,7 @@ export const HeroHighlight = ({
     mouseY.set(clientY - top);
   }
   return (
-    <div
-      className={cn('relative flex items-center justify-center w-full group', containerClassName)}
-      onMouseMove={handleMouseMove}
-    >
+    <div className={cn('relative flex items-center justify-center w-full group', containerClassName)} onMouseMove={handleMouseMove}>
       <div className="absolute inset-0 pointer-events-none" />
       <motion.div
         className="pointer-events-none absolute inset-0 opacity-0 transition duration-300 group-hover:opacity-100"
@@ -49,9 +46,7 @@ export const HeroHighlight = ({
           `,
         }}
       />
-      {showGradient && (
-        <div className="absolute inset-0 h-full w-full pointer-events-none dark:bg-black [mask-image:radial-gradient(ellipse_at_center,transparent,white)]" />
-      )}
+      {showGradient && <div className="absolute inset-0 h-full w-full pointer-events-none [mask-image:radial-gradient(ellipse_at_center,transparent,white)]" />}
       <div className={cn('relative z-20', className)}>{children}</div>
     </div>
   );
@@ -77,7 +72,7 @@ export const Highlight = ({ children, className }: { children: React.ReactNode; 
         display: 'inline',
       }}
       className={cn(`relative inline-block pb-1 px-1 py-1 rounded-lg `, className)}
-      // className={cn(`relative inline-block pb-1 px-1 py-1 rounded-lg bg-gradient-to-r from-zinc-800 from-50%  to-purple-400 dark:from-indigo-500 dark:to-purple-500`, className)}
+      // className={cn(`relative inline-block pb-1 px-1 py-1 rounded-lg bg-gradient-to-r from-zinc-800 from-50%  to-purple-400`, className)}
     >
       {children}
     </motion.span>
