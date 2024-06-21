@@ -2,7 +2,7 @@
   "Frontend": {
     "Basics": ["HTML", "CSS", "JavaScript", "TypeScript"],
     "Frameworks": ["React JS", "Next JS"],
-    "State Managers": ["Redux", "Zustand", "Context API"],
+    "State Managers": ["Redux", "Zustand", "Recoil", "Context API"],
     "Network Utilities": ["Axios", "React Query", "SWR", "Apollo Client", "WebRTC"],
     "Styles": ["Tailwind", "Ant Design", "Material UI", "Shadcn UI", "Semantic UI", "Chakra UI", "Storybook", "Styled Components", "Bootstrap", "SASS/SCSS"]
   },
@@ -12,7 +12,7 @@
     "Caching": ["Redis"],
     "ORM": ["Prisma", "Drizzle", "Sequelize"],
     "Template Engine": ["EJS", "Pug", "Handlebars"],
-    "OS": ["Linux", "Kali", "Parrot OS", "Windows"]
+    "OS": ["Linux", "Kali", "Parrot OS", "Mac", "Windows"]
   },
   "Database": {
     "RDBMS": ["PostgreSQL", "MySQL", "Maria DB", "MS-SQL Server"],

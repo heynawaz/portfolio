@@ -10,7 +10,7 @@ interface ISolutionsProps {
 }
 
 export function SolutionsCard({ servicesData }: { servicesData: ISolutionsProps[] }) {
-  const tagline = ['MOST POPULAR', 'MOST DEMANDED', 'MOST PREFERRED'];
+  const tagline: string[] = ['MOST POPULAR', 'MOST DEMANDED', 'MOST PREFERRED'];
   return servicesData?.map((element: any, index: number) => (
     <>
       <div
@@ -26,7 +26,7 @@ export function SolutionsCard({ servicesData }: { servicesData: ISolutionsProps[
         <ul className="mt-4 xl:mt-5 text-[16px] xl:text-[19px] w-full text-gray-700">
           {element?.details?.map((item: string, index: number) => (
             <li key={index} className="[&:not(:last-child)]:border-b h-[3rem] xl:h-[4rem] w-full border-black/5 flex items-center">
-              <Check className="mr-2" size={20} color="#00B200" />
+              <Check className="mr-2" size={20} color="#00714b" />
               {item}
             </li>
           ))}
