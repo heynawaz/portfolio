@@ -9,7 +9,7 @@ export function CTA({}: Props) {
   return (
     <section className="grid place-items-center my-40">
       <div className="flex items-center justify-center gap-20 shadow-xl rounded-2xl px-20 lg:px-10 py-48 xl:py-32 bg-zinc-50">
-        <div className="h-full w-[50rem] lg:w-full flex flex-col items-start justify-center">
+        <div className="h-full w-[50rem] md:w-full flex flex-col items-start justify-center">
           <h1 className={`${dm_serif.className} text-[3.8rem] xl:text-[3.3rem] sm:!text-[2.8rem] tracking-tight leading-[5rem] sm:leading-tight text-zinc-800`}>
             <span className={`text-purple-900`}>Supercharge </span> your awesome journey together <span className="text-[3rem]">🚀</span>
           </h1>
