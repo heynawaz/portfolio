@@ -17,6 +17,11 @@ const nextConfig = {
         hostname: 'picsum.photos',
         pathname: '**',
       },
+      {
+        protocol: 'https',
+        hostname: 'avatar.iran.liara.run',
+        pathname: '**',
+      },
     ],
   },
 };

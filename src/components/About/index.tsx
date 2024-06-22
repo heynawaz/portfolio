@@ -38,8 +38,8 @@ export function About() {
             ))}
           </div>
 
-          <div className="relative flex flex-col max-w-[670px] order-2 2xl:order-1 mx-8">
-            <div className="absolute inset-0 -z-10 h-full w-full bg-white bg-[linear-gradient(to_right,#8080800a_0px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:50px_50px]">
+          <div className="relative flex flex-col max-w-[700px] order-2 2xl:order-1 mx-8">
+            <div className="absolute inset-0 -z-10 h-full w-full rounded-3xl bg-white bg-[linear-gradient(to_right,#8080800a_0px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:50px_50px]">
               <div className="absolute left-0 right-0 top-0 -z-10 m-auto h-[310px] w-[210px] rounded-full bg-purple-300 opacity-35 blur-[100px]"></div>
             </div>
             <div className="relative flex flex-col sm:flex-col sm:justify-center sm:py-10 w-full gap-4 px-8 sm:px-1 pt-9 pb-7 rounded-3xl border-t-8 border-b-8 border-purple-900">
@@ -66,10 +66,11 @@ export function About() {
                 </div>
               </div>
               <p className="mt-4 text-lg leading-normal text-gray-600">
-                <span className="absolute top-[11rem] left-[-30px] -z-10 text-[10rem] text-purple-900/5"></span>I am a seasoned Full Stack Web Developer with a proven track record of over 3 years,
-                focusing on delivering high-quality solutions. My expertise lies in a comprehensive range of technologies including JavaScript, TypeScript, React, Next.js, Node.js, Nest.js, Express,
-                GraphQL and many more. With a deep understanding of these tools and frameworks, I excel in crafting dynamic and scalable full-stack applications that meet the evolving needs of modern
-                businesses. Let me bring my wealth of experience and technical prowess to your next project.
+                <span className="absolute top-[11rem] left-[-30px] -z-10 text-[10rem] text-purple-900/5"></span>
+                I&apos;m a Full Stack Web Developer with 3+ years of work experience delivering top-notch solutions. I started programming in 2010, building foundational programming logic and
+                developing basic apps. After finishing my schooling, I pursued both my bachelor&apos;s and master&apos;s degrees in computer science to deepen my knowledge. During this time, I began
+                building web projects using PHP. Now I have skills in building modern apps using JavaScript, TypeScript, React, Next.js, Node.js, Nest.js, Express, GraphQL, and more. My focus is on
+                creating high-quality, scalable applications that meet today’s business demands.
                 <span className="absolute top-[31rem] right-[-20px] -z-10 text-[10rem] text-purple-900/5"></span>
               </p>
               <div className="mt-4">
@@ -85,18 +86,18 @@ export function About() {
                       <p className="text-gray-600 text-sm">Jan, 2024 - Present</p>
                     </div>
                     <ul className="list-disc list-outside text-gray-700 text-[1rem]">
-                      <li>Leading the design and development team of multiple enterprise-level applications.</li>
-                      <li>Product security with penetration testing and reporting vulnerabilities.</li>
-                      <li>Transformed UIs using React, decreasing debugging time by 61% and increasing views by 33%.</li>
+                      <li>Directing a design and development team for multiple enterprise-level projects.</li>
+                      <li>Enhanced UIs with React, achieving a 61% reduction in debugging time and a 33% increase in views.</li>
+                      <li>Involved in product security with penetration testing and vulnerability reporting.</li>
                     </ul>
                     <div className="flex justify-between items-center mt-5 mb-2">
                       <h3 className="text-lg font-medium text-gray-700">Full Stack Developer</h3>
                       <p className="text-gray-600 text-sm">Dec, 2020 - Dec, 2023</p>
                     </div>
                     <ul className="list-disc list-outside text-gray-700 text-[1rem]">
-                      <li>Built scalable full stack architecture for multiple enterprise software products.</li>
-                      <li>Built and maintained 100% of backend REST services using Node.js.</li>
-                      <li>Transformed UIs using React, decreasing debugging time by 61% and increasing views by 33%.</li>
+                      <li>Built both front-end and back-end parts of large software projects.</li>
+                      <li>Created and maintained backend services using Node.js.</li>
+                      <li>Tested and reported security issues to make products safer.</li>
                     </ul>
                   </div>
                 </div>
