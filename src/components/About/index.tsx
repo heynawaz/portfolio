@@ -10,7 +10,7 @@ import stackData from './stack.data.json';
 export function About() {
   return (
     <>
-      <section id="about" className="flex justify-center flex-col w-full items-center mb-36 pt-28">
+      <section id="about" className="flex justify-center flex-col w-full items-center mb-36 pt-28 sm:pt-10 sm:mb-0">
         <SectionHeader heading="Who am I?" description="Insights about me, my expertise, and a comprehensive overview of my current programming and technological skills." />
         <div className="flex justify-center 2xl:items-center 2xl:flex-col 2xl:gap-28 w-full mt-20">
           <div className="grid grid-cols-4 xs:!grid-cols-1 md:grid-cols-2 mx-8 gap-8 tracking-wide order-1 2xl:order-2">
@@ -39,10 +39,10 @@ export function About() {
           </div>
 
           <div className="relative flex flex-col max-w-[670px] order-2 2xl:order-1 mx-8">
-            {/* <div className="absolute inset-0 -z-10 h-full w-full bg-white bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:50px_50px]">
-              <div className="absolute left-0 right-0 top-0 -z-10 m-auto h-[310px] w-[210px] rounded-full bg-purple-300 opacity-40 blur-[100px]"></div>
-            </div> */}
-            <div className="relative flex flex-col sm:flex-col sm:justify-center sm:py-10 w-full gap-4 px-8 pt-9 pb-7 rounded-3xl border-t-8 border-b-8 border-purple-900">
+            <div className="absolute inset-0 -z-10 h-full w-full bg-white bg-[linear-gradient(to_right,#8080800a_0px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:50px_50px]">
+              <div className="absolute left-0 right-0 top-0 -z-10 m-auto h-[310px] w-[210px] rounded-full bg-purple-300 opacity-35 blur-[100px]"></div>
+            </div>
+            <div className="relative flex flex-col sm:flex-col sm:justify-center sm:py-10 w-full gap-4 px-8 sm:px-1 pt-9 pb-7 rounded-3xl border-t-8 border-b-8 border-purple-900">
               <div className="grid place-items-center text-center">
                 <Image src={'/assets/Shah Nawaz.jpg'} draggable={false} className="rounded-full shadow-md" alt="Shah Nawaz's Photo" width={120} height={100} />
                 <h1 className="text-2xl font-semibold text-gray-600 mt-3 sm:mt-0">Mohammad Shah Nawaz</h1>

@@ -7,7 +7,7 @@ export default function Home() {
     <Suspense fallback={<Loading />}>
       <NewHeader />
       {/* <Header /> */}
-      <main className="w-full flex flex-col items-center">
+      <main className="container w-full flex flex-col items-center">
         <NewHero />
         {/* <Hero /> */}
         <About />
