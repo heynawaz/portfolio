@@ -1,3 +1,3 @@
 export default function Loading() {
-  return <h3>Loading...</h3>;
+  return <section className="h-screen w-screen container grid place-items-center">Loading...</section>;
 }

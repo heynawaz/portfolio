@@ -1,7 +1,7 @@
 import { dm_serif } from '@/styles/fonts';
 import Image from 'next/image';
+import Link from 'next/link';
 import { BiChevronRight } from 'react-icons/bi';
-import { Calendar } from '../Calendar';
 
 type Props = {};
 
@@ -18,7 +18,8 @@ export function CTA({}: Props) {
             <br />
             Together, we can turn your vision into a reality.
           </p>
-          <Calendar>
+          {/* <Calendar> */}
+          <Link href={'https://cal.com/shah-nawaz/15min'} target="_blank">
             <div className="flex items-center gap-3 bg-purple-900 text-white shadow-lg font-medium hover:opacity-90 px-4 py-3 tracking-wide rounded-full">
               <Image src={'/assets/Shah Nawaz.jpg'} className="rounded-full" alt="Shah Nawaz's Photo" width={30} height={40} />
               <div className="flex items-center gap-4 pt-[3px]">
@@ -26,10 +27,11 @@ export function CTA({}: Props) {
                 <BiChevronRight />
               </div>
             </div>
-          </Calendar>
+          </Link>
+          {/* </Calendar> */}
         </div>
         <div className="flex justify-center xl:hidden">
-          <Image src={'/assets/svg/bg-side-7.svg'} alt="svg" draggable={false} height={400} width={500} />
+          <Image src={'/assets/svg/bg-side-7.svg'} alt="svg" draggable={false} height={1000} width={500} />
         </div>
       </div>
     </section>
