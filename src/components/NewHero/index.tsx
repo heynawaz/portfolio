@@ -9,7 +9,7 @@ import { HeroHighlight, Highlight } from '../ui/hero-highlight';
 
 export function NewHero() {
   return (
-    <section className="container min-w-full pt-36 pb-14 sm:pb-0 bg-[linear-gradient(to_top,rgba(255,255,255,1),rgba(255,255,255,0)),url('/assets/img/hero-bg-6.jpg')] bg-no-repeat bg-center bg-cover">
+    <section className="container min-w-full pt-36 sm:pt-40 pb-14 sm:pb-0 bg-[linear-gradient(to_top,rgba(255,255,255,1),rgba(255,255,255,0)),url('/assets/img/hero-bg-6.jpg')] bg-no-repeat bg-center bg-cover">
       {/* <section className="flex items-center justify-center flex-col text-center pt-40 pb-20 w-full bg-gradient-t-b from-purple-200 from-20% to-white"> */}
       <HeroHighlight className="w-[90%]">
         <motion.h1 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: [20, -5, 0] }} transition={{ duration: 0.5, ease: [0.4, 0.0, 0.2, 1] }}>
