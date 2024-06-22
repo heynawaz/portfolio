@@ -7,7 +7,7 @@ export function Footer() {
     <>
       <div className="border border-1 border-gray-100 w-[75%]" />
       <footer className="flex items-center justify-center w-full rounded-t-2xl h-32 mb-10 text-[16px] font-normal text-purple-950">
-        <div className="w-[75%] flex justify-between items-center">
+        <div className="w-[75%] sm:w-[90%] flex justify-between items-center">
           <div>
             <Link href={'#'} className="text-3xl text-black font-bold tracking-tight">
               nawaz<span className="text-purple-900">.</span>

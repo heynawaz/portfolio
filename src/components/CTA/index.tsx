@@ -8,14 +8,12 @@ type Props = {};
 export function CTA({}: Props) {
   return (
     <section className="grid place-items-center my-40">
-      <div className="flex items-center justify-center gap-20 shadow-xl rounded-2xl h-[45rem] px-20 bg-zinc-50">
-        <div className="h-full flex flex-col items-start justify-center">
-          <h1 className={`${dm_serif.className} text-[3.8rem] tracking-tight leading-[5rem] text-zinc-800`}>
-            <span className={`text-purple-900`}>Supercharge </span> your awesome
-            <br />
-            journey together <span className="text-[3rem]">🚀</span>
+      <div className="flex items-center justify-center gap-20 shadow-xl rounded-2xl px-20 lg:px-10 py-48 xl:py-32 bg-zinc-50">
+        <div className="h-full w-[50rem] lg:w-full flex flex-col items-start justify-center">
+          <h1 className={`${dm_serif.className} text-[3.8rem] xl:text-[3.3rem] sm:!text-[2.8rem] tracking-tight leading-[5rem] sm:leading-tight text-zinc-800`}>
+            <span className={`text-purple-900`}>Supercharge </span> your awesome journey together <span className="text-[3rem]">🚀</span>
           </h1>
-          <p className="mt-6 mb-10 text-lg leading-relaxed text-gray-500">
+          <p className="mt-6 mb-10 text-lg sm:text-[.9rem] leading-relaxed text-gray-500">
             Ready to take the next step? Get in touch today to schedule a consultation.
             <br />
             Together, we can turn your vision into a reality.
@@ -30,7 +28,7 @@ export function CTA({}: Props) {
             </div>
           </Calendar>
         </div>
-        <div className="flex justify-center">
+        <div className="flex justify-center xl:hidden">
           <Image src={'/assets/svg/bg-side-7.svg'} alt="svg" draggable={false} height={400} width={500} />
         </div>
       </div>
