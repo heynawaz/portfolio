@@ -10,22 +10,22 @@ const testimonials = [
     title: 'Sr. Full Stack Developer',
     image: '/assets/img/umair.jpg',
   },
-  // {
-  //   quote:
-  //     "To be, or not to be, that is the question: Whether 'tis nobler in the mind to suffer The slings and arrows of outrageous fortune, Or to take Arms against a Sea of troubles, And by opposing end them: to die, to sleep.",
-  //   name: 'William Shakespeare',
-  //   title: 'Hamlet',
-  // },
-  // {
-  //   quote: 'All that we see or seem is but a dream within a dream.',
-  //   name: 'Edgar Allan Poe',
-  //   title: 'A Dream Within a Dream',
-  // },
-  // {
-  //   quote: 'It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.',
-  //   name: 'Jane Austen',
-  //   title: 'Pride and Prejudice',
-  // },
+  {
+    quote:
+      "To be, or not to be, that is the question: Whether 'tis nobler in the mind to suffer The slings and arrows of outrageous fortune, Or to take Arms against a Sea of troubles, And by opposing end them: to die, to sleep.",
+    name: 'William Shakespeare',
+    title: 'Hamlet',
+  },
+  {
+    quote: 'All that we see or seem is but a dream within a dream.',
+    name: 'Edgar Allan Poe',
+    title: 'A Dream Within a Dream',
+  },
+  {
+    quote: 'It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.',
+    name: 'Jane Austen',
+    title: 'Pride and Prejudice',
+  },
   {
     quote: 'He has a good knowledge of javascript and designing front-end and has good problem-solving and communication skills.',
     name: 'Mohd Arshad',

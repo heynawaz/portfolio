@@ -77,7 +77,7 @@ export const InfiniteMovingCards = ({
               <div aria-hidden="true" className="user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"></div>
               <p className=" relative z-20 text-[1.1rem] leading-[1.5] text-gray-800 font-normal">&quot;{item?.quote}&quot;</p>
               <div className="relative z-20 mt-6 flex flex-row gap-4 items-center">
-                <Image src={item?.image || 'https://avatar.iran.liara.run/public'} draggable={false} className="rounded-full" alt="Shah Nawaz's Photo" width={45} height={1000} />
+                <Image src={item?.image || '/assets/img/avatar.png'} draggable={false} className="rounded-full" alt="Shah Nawaz's Photo" width={45} height={2000} />
                 <span className="flex flex-col gap-1">
                   <span className=" text-xl leading-[1.3] text-purple-950 font-semibold">{item?.name}</span>
                   <span className=" text-md leading-[1] text-gray-600 font-normal">{item?.title}</span>
