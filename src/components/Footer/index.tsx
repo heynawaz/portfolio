@@ -5,7 +5,7 @@ import { FiAtSign } from 'react-icons/fi';
 export function Footer() {
   return (
     <>
-      <div className="border border-1 border-gray-100 w-[75%]" />
+      <div className="border border-1 border-gray-100 w-[75%] sm:w-full" />
       <footer className="flex items-center justify-center w-full rounded-t-2xl h-32 mb-10 text-[16px] font-normal text-purple-950">
         <div className="w-[75%] sm:w-[90%] flex justify-between items-center">
           <div>

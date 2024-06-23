@@ -37,10 +37,10 @@ export function CTA2({}: Props) {
     <section className="w-full mt-32 flex justify-center">
       <div className="flex xl:flex-col items-center justify-center gap-20 shadow-sm w-full px-20 py-28 xl:px-5 xl:py-36 lg:py-20 md:!py-16 bg-zinc-50">
         <div className="flex flex-col w-[800px] xl:w-[90%] order-1 xl:order-2">
-          <h1 className={`${dm_serif.className} text-[3.8rem] xl:text-[3.3rem] tracking-tight leading-[5rem] text-zinc-800`}>
+          <h1 className={`${dm_serif.className} text-[3.8rem] xl:text-[3.3rem] sm:!text-[2.5rem] tracking-tight leading-[5rem] text-zinc-800`}>
             <span className={`${dm_serif.className} text-purple-900`}>Why </span>choose me?
           </h1>
-          <p className="mt-5 mb-10 text-[1.1rem] lg:text-[1rem] leading-relaxed text-gray-500">
+          <p className="mt-5 sm:mt-1 mb-10 text-[1.1rem] lg:text-[1rem] leading-relaxed text-gray-500">
             As a passionate engineer, I bring a wealth of experience in building robust, scalable, and efficient web applications. From front-end user interfaces to back-end server logic, I have the
             skills and expertise to handle every aspect of your project.
           </p>

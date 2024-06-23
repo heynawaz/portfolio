@@ -17,7 +17,7 @@ export function Solutions() {
         'Cross-Browser Compatibility',
         'Accessibility',
       ],
-      className: 'bg-gradient-to-b from-emerald-50 text-gray-700',
+      className: 'bg-gradient-to-b from-emerald-50 text-gray-700 sm:hover:scale-100',
     },
     {
       title: 'Full Stack Development',
@@ -33,7 +33,7 @@ export function Solutions() {
         'Scalability Solutions',
         'Maintenance and Support',
       ],
-      className: 'bg-gradient-to-b from-fuchsia-100 text-gray-700 scale-110 xs:scale-100 hover:scale-[1.15]',
+      className: 'bg-gradient-to-b from-fuchsia-100 text-gray-700 scale-110 xs:scale-100 hover:scale-[1.15] sm:hover:scale-100',
     },
     {
       title: 'Backend Development',
@@ -49,7 +49,7 @@ export function Solutions() {
         'Performance Tuning and Optimization',
         'Security Implementations',
       ],
-      className: 'bg-gradient-to-b from-rose-50 text-gray-700',
+      className: 'bg-gradient-to-b from-rose-50 text-gray-700 sm:hover:scale-100',
     },
   ];
 

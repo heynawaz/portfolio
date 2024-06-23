@@ -6,10 +6,8 @@ export default function Home() {
   return (
     <Suspense fallback={<Loading />}>
       <NewHeader />
-      {/* <Header /> */}
       <main className="container w-full flex flex-col items-center">
         <NewHero />
-        {/* <Hero /> */}
         <About />
         <Skills />
         <Solutions />
@@ -17,7 +15,6 @@ export default function Home() {
         <Showcase />
         <Testimonials />
         <CTA />
-        {/* <FooterNote /> */}
       </main>
       <Footer />
     </Suspense>
