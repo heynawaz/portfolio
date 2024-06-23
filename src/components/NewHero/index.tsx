@@ -33,7 +33,7 @@ export function NewHero() {
           </div>
           <div className="flex gap-5 mt-11 sm:mt-8 items-center justify-center sm:justify-start sm:items-start sm:gap-2">
             <Calendar>
-              <div className="flex items-center gap-3 bg-purple-900 text-white font-medium hover:opacity-90 px-7 py-3 tracking-wide rounded-lg">
+              <div className="flex items-center gap-3 bg-purple-800 text-white font-medium hover:opacity-90 px-7 py-3 tracking-wide rounded-lg">
                 <div className="min-w-24 sm:text-sm flex items-center gap-4 pt-[4px]">Book a free call</div>
               </div>
             </Calendar>
@@ -41,7 +41,7 @@ export function NewHero() {
               href={'/assets/pdf/Shah Nawaz - Resume.pdf'}
               download={'nawaz_3+_fullstack'}
               target="_blank"
-              className="xs:min-w-[9.5rem] text-sm sm:text-xs bg-transparent hover:bg-white border border-purple-900/20 text-purple-900 font-medium hover:text-purple-900 px-9 py-[14px] h-full tracking-wide rounded-lg"
+              className="xs:min-w-[9.5rem] text-sm sm:text-xs bg-transparent hover:bg-white border border-purple-900/20 text-purple-800 font-medium hover:text-purple-900 px-9 py-[14px] h-full tracking-wide rounded-lg"
             >
               <p className="pt-[3px]">Download CV</p>
             </Link>

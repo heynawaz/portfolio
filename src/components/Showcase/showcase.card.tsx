@@ -15,7 +15,7 @@ export default function ShowcaseCard(props: IShowcaseCard) {
     <div key={index} className={`p-5 w-[340px] transition-all duration-150 shadow-lg shadow-purple-900/10 hover:shadow-sm border border-purple-950/5 rounded-xl break-inside-avoid mb-6 mx-3 bg-white`}>
       <Image src={element?.screenshotUrl} draggable={false} width={2000} height={100} alt={element?.projectTitle} className="w-full shadow-sm rounded-lg" />
       <div className="w-full leading-[22px] mt-4">
-        <h1 className="font-bold text-xl text-purple-900">{element?.projectTitle}</h1>
+        <h1 className="font-bold text-xl text-purple-800">{element?.projectTitle}</h1>
         <div className="flex gap-[7px] flex-wrap mt-2">
           {element?.techStack?.split(',').map((tech, index) => (
             <span key={index} className="font-medium text-xs text-gray-600 bg-gray-100/60 border border-gray-900/5 px-[5px] pt-[4px] pb-[2px] rounded-sm">
@@ -26,7 +26,7 @@ export default function ShowcaseCard(props: IShowcaseCard) {
         <p className="w-full mt-3 text-[.9rem] leading-relaxed text-gray-400 font-light">{element?.projectDescription}</p>
       </div>
       <div className="flex gap-3 mt-5">
-        <Button variant={'outline'} size={'sm'} className="text-white bg-purple-900 hover:bg-purple-900/90 hover:text-white font-medium">
+        <Button variant={'outline'} size={'sm'} className="text-white bg-purple-800 hover:bg-purple-800/90 hover:text-white font-medium">
           <IoNavigate className="mr-2 text-white" />
           <p className="pt-[3px]">Live Demo</p>
         </Button>

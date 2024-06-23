@@ -18,7 +18,7 @@ export function CTA({}: Props) {
           </p>
           {/* <Calendar> */}
           <Link href={'https://cal.com/shah-nawaz/15min'} target="_blank">
-            <div className="flex items-center gap-3 bg-purple-800 text-white shadow-lg font-medium hover:opacity-90 px-4 py-3 tracking-wide rounded-full">
+            <div className="flex items-center gap-3 bg-gradient-to-r from-purple-800 from-50% to-purple-900 text-white shadow-lg font-medium hover:opacity-90 px-4 py-3 tracking-wide rounded-full">
               <Image src={'/assets/Shah Nawaz.jpg'} className="rounded-full" alt="Shah Nawaz's Photo" width={30} height={40} />
               <div className="flex items-center gap-4 pt-[3px]">
                 Schedule a free call

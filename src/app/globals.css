@@ -77,12 +77,12 @@
 
 ::-moz-selection { 
   color: #fff;
-  background: #581c87;
+  background: #6b21a8;
 }
 
 ::selection {
   color: #fff;
-  background: #581c87;
+  background: #6b21a8;
 }
 
 ::-webkit-scrollbar {
@@ -96,5 +96,5 @@
  
 
 ::-webkit-scrollbar-thumb {
-  background: #581c87; 
+  background: #6b21a8; 
 }

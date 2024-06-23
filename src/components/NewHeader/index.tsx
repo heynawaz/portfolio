@@ -49,12 +49,12 @@ export function NewHeader() {
     <>
       <header
         className={`fixed top-0 z-50 flex justify-center items-center h-28 sm:h-20 w-screen transition-all ease-in-out duration-500
-        ${hasScrolled && 'sm:hidden rounded-full !px-6 !max-w-fit !h-[70px] backdrop-filter backdrop-blur-md top-5 shadow-purple-900/30 shadow-[0px_2px_5px_-1px_rgb(0,0,0,0.1)] bg-gradient-to-r from-gray-100/20 to-gray-100/20'}`}
+        ${hasScrolled && 'sm:hidden rounded-full !px-6 !max-w-fit !h-[70px] backdrop-filter backdrop-blur-md top-5 shadow-purple-800/30 shadow-[0px_2px_5px_-1px_rgb(0,0,0,0.1)] bg-gradient-to-r from-gray-100/20 to-gray-100/20'}`}
       >
         <div className={`w-[55%] xl:w-[90%] flex justify-between items-center transition-all ease-in-out duration-500 ${hasScrolled && 'sm:fixed flex justify-between w-[90%]'}`}>
           {!hasScrolled && (
             <Link href={'#'} className="sm:block text-3xl text-black font-bold tracking-tight">
-              nawaz<span className="text-purple-900">.</span>
+              nawaz<span className="text-purple-800">.</span>
             </Link>
           )}
           <button className="hidden sm:block outline-none transition-all ease-in-out duration-500" onClick={() => setMobile(!mobile)}>
@@ -77,7 +77,7 @@ export function NewHeader() {
             </nav>
           ) : (
             <nav
-              className={`sm:hidden flex gap-12 items-center text-purple-900 h-fit text-[16px] tracking-wide font-medium transition-all ease-in-out duration-700
+              className={`sm:hidden flex gap-12 items-center text-purple-800 h-fit text-[16px] tracking-wide font-medium transition-all ease-in-out duration-700
               ${hasScrolled && 'flex items-center justify-center w-full pt-0'}`}
             >
               <Link href={'#'} onClick={() => (document.body.scrollTop = 0)} className="hover:underline underline-offset-8 decoration-1">

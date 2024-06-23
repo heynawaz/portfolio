@@ -49,19 +49,19 @@ export function About() {
                 <p className="font-light text-gray-500 text-md">Software Engineer</p>
                 <div className="flex items-center flex-row sm:justify-center gap-5 mt-5">
                   <Link href={'https://github.com/yoursnawaz'} target="_blank" className="hover:scale-125 transition-all">
-                    <FaGithub className="fill-zinc-600 hover:fill-purple-900" size={16} />
+                    <FaGithub className="fill-zinc-600 hover:fill-purple-800" size={16} />
                   </Link>
                   <Link href={'https://twitter.com/yoursnawaz'} target="_blank" className="hover:scale-125 transition-all">
-                    <FaXTwitter className="fill-zinc-600 hover:fill-purple-900" size={16} />
+                    <FaXTwitter className="fill-zinc-600 hover:fill-purple-800" size={16} />
                   </Link>
                   <Link href={'https://www.linkedin.com/in/shahnawazz/'} target="_blank" className="hover:scale-125 transition-all">
-                    <FaLinkedinIn className="fill-zinc-600 hover:fill-purple-900" size={16} />
+                    <FaLinkedinIn className="fill-zinc-600 hover:fill-purple-800" size={16} />
                   </Link>
                   <Link href={'#'} className="hover:scale-125 transition-all">
-                    <FaInstagram className="fill-zinc-600 hover:fill-purple-900" size={16} />
+                    <FaInstagram className="fill-zinc-600 hover:fill-purple-800" size={16} />
                   </Link>
                   <Link href={'#'} className="hover:scale-125 transition-all">
-                    <FaFacebookF className="fill-zinc-600 hover:fill-purple-900" size={16} />
+                    <FaFacebookF className="fill-zinc-600 hover:fill-purple-800" size={16} />
                   </Link>
                 </div>
               </div>
@@ -76,9 +76,9 @@ export function About() {
               <div className="mt-4">
                 <h3 className="text-2xl text-purple-900 font-bold sm:underline">Work Experience</h3>
                 <div className="flex gap-6 mt-6 sm:mt-3">
-                  <IoBriefcaseOutline size={50} color="#581c87" className="sm:hidden" />
+                  <IoBriefcaseOutline size={50} color="#6b21a8" className="sm:hidden" />
                   <div className="w-full">
-                    <Link href={'https://www.cloudanalogy.com/'} target="_blank" className="text-xl font-semibold text-purple-900 hover:underline">
+                    <Link href={'https://www.cloudanalogy.com/'} target="_blank" className="text-xl font-semibold text-purple-800 hover:underline">
                       Cloud Analogy
                     </Link>
                     <div className="flex justify-between items-center mb-2">
@@ -105,9 +105,9 @@ export function About() {
               <div className="mt-8 sm:mt-4">
                 <h3 className="text-2xl text-purple-900 font-bold sm:underline">Education</h3>
                 <div className="flex gap-6 mt-6 sm:mt-3">
-                  <LuGraduationCap size={50} color="#581c87" className="sm:hidden" />
+                  <LuGraduationCap size={50} color="#6b21a8" className="sm:hidden" />
                   <div className="w-full">
-                    <Link href={'https://www.iul.ac.in/Program/PG/PG_mca.aspx'} target="_blank" className="text-xl font-semibold text-purple-900 hover:underline">
+                    <Link href={'https://www.iul.ac.in/Program/PG/PG_mca.aspx'} target="_blank" className="text-xl font-semibold text-purple-800 hover:underline">
                       Master of Computer Applications
                     </Link>
                     <div className="flex justify-between items-center mb-2">
@@ -119,9 +119,9 @@ export function About() {
                   </div>
                 </div>
                 <div className="flex gap-6 mt-6">
-                  <LuGraduationCap size={50} color="#581c87" className="sm:hidden" />
+                  <LuGraduationCap size={50} color="#6b21a8" className="sm:hidden" />
                   <div className="w-full">
-                    <Link href={'https://www.iul.ac.in/Program/UG/UG_BCA.aspx'} target="_blank" className="text-xl font-semibold text-purple-900 hover:underline">
+                    <Link href={'https://www.iul.ac.in/Program/UG/UG_BCA.aspx'} target="_blank" className="text-xl font-semibold text-purple-800 hover:underline">
                       Bachelor of Computer Applications
                     </Link>
                     <div className="flex justify-between items-center mb-2">

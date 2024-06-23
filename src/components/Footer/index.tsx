@@ -10,7 +10,7 @@ export function Footer() {
         <div className="w-[75%] sm:w-[90%] flex justify-between items-center">
           <div>
             <Link href={'#'} className="text-3xl text-black font-bold tracking-tight">
-              nawaz<span className="text-purple-900">.</span>
+              nawaz<span className="text-purple-800">.</span>
             </Link>
             <p className="tracking-wide text-xs pt-[4px] text-gray-600">
               <span className="text-[9px]">&copy;</span> msnawaz {new Date().getFullYear()}. All rights reserved.

@@ -73,7 +73,7 @@ export const Card = ({ className, children }: { className?: string; children: Re
 };
 
 export const CardTitle = ({ className, children }: { className?: string; children: React.ReactNode }) => {
-  return <h4 className={cn('text-purple-900 text-lg font-bold tracking-wide mt-1', className)}>{children}</h4>;
+  return <h4 className={cn('text-purple-800 text-lg font-bold tracking-wide mt-1', className)}>{children}</h4>;
 };
 
 export const CardDescription = ({ className, children }: { className?: string; children: React.ReactNode }) => {

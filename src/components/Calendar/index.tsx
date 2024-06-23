@@ -14,7 +14,7 @@ export function Calendar(props: ICalendarProps) {
   useEffect(() => {
     (async function () {
       const cal = await getCalApi({});
-      cal('ui', { theme: 'light', styles: { branding: { brandColor: '#581C87' } }, hideEventTypeDetails: false, layout: 'month_view' });
+      cal('ui', { theme: 'light', styles: { branding: { brandColor: '##6b21a8' } }, hideEventTypeDetails: false, layout: 'month_view' });
     })();
   }, []);
 
