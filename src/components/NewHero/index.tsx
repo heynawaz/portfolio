@@ -48,7 +48,7 @@ export function NewHero() {
           </div>
         </motion.h1>
       </HeroHighlight>
-      <div className="flex justify-between h-[335px] lg:justify-center lg:h-80 sm:!h-42 w-full overflow-hidden">
+      <div className="flex justify-between lg:justify-center lg:h-80 sm:!h-42 w-full overflow-hidden">
         <Image src={'/assets/svg/bg-side-3.svg'} alt="arrow" draggable={false} height={400} width={500} className="lg:hidden ml-[-260px] opacity-20" />
         <Image src={'/assets/svg/arrow-leaf.svg'} alt="arrow" draggable={false} height={400} width={200} className="sm:w-28 mt-32 sm:mt-2 opacity-70 rotate-[270deg] scale-x-[-1]" />
         <Image src={'/assets/svg/bg-side-6.svg'} alt="arrow" draggable={false} height={400} width={500} className="lg:hidden mr-[-250px] opacity-20" />

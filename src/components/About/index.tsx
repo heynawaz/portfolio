@@ -45,7 +45,7 @@ export function About() {
             <div className="relative flex flex-col sm:flex-col sm:justify-center sm:py-10 w-full gap-4 px-8 sm:px-1 pt-9 pb-7 rounded-3xl border-t-8 border-b-8 border-purple-900">
               <div className="grid place-items-center text-center">
                 <Image src={'/assets/Shah Nawaz.jpg'} draggable={false} className="rounded-full shadow-md" alt="Shah Nawaz's Photo" width={120} height={1000} />
-                <h1 className="text-2xl font-semibold text-gray-600 mt-3 sm:mt-0">Mohammad Shah Nawaz</h1>
+                <h1 className="text-2xl font-semibold text-gray-600 mt-3">Mohammad Shah Nawaz</h1>
                 <p className="font-light text-gray-500 text-md">Software Engineer</p>
                 <div className="flex items-center flex-row sm:justify-center gap-5 mt-5">
                   <Link href={'https://github.com/yoursnawaz'} target="_blank" className="hover:scale-125 transition-all">
