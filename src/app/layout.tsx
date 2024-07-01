@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     locale: 'en_US',
   },
   twitter: {
-    card: 'app',
+    card: 'summary_large_image',
     title: 'Shah Nawaz - Developer | Designer | Problem Solver',
     description: 'A trusted software engineer having expertise in providing complex solutions for all formats of web applications.',
     creator: '@heynawaz',
@@ -29,18 +29,6 @@ export const metadata: Metadata = {
     images: {
       url: 'https://x.com/heynawaz/photo',
       alt: '/assets/Shah Nawaz.jpg',
-    },
-    app: {
-      name: 'twitter_app',
-      id: {
-        iphone: 'twitter_app://iphone',
-        ipad: 'twitter_app://ipad',
-        googleplay: 'twitter_app://googleplay',
-      },
-      url: {
-        iphone: 'https://iphone_url',
-        ipad: 'https://ipad_url',
-      },
     },
   },
 };
