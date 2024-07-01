@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   keywords: ['Shah Nawaz', 'msnawaz', 'Web developer', 'Software Engineer', 'Hire Software Engineer', 'Hire Developer', 'Next.js', 'React.js', 'JavaScript', 'TypeScript'],
   authors: [{ name: 'Shah Nawaz', url: 'https://www.msnawaz.com' }],
   creator: 'Shah Nawaz',
+  icons: ['/assets/Shah Nawaz.jpg', 'favicon.ico'],
   publisher: 'Shah Nawaz',
   category: 'technology',
   openGraph: {
