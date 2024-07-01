@@ -3,6 +3,7 @@ export * from '@/components/AnimatedList';
 export * from '@/components/Calendar';
 export * from '@/components/CTA';
 export * from '@/components/CTA2';
+export * from '@/components/CustomHead';
 export * from '@/components/Footer';
 export * from '@/components/FooterNote';
 export * from '@/components/Header';

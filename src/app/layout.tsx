@@ -1,3 +1,4 @@
+import { CustomHead } from '@/components';
 import { ls } from '@/styles/fonts';
 import type { Metadata } from 'next';
 import './globals.css';
@@ -13,7 +14,7 @@ export const metadata: Metadata = {
   publisher: 'Shah Nawaz',
   category: 'technology',
   openGraph: {
-    title: 'Shah Nawaz - Developer | Designer | Problem Solver',
+    title: 'Shah Nawaz | Software Engineer',
     description: 'A trusted software engineer having expertise in providing complex solutions for all formats of web applications.',
     images: ['/assets/Shah Nawaz.jpg'],
     url: 'https://www.msnawaz.com',
@@ -23,16 +24,18 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Shah Nawaz - Developer | Designer | Problem Solver',
+    title: 'Shah Nawaz | Software Engineer',
     description: 'A trusted software engineer having expertise in providing complex solutions for all formats of web applications.',
     creator: '@heynawaz',
-    site: '@heynawaz',
+    site: 'https://x.com/heynawaz',
+    images: ['/assets/Shah Nawaz.jpg'],
   },
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className="scroll-smooth">
+      <CustomHead />
       <body className={`container flex flex-col items-center p-0 m-0 box-border ${ls.className}`}>{children}</body>
     </html>
   );
