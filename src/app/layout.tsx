@@ -26,10 +26,6 @@ export const metadata: Metadata = {
     description: 'A trusted software engineer having expertise in providing complex solutions for all formats of web applications.',
     creator: '@heynawaz',
     site: '@heynawaz',
-    images: {
-      url: 'https://x.com/heynawaz/photo',
-      alt: '/assets/Shah Nawaz.jpg',
-    },
   },
 };
 
