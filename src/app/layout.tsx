@@ -10,13 +10,38 @@ export const metadata: Metadata = {
   authors: [{ name: 'Shah Nawaz', url: 'https://www.msnawaz.com' }],
   creator: 'Shah Nawaz',
   publisher: 'Shah Nawaz',
+  category: 'technology',
   openGraph: {
     title: 'Shah Nawaz - Developer | Designer | Problem Solver',
     description: 'A trusted software engineer having expertise in providing complex solutions for all formats of web applications.',
     images: ['/assets/Shah Nawaz.jpg'],
     url: 'https://www.msnawaz.com',
-    siteName: 'Nawaz',
-    authors: ['Shah Nawaz'],
+    siteName: 'Shah Nawaz',
+    type: 'website',
+    locale: 'en_US',
+  },
+  twitter: {
+    card: 'app',
+    title: 'Shah Nawaz - Developer | Designer | Problem Solver',
+    description: 'A trusted software engineer having expertise in providing complex solutions for all formats of web applications.',
+    creator: '@heynawaz',
+    site: '@heynawaz',
+    images: {
+      url: 'https://x.com/heynawaz/photo',
+      alt: '/assets/Shah Nawaz.jpg',
+    },
+    app: {
+      name: 'twitter_app',
+      id: {
+        iphone: 'twitter_app://iphone',
+        ipad: 'twitter_app://ipad',
+        googleplay: 'twitter_app://googleplay',
+      },
+      url: {
+        iphone: 'https://iphone_url',
+        ipad: 'https://ipad_url',
+      },
+    },
   },
 };
 
