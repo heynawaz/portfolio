@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   creator: 'Shah Nawaz',
   publisher: 'Shah Nawaz',
   openGraph: {
-    title: 'Shah Nawaz',
+    title: 'Shah Nawaz - Developer | Designer | Problem Solver',
     description: 'A trusted software engineer having expertise in providing complex solutions for all formats of web applications.',
     images: ['/assets/Shah Nawaz.jpg'],
     url: 'https://www.msnawaz.com',
