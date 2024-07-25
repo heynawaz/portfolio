@@ -1,7 +1,11 @@
+'use client'
 import { cn } from '@/utils/cn';
-import { HTMLProps } from 'react';
+import { HTMLProps, useRef } from 'react';
 import { SectionHeader } from '../common';
-import { InfiniteMovingCards } from '../ui/infinite-moving-cards';
+import { InfiniteMovingCards } from '@/components/ui/infinite-moving-cards';
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
+import { Card, CardContent } from "@/components/ui/card"
+import Autoplay from "embla-carousel-autoplay"
 
 const testimonials = [
   {
@@ -35,6 +39,9 @@ const testimonials = [
 ];
 
 export function Testimonials({ className }: { className?: HTMLProps<HTMLElement>['className'] }) {
+  const plugin = useRef(
+    Autoplay({ delay: 2000, stopOnInteraction: true })
+  )
   return (
     <section
       id="testimonials"
@@ -46,7 +53,30 @@ export function Testimonials({ className }: { className?: HTMLProps<HTMLElement>
       <SectionHeader heading="Wall of love" description="Real people. Real Results." />
       <div className="h-fit mt-16 rounded-md flex flex-col text-left antialiased items-center justify-center relative overflow-hidden">
         <InfiniteMovingCards items={testimonials} direction="left" speed="slow" />
+      
       </div>
+      {/* <Carousel
+      plugins={[plugin.current]}
+      className="w-full max-w-xs"
+      onMouseEnter={plugin.current.stop}
+      onMouseLeave={plugin.current.reset}
+    >
+      <CarouselContent>
+        {Array.from({ length: 5 }).map((_, index) => (
+          <CarouselItem key={index}>
+            <div className="p-1">
+              <Card>
+                <CardContent className="flex aspect-square items-center justify-center p-6">
+                  <span className="text-4xl font-semibold">{index + 1}</span>
+                </CardContent>
+              </Card>
+            </div>
+          </CarouselItem>
+        ))}
+      </CarouselContent>
+      <CarouselPrevious />
+      <CarouselNext />
+    </Carousel> */}
     </section>
   );
 }
