@@ -1,5 +1,5 @@
 'use client';
 
 export default function NotFound() {
-  return window.location.replace('/');
+  return typeof window !== "undefined" && window.location.replace('/');
 }
