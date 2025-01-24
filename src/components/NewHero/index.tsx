@@ -27,7 +27,7 @@ export function NewHero() {
             <h1 className={`relative leading-snug lg:leading-tight w-[58rem] lg:w-full text-[4rem] lg:text-[3rem] sm:!text-[2.3rem] text-zinc-800 font-bold mt-6 tracking-tight`}>
               I build <Highlight className={`${ls.className} text-purple-800 font-bold`}>pixel-perfect, engaging, and accessible digital experiences.</Highlight>
             </h1>
-            <p className="text-lg sm:text-sm xs:!text-[.7rem] text-gray-600 mt-3 w-[50rem] lg:w-[90%]">
+            <p className="text-lg font-light sm:text-sm xs:!text-[.7rem] text-gray-600 mt-3 w-[50rem] lg:w-[90%]">
               Transform your online presence into an engaging showcase that captivates visitors, turning interest into action and building your brand around the clock.
             </p>
           </div>
@@ -39,7 +39,7 @@ export function NewHero() {
             </Calendar>
             <Link
               href={'/assets/pdf/Shah Nawaz - Resume.pdf'}
-              download={'nawaz_3+_fullstack'}
+              download={'nawaz_4+_fullstack'}
               target="_blank"
               className="xs:min-w-[9.5rem] text-sm sm:text-xs bg-transparent hover:bg-white border border-purple-900/20 text-purple-800 font-medium hover:text-purple-900 px-9 py-[14px] h-full tracking-wide rounded-lg"
             >

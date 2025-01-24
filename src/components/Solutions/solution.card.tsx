@@ -21,12 +21,12 @@ export function SolutionsCard({ servicesData }: { servicesData: ISolutionsProps[
       )}
     >
       <Image src={element?.image} draggable={false} height={100} width={60} alt={element?.title} />
-      <p className="text-xs xl:text-sm mt-8 mb-1 text-gray-400 font-medium tracking-wider">{tagline[index]}</p>
-      <h1 className="w-[180px] text-[2rem] xl:text-[2.6rem] sm:!text-[2rem] font-bold leading-tight">{element?.title}</h1>
-      <ul className="mt-4 xl:mt-5 text-[16px] xl:text-[19px] sm:!text-[16px] w-full text-gray-700">
+      {/* <p className="text-xs xl:text-sm mt-8 mb-1 text-gray-400 font-medium tracking-wider">{tagline[index]}</p> */}
+      <h1 className="w-[180px] text-2xl xl:text-[2.6rem] sm:!text-[2rem] font-bold leading-tight mt-5">{element?.title}</h1>
+      <ul className="mt-4 xl:mt-5 text-sm xl:text-[19px] sm:!text-[16px] w-full text-gray-700">
         {element?.details?.map((item: string, index: number) => (
           <li key={index} className="[&:not(:last-child)]:border-b h-[3rem] xl:h-[4rem] sm:!h-[3.3rem] w-full border-black/5 flex items-center">
-            <Check className="mr-2" size={20} color="#00714b" />
+            <Check className="mr-2" size={14} color="#00714b" />
             {item}
           </li>
         ))}

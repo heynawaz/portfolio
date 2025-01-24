@@ -68,11 +68,11 @@ export function NewHeader() {
               <Link href={'#about'} onClickCapture={() => setMobile(false)} className="h-10 flex items-center hover:underline underline-offset-8 decoration-1">
                 About
               </Link>
-              <Link href={'#showcase'} onClickCapture={() => setMobile(false)} className="h-10 flex items-center hover:underline underline-offset-8 decoration-1">
-                Showcase
-              </Link>
               <Link href={'#solutions'} onClickCapture={() => setMobile(false)} className="h-10 flex items-center hover:underline underline-offset-8 decoration-1">
                 Solutions
+              </Link>
+              <Link href={'#testimonial'} onClickCapture={() => setMobile(false)} className="h-10 flex items-center hover:underline underline-offset-8 decoration-1">
+                Testimonial
               </Link>
             </nav>
           ) : (
@@ -91,11 +91,11 @@ export function NewHeader() {
                   nawaz<span className="text-purple-700">.</span>
                 </Link>
               )}
-              <Link href={'#showcase'} className="hover:underline underline-offset-8 decoration-1">
-                Showcase
-              </Link>
               <Link href={'#solutions'} className="hover:underline underline-offset-8 decoration-1">
                 Solutions
+              </Link>
+              <Link href={'#testimonial'} className="hover:underline underline-offset-8 decoration-1">
+                Testimonial
               </Link>
             </nav>
           )}
