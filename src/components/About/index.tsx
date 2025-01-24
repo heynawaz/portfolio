@@ -6,7 +6,7 @@ import { IoBriefcaseOutline } from 'react-icons/io5';
 import { LuGraduationCap } from 'react-icons/lu';
 import { SectionHeader } from '../common';
 import stackData from './stack.data.json';
-import { Circle, CircleDot, ClipboardCheck, Dot, Loader, LoaderCircle, SendHorizonal, Shell, ShipWheel, Squircle } from 'lucide-react';
+import { ClipboardCheck, Dot, Loader, LoaderCircle, SendHorizonal, Shell, ShipWheel, Squircle } from 'lucide-react';
 
 export function About() {
   return (
