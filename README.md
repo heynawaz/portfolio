@@ -1,6 +1,6 @@
-# 👨‍💻 Shah Nawaz — Full-Stack Web Developer 
+# 👨‍💻 Shah Nawaz — Senior Full-Stack Web Developer
 
-
+---
 
 ## 🚀 About Me
 
