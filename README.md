@@ -1,9 +1,7 @@
 # 👨‍💻 Shah Nawaz — Senior Full-Stack Web Developer
 
----
 
 ## 🚀 About Me
-
 I’m Shah Nawaz, with 4+ years as a Senior Full-Stack Developer, I create pixel-perfect UI experiences and robust backend infrastructure. I started coding in 2010, and my mission is to build scalable, accessible, and high-performing web apps.
 
 - **Current Role:** Senior Developer I @ Cloud Analogy (Jan 2025–Present)  
@@ -12,7 +10,6 @@ I’m Shah Nawaz, with 4+ years as a Senior Full-Stack Developer, I create pix
 - **Core Skills:** JavaScript, TypeScript, React, Next.js, Node.js, Nest.js, Express, GraphQL, PostgreSQL, Redis, AWS, Docker, CI/CD, Cypress, and more.  
 *(Detailed stack → [msnawaz.com](https://www.msnawaz.com))*
 
----
 
 ## 🌐 My Work
 
@@ -20,9 +17,6 @@ I’m Shah Nawaz, with 4+ years as a Senior Full-Stack Developer, I create pix
 2. **Project X** — Real-time chat app using React, Node.js, Socket.io, deployed on AWS.  
 3. **Project Y** — E-commerce platform with Express, Prisma, PostgreSQL, JWT auth.
 
-*(Add GitHub links when available!)*
-
----
 
 ## 🔧 Tech Stack
 
@@ -33,7 +27,6 @@ I’m Shah Nawaz, with 4+ years as a Senior Full-Stack Developer, I create pix
 - **Testing:** Cypress, Katalon, Postman, Cucumber  
 - **Authentication:** Passport.js, NextAuth, JWT, OAuth2
 
----
 
 ## 📩 Contact & Availability
 
@@ -44,7 +37,6 @@ I’m Shah Nawaz, with 4+ years as a Senior Full-Stack Developer, I create pix
 
 **Availability:** Open to freelance, contract, or full-time roles.
 
----
 
 ## 💬 Recommendations
 
@@ -53,7 +45,6 @@ I’m Shah Nawaz, with 4+ years as a Senior Full-Stack Developer, I create pix
 
 (Full testimonials on [my website](https://www.msnawaz.com))
 
----
 
 ## ⚙️ Getting Started
 
