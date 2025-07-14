@@ -10,10 +10,10 @@ export default function Home() {
         <NewHero />
         <About />
         <Skills />
-        <Solutions />
+        {/* <Solutions /> */}
+        <Testimonials />
         <CTA2 />
         {/* <Showcase /> */}
-        <Testimonials />
         <CTA />
       </main>
       <Footer />

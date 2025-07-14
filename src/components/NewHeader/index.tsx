@@ -61,23 +61,23 @@ export function NewHeader() {
             <RxHamburgerMenu size={18} />
           </button>
           {mobile ? (
-            <nav className="hidden absolute right-[5%] top-20 z-30 sm:flex flex-col bg-purple-900/95 px-4 w-48 text-sm font-medium text-white rounded-xl rounded-tr-none transition-all ease-in-out duration-500">
+            <nav className="hidden absolute right-[5%] top-16 z-30 sm:flex flex-col bg-purple-950/95 px-4 w-48 text-sm font-medium text-white rounded-xl rounded-tr-none transition-all ease-in-out duration-500">
               <Link href={'#'} onClick={() => (document.body.scrollTop = 0)} onClickCapture={() => setMobile(false)} className="h-10 flex items-center hover:underline underline-offset-8 decoration-1">
                 Home
               </Link>
               <Link href={'#about'} onClickCapture={() => setMobile(false)} className="h-10 flex items-center hover:underline underline-offset-8 decoration-1">
                 About
               </Link>
-              <Link href={'#solutions'} onClickCapture={() => setMobile(false)} className="h-10 flex items-center hover:underline underline-offset-8 decoration-1">
+              {/* <Link href={'#solutions'} onClickCapture={() => setMobile(false)} className="h-10 flex items-center hover:underline underline-offset-8 decoration-1">
                 Solutions
-              </Link>
+              </Link> */}
               <Link href={'#testimonial'} onClickCapture={() => setMobile(false)} className="h-10 flex items-center hover:underline underline-offset-8 decoration-1">
                 Testimonial
               </Link>
             </nav>
           ) : (
             <nav
-              className={`sm:hidden flex gap-12 items-center text-purple-800 h-fit text-[16px] tracking-wide font-medium transition-all ease-in-out duration-700
+              className={`sm:hidden flex gap-12 items-center text-purple-900 h-fit text-[16px] tracking-wide font-medium transition-all ease-in-out duration-700
               ${hasScrolled && 'flex items-center justify-center w-full pt-0'}`}
             >
               <Link href={'#'} onClick={() => (document.body.scrollTop = 0)} className="hover:underline underline-offset-8 decoration-1">
@@ -91,9 +91,9 @@ export function NewHeader() {
                   nawaz<span className="text-purple-700">.</span>
                 </Link>
               )}
-              <Link href={'#solutions'} className="hover:underline underline-offset-8 decoration-1">
+              {/* <Link href={'#solutions'} className="hover:underline underline-offset-8 decoration-1">
                 Solutions
-              </Link>
+              </Link> */}
               <Link href={'#testimonial'} className="hover:underline underline-offset-8 decoration-1">
                 Testimonial
               </Link>

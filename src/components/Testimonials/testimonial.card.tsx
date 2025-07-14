@@ -14,7 +14,7 @@ export default function TestimonialCard(props: IShowcaseCard) {
   return cardDetails?.map((item, index) => (
     <div
       key={index}
-      className={`p-5 w-[25rem] transition-all duration-150 shadow-lg shadow-purple-900/10 hover:shadow-sm border border-purple-950/5 rounded-xl break-inside-avoid mb-6 mx-3 bg-white/90`}
+      className={`p-5 w-[25rem] transition-all duration-150 shadow-lg shadow-purple-900/10 hover:shadow-sm border-3 border-indigo-700/5 rounded-xl break-inside-avoid mb-6 mx-3 bg-white/90`}
     >
       <div aria-hidden="true" className="user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5"></div>
       <p className={`relative z-20 text-md leading-[1.6] text-left text-gray-700 font-light`}>&quot;{item?.quote}&quot;</p>

@@ -20,8 +20,8 @@
     "Message Queues": ["Kafka", "SQS"]
   },
   "DevOps": {
-    "Infrastructure": ["AWS", "GitLab", "GitHub", "Nginx"],
+    "Infrastructure": ["Terraform", "Pulumi", "Amazon Web Services", "Google Cloud", "GitLab", "GitHub", "Nginx"],
     "Virtualization": ["Docker", "VMWare", "Oracle VirtualBox"],
-    "Automation": ["Cypress JS", "Katalon Studio", "Postman Scripting", "Cucumber"]
+    "Automation": ["Selenium", "Cypress JS", "Katalon Studio", "Postman Scripting", "Cucumber"]
   }
 }
