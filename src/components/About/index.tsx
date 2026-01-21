@@ -68,7 +68,7 @@ export function About() {
               </div>
               <p className="mt-4 text-md leading-normal font-light text-gray-600">
                 <span className="absolute top-[11rem] left-[-30px] -z-10 text-[10rem] text-purple-900/5"></span>
-                I&apos;m a Senior Full Stack Web Developer with 4+ years of work experience delivering top-notch solutions. I started programming in 2010, building foundational programming logic and
+                I&apos;m a Senior Full Stack Web Developer with 5+ years of work experience delivering top-notch solutions. I started programming in 2010, building foundational programming logic and
                 developing basic apps. After finishing my schooling, I pursued both my bachelor&apos;s and master&apos;s degrees in computer science to deepen my knowledge. During this time, I started
                 building web projects using HTML, CSS and PHP. Now I have skills in building modern apps using JavaScript, TypeScript, React, Next.js, Node.js, Nest.js, Express, GraphQL, and more. My
                 focus is on creating high-quality, scalable applications that meet today’s business demands.
