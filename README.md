@@ -2,7 +2,7 @@
 
 
 ## 🚀 About Me
-I’m Shah Nawaz, with 4+ years as a Senior Full-Stack Developer, I create pixel-perfect UI experiences and robust backend infrastructure. I started coding in 2010, and my mission is to build scalable, accessible, and high-performing web apps.
+I’m Shah Nawaz, with 5+ years as a Senior Full-Stack Developer, I create pixel-perfect UI experiences and robust backend infrastructure. I started coding in 2010, and my mission is to build scalable, accessible, and high-performing web apps.
 
 - **Current Role:** Senior Developer I @ Cloud Analogy (Jan 2025–Present)  
 - **Earlier:** Developer II (2024), Full-Stack Developer (2020–2023)  
