@@ -47,7 +47,7 @@ export function About() {
               <div className="grid place-items-center text-center">
                 <Image src={'/assets/Shah Nawaz.jpg'} draggable={false} className="rounded-full shadow-md" alt="Shah Nawaz's Photo" width={120} height={1000} />
                 <h1 className="text-2xl font-semibold text-gray-600 mt-3">Mohammad Shah Nawaz</h1>
-                <p className="font-light text-gray-500 text-md">Senior Software Engineer</p>
+                <p className="font-light text-gray-500 text-md">Software Engineer</p>
                 <div className="flex items-center flex-row sm:justify-center gap-5 mt-5">
                   <Link href={'https://github.com/yoursnawaz'} target="_blank" className="hover:scale-125 transition-all">
                     <FaGithub className="fill-zinc-600 hover:fill-purple-800" size={16} />
@@ -68,7 +68,7 @@ export function About() {
               </div>
               <p className="mt-4 text-md leading-normal font-light text-gray-600">
                 <span className="absolute top-[11rem] left-[-30px] -z-10 text-[10rem] text-purple-900/5"></span>
-                I&apos;m a Web Developer with 5+ years of work experience delivering top-notch solutions. I started programming in 2010, building foundational programming logic and
+                I&apos;m a software engineer with 5+ years of work experience delivering top-notch solutions. I started programming in 2010, building foundational programming logic and
                 developing basic apps. After finishing my schooling, I pursued both my bachelor&apos;s and master&apos;s degrees in computer science to deepen my knowledge. During this time, I started
                 building web projects using HTML, CSS and PHP. Now I have skills in building modern apps using JavaScript, TypeScript, React, Next.js, Node.js, Nest.js, Express, GraphQL, and more. My
                 focus is on creating high-quality, scalable applications that meet today’s business demands.
