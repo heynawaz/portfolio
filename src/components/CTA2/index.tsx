@@ -44,7 +44,7 @@ export function CTA2({}: Props) {
             As a passionate engineer, I bring a wealth of experience in building robust, scalable, and efficient web applications. From front-end user interfaces to back-end server logic, I have the
             skills and expertise to handle every aspect of your project.
           </p>
-          <Link href={'/assets/pdf/Shah Nawaz - Resume.pdf'} target="_blank" className="text-lg flex underline decoration-1 underline-offset-4 hover:text-purple-800">
+          <Link href={'/assets/pdf/Shah_Nawaz_Resume_5+.pdf'} target="_blank" className="text-lg flex underline decoration-1 underline-offset-4 hover:text-purple-800">
             View my CV&nbsp;
             <BsArrowRight className="pt-[8px] text-lg" />
           </Link>

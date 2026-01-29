@@ -43,7 +43,7 @@ export function NewHero() {
               Transform your online presence into an engaging showcase that captivates visitors, turning interest into action and building your brand around the clock.
             </p>
           </div>
-          <div className="flex gap-5 mt-11 sm:mt-8 items-center justify-center sm:justify-start sm:items-start sm:gap-2">
+          <div className="flex flex-col gap-4 mt-11 sm:mt-8 items-center justify-center sm:justify-start sm:items-start sm:gap-2">
             <Link href={'https://cal.com/shah-nawaz/15min'} target="_blank">
               {/* <div className="flex items-center gap-3 bg-gradient-to-r from-purple-800 from-50% to-purple-900 text-white shadow-lg font-medium hover:opacity-90 px-4 py-3 sm:px32 tracking-wide rounded-full">
                 <CalendarFoldIcon />
@@ -55,10 +55,10 @@ export function NewHero() {
               {/* <InteractiveHoverButton>
                 <AuroraText>Schedule a Free Consultation</AuroraText>
               </InteractiveHoverButton> */}
-              <ButtonColorful label="Schedule a Free Consultation" />
+              <ButtonColorful label="Book a free call" />
             </Link>
             {/* <Link
-              href={'/assets/pdf/Shah Nawaz - Resume.pdf'}
+              href={'/assets/pdf/Shah_Nawaz_Resume_5+.pdf'}
               download={'nawaz_4+_fullstack'}
               target="_blank"
               className="xs:min-w-[9.5rem] flex gap-2 items-center text-sm sm:text-xs bg-transparent hover:bg-white text-purple-800 font-medium hover:text-purple-900 px-9 py-[14px] h-full tracking-wide rounded-lg"
@@ -66,6 +66,7 @@ export function NewHero() {
               <ArrowDownToLine className="size-4" />
               <p className="pt-[3px]">Download CV</p>
             </Link> */}
+            <p className="text-xs text-gray-400 font-normal ">Friendly chat, no pressure</p>
           </div>
         </motion.h1>
       </HeroHighlight>

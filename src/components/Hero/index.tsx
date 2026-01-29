@@ -9,14 +9,14 @@ export function Hero() {
   const getCurrentMonth = new Date().toLocaleDateString('en-US', { month: 'short' });
   const getCurrentDate = new Date().toLocaleDateString('en-US', { day: '2-digit' });
   const getCurrentDay = new Date().toLocaleDateString('en-US', { weekday: 'long' });
-  const fileName = 'Shah Nawaz - Resume.pdf';
+  const fileName = 'Shah_Nawaz_Resume_5+.pdf';
 
   // Download resume on key press
   useEffect(() => {
     const handleKeyPress = (e: KeyboardEvent) => {
       if (e.key.toLowerCase() === 'd') {
         const link = document.createElement('a');
-        link.href = '/assets/pdf/Shah Nawaz - Resume.pdf';
+        link.href = '/assets/pdf/Shah_Nawaz_Resume_5+.pdf';
         link.download = fileName;
         document.body.appendChild(link);
         link.click();
@@ -53,7 +53,7 @@ export function Hero() {
             </Highlight>
             <br />
             <Link
-              href={'/assets/pdf/Shah Nawaz - Resume.pdf'}
+              href={'/assets/pdf/Shah_Nawaz_Resume_5+.pdf'}
               download={fileName}
               target="_blank"
               className="text-black transition-all ease-in duration-100 font-normal text-[17px] tracking-wide hover:underline hover:underline-offset-8"

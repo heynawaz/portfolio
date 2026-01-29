@@ -8,14 +8,14 @@ export function NewHeader() {
   const [hasScrolled, setHasScrolled] = useState(false);
   const [mobile, setMobile] = useState(false);
   const { width } = useWindowDimensions();
-  const fileName = 'Shah Nawaz - Resume.pdf';
+  const fileName = 'Shah_Nawaz_Resume_5+.pdf';
 
   // Download resume on key press
   useEffect(() => {
     const handleKeyPress = (e: KeyboardEvent) => {
       if (e.key.toLowerCase() === 'd') {
         const link = document.createElement('a');
-        link.href = '/assets/pdf/Shah Nawaz - Resume.pdf';
+        link.href = '/assets/pdf/Shah_Nawaz_Resume_5+.pdf';
         link.download = fileName;
         document.body.appendChild(link);
         link.click();
@@ -91,9 +91,9 @@ export function NewHeader() {
                   nawaz<span className="text-purple-700">.</span>
                 </Link>
               )}
-              {/* <Link href={'#solutions'} className="hover:underline underline-offset-8 decoration-1">
+              <Link href={'#solutions'} className="hover:underline underline-offset-8 decoration-1">
                 Solutions
-              </Link> */}
+              </Link>
               <Link href={'#testimonial'} className="hover:underline underline-offset-8 decoration-1">
                 Testimonial
               </Link>

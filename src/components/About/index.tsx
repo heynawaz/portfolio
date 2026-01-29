@@ -68,7 +68,7 @@ export function About() {
               </div>
               <p className="mt-4 text-md leading-normal font-light text-gray-600">
                 <span className="absolute top-[11rem] left-[-30px] -z-10 text-[10rem] text-purple-900/5"></span>
-                I&apos;m a Senior Full Stack Web Developer with 5+ years of work experience delivering top-notch solutions. I started programming in 2010, building foundational programming logic and
+                I&apos;m a Web Developer with 5+ years of work experience delivering top-notch solutions. I started programming in 2010, building foundational programming logic and
                 developing basic apps. After finishing my schooling, I pursued both my bachelor&apos;s and master&apos;s degrees in computer science to deepen my knowledge. During this time, I started
                 building web projects using HTML, CSS and PHP. Now I have skills in building modern apps using JavaScript, TypeScript, React, Next.js, Node.js, Nest.js, Express, GraphQL, and more. My
                 focus is on creating high-quality, scalable applications that meet today’s business demands.
@@ -86,15 +86,22 @@ export function About() {
                       <div className="flex justify-between items-center mb-2 mt-1">
                         <h3 className="text-sm text-gray-700 flex items-center gap-2">
                           <SendHorizonal className="size-3" color="#6b21a8" />
-                          Senior Developer - I - Full Stack
+                          Lead - Full Stack
                         </h3>
-                        <p className="text-gray-600 text-sm">Jan, 2025 - Present</p>
+                        <p className="text-gray-600 text-sm">Jan, 2026 - Present</p>
                       </div>
                       {/* <ul className="list-disc list-outside text-gray-700 text-[1rem]">
                       <li>Directing a design and development team for multiple enterprise-level projects.</li>
                       <li>Enhanced UIs with React, achieving a 61% reduction in debugging time and a 33% increase in views.</li>
                       <li>Involved in product security with penetration testing and vulnerability reporting.</li>
                     </ul> */}
+                    <div className="flex justify-between items-center mb-2 text-sm font-light text-muted-foreground">
+                        <h3 className="flex items-center gap-2">
+                          <ClipboardCheck className="size-3" />
+                          Senior Developer - I - Full Stack
+                        </h3>
+                        <p className="text-sm">Jan, 2025 - Dec, 2025</p>
+                      </div>
                       <div className="flex justify-between items-center mb-2 text-sm font-light text-muted-foreground">
                         <h3 className="flex items-center gap-2">
                           <ClipboardCheck className="size-3" />

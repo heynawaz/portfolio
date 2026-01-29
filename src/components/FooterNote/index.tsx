@@ -29,7 +29,7 @@ export function FooterNote() {
       icon: <FaRegFilePdf size={30} className="text-purple-900" />,
       button: (
         <div className="absolute bottom-2 z-50">
-          <Button size={'default'} variant={'outline'} className="hover:bg-purple-100 px-5 tracking-wider" onClick={() => window.open('/assets/pdf/Shah Nawaz - Resume.pdf', '_blank')}>
+          <Button size={'default'} variant={'outline'} className="hover:bg-purple-100 px-5 tracking-wider" onClick={() => window.open('/assets/pdf/Shah_Nawaz_Resume_5+.pdf', '_blank')}>
             <p className="pt-[3px]">Download</p>
           </Button>
         </div>
