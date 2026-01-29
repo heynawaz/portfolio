@@ -1,14 +1,14 @@
-# 👨‍💻 Shah Nawaz — Senior Full-Stack Web Developer
+# 👨‍💻 Shah Nawaz — Lead Developer
 
 
 ## 🚀 About Me
-I’m Shah Nawaz, with 5+ years as a Senior Full-Stack Developer, I create pixel-perfect UI experiences and robust backend infrastructure. I started coding in 2010, and my mission is to build scalable, accessible, and high-performing web apps.
+I’m Shah Nawaz, with 5+ years as a Web Developer, I create pixel-perfect UI experiences and robust backend infrastructure. I started coding in 2010, and my mission is to build scalable, accessible, and high-performing web apps.
 
-- **Current Role:** Senior Developer I @ Cloud Analogy (Jan 2025–Present)  
-- **Earlier:** Developer II (2024), Full-Stack Developer (2020–2023)  
-- **Education:** MCA & BCA, Integral University (2014–2020)  
+- **Current Role:** Assistant Lead @Cloud Analogy 
+- **Earlier:** Senior Developer I @Cloud Analogy
+- **Education:** MCA & BCA, Integral University
 - **Core Skills:** JavaScript, TypeScript, React, Next.js, Node.js, Nest.js, Express, GraphQL, PostgreSQL, Redis, AWS, Docker, CI/CD, Cypress, and more.  
-*(Detailed stack → [msnawaz.com](https://www.msnawaz.com))*
+*(Detailed stack → [www.msnawaz.com](https://www.msnawaz.com))*
 
 
 ## 🌐 My Work
