@@ -80,7 +80,7 @@ export const metadataDetails: Metadata = {
     description,
     images: [
       {
-        url: '/og-image.png',
+        url: `${siteUrl}/og-image.png`,
         width: 1200,
         height: 630,
         alt: 'Shah Nawaz - Lead Full-Stack Engineer',
@@ -97,7 +97,7 @@ export const metadataDetails: Metadata = {
     description,
     creator: '@heynawaz',
     site: '@heynawaz',
-    images: ['/og-image.png'],
+    images: [`${siteUrl}/og-image.png`],
   },
   verification: {
     // Add verification codes from Search Console / Bing Webmaster

@@ -12,6 +12,14 @@ export const metadata: Metadata = {
     title: 'Shah Nawaz | Lead Full-Stack Engineer | React, Next.js, Node.js',
     description: 'Lead Full-Stack Engineer specializing in React, Next.js, Node.js, and TypeScript. Build scalable web apps, AI solutions, and SaaS platforms. Available for hire.',
     url: 'https://www.msnawaz.com',
+    images: [
+      {
+        url: 'https://www.msnawaz.com/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'Shah Nawaz - Lead Full-Stack Engineer',
+      },
+    ],
   },
 };
 
