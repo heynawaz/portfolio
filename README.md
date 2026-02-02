@@ -1,58 +1,72 @@
-# 👨‍💻 Shah Nawaz — Lead Developer
+<p align="center">
+  <img src="https://img.shields.io/badge/Full--Stack-Engineer-123458?style=for-the-badge&labelColor=0f0f0f" alt="Full-Stack Engineer" />
+</p>
 
+<h1 align="center">Hey, I'm Shah Nawaz</h1>
+<h3 align="center">Lead Developer · Builder · Problem Solver</h3>
 
-## 🚀 About Me
-I’m Shah Nawaz, with 5+ years as a Web Developer, I create pixel-perfect UI experiences and robust backend infrastructure. I started coding in 2010, and my mission is to build scalable, accessible, and high-performing web apps.
+<p align="center">
+  <i>Turning ideas into pixel-perfect UIs and robust backend systems.</i>
+</p>
 
-- **Current Role:** Assistant Lead @Cloud Analogy 
-- **Earlier:** Senior Developer I @Cloud Analogy
-- **Education:** MCA & BCA, Integral University
-- **Core Skills:** JavaScript, TypeScript, React, Next.js, Node.js, Nest.js, Express, GraphQL, PostgreSQL, Redis, AWS, Docker, CI/CD, Cypress, and more.  
-*(Detailed stack → [www.msnawaz.com](https://www.msnawaz.com))*
+---
 
+## ⚡ What I Do
 
-## 🌐 My Work
+I build **scalable web applications**—from frontend UIs to backend services. JavaScript-native, TypeScript advocate, and obsessed with clean architecture.
 
-1. **MyPortfolio (this site)** — Next.js + Tailwind, interactive & SEO-ready portfolio.  
-2. **Project X** — Real-time chat app using React, Node.js, Socket.io, deployed on AWS.  
-3. **Project Y** — E-commerce platform with Express, Prisma, PostgreSQL, JWT auth.
+**Current Role** · Assistant Lead @ Cloud Analogy  
+**Education** · MCA & BCA, Integral University
 
+---
 
-## 🔧 Tech Stack
+## 🛠 Stack
 
-- **Frontend:** React, Next.js, Tailwind, AntD, MUI, Chakra  
-- **Backend:** Node.js, Express, Nest.js, REST, GraphQL  
-- **Databases:** PostgreSQL, MySQL, MongoDB, Redis  
-- **DevOps:** AWS, Docker, GitHub/GitLab CI, Nginx  
-- **Testing:** Cypress, Katalon, Postman, Cucumber  
-- **Authentication:** Passport.js, NextAuth, JWT, OAuth2
+| Frontend | Backend | Data | DevOps |
+|----------|---------|------|--------|
+| React, Next.js, TypeScript | Node.js, Nest.js, Express | PostgreSQL, MongoDB, Redis | AWS, Docker, CI/CD |
+| Tailwind, Framer | GraphQL, REST | Prisma | Nginx, GitHub Actions |
 
+**Full stack details** → [msnawaz.com](https://www.msnawaz.com)
 
-## 📩 Contact & Availability
+---
 
-- **Email:** shahnawaz.com@hotmail.com 
-- **Website:** [www.msnawaz.com](https://www.msnawaz.com)  
-- **LinkedIn:** [linkedin.com/in/shahnawazz](https://www.linkedin.com/in/shahnawazz)  
-- **Book a Free Call:** [Book a short call here](https://cal.com/shah-nawaz/15min?duration=15)
+## 🚀 Featured Work
 
-**Availability:** Open to freelance, contract, or full-time roles.
+| Project | Stack |
+|---------|-------|
+| **This Portfolio** | Next.js, Tailwind, Framer Motion, SEO-ready |
+| **Real-time Chat** | React, Node.js, Socket.io, AWS |
+| **E-commerce Platform** | Express, Prisma, PostgreSQL, JWT |
 
+---
 
-## 💬 Recommendations
+## 📬 Get in Touch
 
-> “He’s quick to pick up on what’s needed… communicates well and is really good at managing tasks… reliable… definitely recommend.”  
-> “Nawaz is a highly skilled engineer… consistently goes above and beyond to ensure project success.”  
+| | |
+|---|---|
+| 📧 **Email** | shahnawaz.com@hotmail.com |
+| 🔗 **LinkedIn** | [linkedin.com/in/shahnawazz](https://linkedin.com/in/shahnawazz) |
+| 📅 **Book a Call** | [cal.com/shah-nawaz](https://cal.com/shah-nawaz/15min) |
 
-(Full testimonials on [my website](https://www.msnawaz.com))
+**Open to** freelance, contract, and full-time opportunities.
 
+---
 
-## ⚙️ Getting Started
+## 💬 What People Say
 
-Clone this repo locally:
+> *"Quick to pick up on what's needed… communicates well and really good at managing tasks. Definitely recommend."*
+
+> *"Nawaz is a highly skilled engineer… consistently goes above and beyond to ensure project success."*
+
+---
+
+## ⚙️ Run Locally
 
 ```bash
 git clone https://github.com/heynawaz/portfolio.git
 cd portfolio
-npm install -g pnpm
-pnpm install        # or yarn
-pnpm dev        # or yarn dev
+pnpm install && pnpm dev
+```
+
+**Built with** Next.js · Tailwind CSS · Framer Motion
