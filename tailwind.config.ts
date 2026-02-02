@@ -1,6 +1,7 @@
 import type { Config } from 'tailwindcss';
 
 const config = {
+  darkMode: 'class',
   content: ['./src/**/*.{js,ts,jsx,tsx,mdx,html}'],
   // content: ['./src/pages/**/*.{js,ts,jsx,tsx,mdx}', './src/components/**/*.{js,ts,jsx,tsx,mdx}', './src/app/**/*.{js,ts,jsx,tsx,mdx}', './src/**/*.{js,ts,jsx,tsx,mdx}'],
   theme: {
@@ -24,6 +25,7 @@ const config = {
       animation: {
         scroll: 'scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite',
         gradient: 'gradient 8s linear infinite',
+        'spin-slow': 'spin 8s linear infinite',
       },
       keyframes: {
         scroll: {
@@ -38,6 +40,16 @@ const config = {
         },
       },
       colors: {
+        // Portfolio palette
+        palette: {
+          cream: '#F1EFEC',
+          beige: '#D4C9BE',
+          navy: '#123458',
+          'navy-light': '#1a4a72',
+          'navy-bright': '#5b9bd5',
+          black: '#030303',
+          'black-soft': '#0f0f0f',
+        },
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
         ring: 'hsl(var(--ring))',

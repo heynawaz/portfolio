@@ -12,6 +12,5 @@ export * from '@/components/NewHeader';
 export * from '@/components/NewHero';
 export * from '@/components/Showcase';
 export * from '@/components/Skills';
-export * from '@/components/Solutions';
 export * from '@/components/Testimonials';
 export * from '@/components/CustomCarousel';

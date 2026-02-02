@@ -1,16 +1,28 @@
-import { pacifico } from '@/styles/fonts';
+'use client';
+
+import { ls } from '@/styles/fonts';
+import { cn } from '@/lib/utils';
+import { BlurText } from '@/components/ui/blur-text';
 
 interface ISectionHeader {
   heading: string;
   description: string;
+  label?: string;
+  className?: string;
 }
 
-export function SectionHeader(props: ISectionHeader) {
-  const { heading, description } = props;
+export function SectionHeader({ heading, description, label, className }: ISectionHeader) {
   return (
-    <div className="w-fit flex justify-center flex-col items-center text-center">
-      <h1 className={`${pacifico.className} text-4xl sm:text-3xl bg-gradient-to-r from-purple-400 from-30% to-indigo-950 text-transparent bg-clip-text w-full h-14 sm:h-10`}>{heading}</h1>
-      <p className="max-w-[45rem] md:w-[90%] font-light text-center mt-3 text-lg md:text-[.9rem] md:leading-[1.4rem] text-gray-500">{description}</p>
+    <div className={cn('flex w-full max-w-2xl flex-col items-center gap-4 text-center mx-auto', className)}>
+      {label && (
+        <p className={cn('text-sm font-semibold uppercase tracking-widest text-violet-600', ls.className)}>
+          {label}
+        </p>
+      )}
+      <h2 className={cn('text-3xl font-semibold tracking-tight text-black sm:text-4xl', ls.className)}>
+        <BlurText text={heading} animateBy="words" delay={100} />
+      </h2>
+      <p className={cn('text-lg leading-relaxed text-black/50', ls.className)}>{description}</p>
     </div>
   );
 }

@@ -1,165 +1,179 @@
 'use client';
+
+import { useRef } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { FaFacebookF, FaGithub, FaInstagram, FaLinkedinIn, FaXTwitter } from 'react-icons/fa6';
-import { IoBriefcaseOutline } from 'react-icons/io5';
-import { LuGraduationCap } from 'react-icons/lu';
-import { SectionHeader } from '../common';
-import stackData from './stack.data.json';
-import { ClipboardCheck, Dot, Loader, LoaderCircle, SendHorizonal, Shell, ShipWheel, Squircle } from 'lucide-react';
+import { FaGithub, FaLinkedinIn, FaXTwitter, FaReact, FaNodeJs, FaAws, FaDocker, FaGitAlt, FaFigma } from 'react-icons/fa6';
+import { HiOutlineCodeBracket, HiOutlineServer, HiOutlineCloud, HiOutlineWrenchScrewdriver } from 'react-icons/hi2';
+import { SiNextdotjs, SiTypescript, SiTailwindcss, SiFramer, SiExpress, SiPostgresql, SiMongodb, SiRedis, SiGithubactions, SiVisualstudiocode, SiPostman, SiJest, SiNestjs, SiGraphql, SiPrisma, SiNginx, SiCypress, SiReactquery, SiRedux, SiBurpsuite, SiTerraform, SiKubernetes, SiGitlab, SiGooglecloud } from 'react-icons/si';
+import { ls } from '@/styles/fonts';
+import { cn } from '@/lib/utils';
+import { AnimatedContent } from '../ui/animated-content';
+import { SpotlightCard } from '../ui/spotlight-card';
+import { IconType } from 'react-icons';
+
+// Tech icons mapping with original brand colors
+const techIcons: Record<string, { icon: IconType; color: string }> = {
+  'React': { icon: FaReact, color: '#61DAFB' },
+  'Next.js': { icon: SiNextdotjs, color: '#000000' },
+  'TypeScript': { icon: SiTypescript, color: '#3178C6' },
+  'Tailwind': { icon: SiTailwindcss, color: '#06B6D4' },
+  'Framer': { icon: SiFramer, color: '#0055FF' },
+  'React Query': { icon: SiReactquery, color: '#FF4154' },
+  'Redux': { icon: SiRedux, color: '#764ABC' },
+  'Node.js': { icon: FaNodeJs, color: '#339933' },
+  'Express': { icon: SiExpress, color: '#000000' },
+  'Nest.js': { icon: SiNestjs, color: '#E0234E' },
+  'GraphQL': { icon: SiGraphql, color: '#E10098' },
+  'Prisma': { icon: SiPrisma, color: '#2D3748' },
+  'PostgreSQL': { icon: SiPostgresql, color: '#4169E1' },
+  'MongoDB': { icon: SiMongodb, color: '#47A248' },
+  'Redis': { icon: SiRedis, color: '#DC382D' },
+  'AWS': { icon: FaAws, color: '#FF9900' },
+  'Docker': { icon: FaDocker, color: '#2496ED' },
+  'GitHub Actions': { icon: SiGithubactions, color: '#2088FF' },
+  'Terraform': { icon: SiTerraform, color: '#7B42BC' },
+  'Kubernetes': { icon: SiKubernetes, color: '#326CE5' },
+  'GitLab': { icon: SiGitlab, color: '#FC6D26' },
+  'Google Cloud': { icon: SiGooglecloud, color: '#4285F4' },
+  'Nginx': { icon: SiNginx, color: '#009639' },
+  'Cypress': { icon: SiCypress, color: '#17202C' },
+  'Git': { icon: FaGitAlt, color: '#F05032' },
+  'Figma': { icon: FaFigma, color: '#F24E1E' },
+  'VS Code': { icon: SiVisualstudiocode, color: '#007ACC' },
+  'Postman': { icon: SiPostman, color: '#FF6C37' },
+  'Jest': { icon: SiJest, color: '#C21325' },
+  'Burp Suite': { icon: SiBurpsuite, color: '#000000' },
+};
+
+const skills = [
+  { category: 'Frontend', Icon: HiOutlineCodeBracket, items: ['React', 'Next.js', 'TypeScript', 'Tailwind', 'Framer', 'React Query', 'Redux'] },
+  { category: 'Backend', Icon: HiOutlineServer, items: ['Node.js', 'Express', 'Nest.js', 'GraphQL', 'Prisma', 'PostgreSQL', 'MongoDB', 'Redis'] },
+  { category: 'Cloud & DevOps', Icon: HiOutlineCloud, items: ['AWS', 'Google Cloud', 'Docker', 'Kubernetes', 'Terraform', 'GitHub Actions', 'GitLab', 'Nginx'] },
+  { category: 'Tools', Icon: HiOutlineWrenchScrewdriver, items: ['Git', 'Figma', 'VS Code', 'Postman', 'Jest', 'Cypress', 'Burp Suite'] },
+];
+
 
 export function About() {
+  const ref = useRef<HTMLElement>(null);
+
   return (
-    <>
-      <section id="about" className="flex justify-center flex-col w-full items-center mb-36 pt-28 sm:pt-10 sm:mb-0">
-        <SectionHeader heading="Who am I?" description="Insights about me, my expertise, and a comprehensive overview of my current programming and technological skills." />
-        <div className="flex justify-center xl:items-center xl:flex-col xl:gap-28 w-full mt-20">
-          <div className="grid grid-cols-4 xs:!grid-cols-1 md:grid-cols-2 mx-8 gap-8 tracking-wide order-1 xl:order-2">
-            {Object.entries(stackData)?.map(([stack, details], index) => (
-              <div key={index}>
-                <div key={`stack${index}`} className="min-h-[5.3rem] grid place-items-center min-w-44 bg-gradient-to-r from-violet-200 to-purple-200 text-lg font-bold text-purple-900 rounded-lg">
-                  {stack}
+    <section ref={ref} id="about" className="relative w-full px-6 sm:px-4 xs:px-3 py-32 md:py-24 sm:py-16 xs:py-12 overflow-hidden bg-palette-cream">
+      <div className="relative mx-auto max-w-7xl">
+        {/* Main content */}
+        <div className="grid grid-cols-[auto_1fr] items-start gap-16 lg:grid-cols-1 lg:gap-10 sm:gap-8">
+          {/* Left: Profile Card */}
+          <AnimatedContent delay={0.2} direction="left" distance={50}>
+            <div className="flex flex-col items-center sticky top-24 lg:static lg:items-center">
+              {/* Photo Card with Spotlight */}
+              <SpotlightCard 
+                className="p-6 sm:p-4 rounded-3xl sm:rounded-2xl border border-palette-beige/50"
+                spotlightColor="rgba(18, 52, 88, 0.15)"
+              >
+                <div className="relative h-72 w-64 sm:h-64 sm:w-56 overflow-hidden rounded-2xl sm:rounded-xl">
+                  <Image
+                    src="/assets/shah-nawaz-about.png"
+                    alt="Shah Nawaz"
+                    fill
+                    className="object-cover"
+                    priority
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
                 </div>
-                <div key={`details${index}`} className="min-w-44 mt-6 rounded-md shadow-md">
-                  {Object.entries(details)?.map(([keys, list], subIndex) => (
-                    <div key={subIndex}>
-                      <div
-                        key={`section${subIndex}`}
-                        className={`${subIndex === 0 && 'rounded-t-md'} flex items-center justify-center px-3 pt-[2px] h-10 font-semibold text-sm text-purple-950 bg-gradient-to-r from-violet-100 to-purple-100 shadow-md`}
-                      >
-                        {keys}
-                      </div>
-                      <ul key={`data${subIndex}`} className="list-inside list-disc py-3 pl-3 bg-purple-200/15 text-gray-600 leading-relaxed text-sm">
-                        {list?.map((data, index) => <li key={index}>{data}</li>)}
-                      </ul>
-                    </div>
+              </SpotlightCard>
+
+              {/* Info */}
+              <div className="mt-8 sm:mt-6 text-center lg:text-center">
+                <h3 className={cn('text-2xl sm:text-xl font-semibold text-black', ls.className)}>
+                  Shah Nawaz
+                </h3>
+                <p className={cn('mt-1 text-lg sm:text-base text-black/60', ls.className)}>Lead Full-Stack Engineer</p>
+
+                {/* Social links */}
+                <div className="mt-6 sm:mt-4 flex items-center justify-center gap-3">
+                  {[
+                    { href: 'https://github.com/heynawaz', Icon: FaGithub, label: 'GitHub' },
+                    { href: 'https://twitter.com/heynawaz', Icon: FaXTwitter, label: 'Twitter' },
+                    { href: 'https://www.linkedin.com/in/shahnawazz/', Icon: FaLinkedinIn, label: 'LinkedIn' },
+                  ].map(({ href, Icon, label }) => (
+                    <Link
+                      key={href}
+                      href={href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={label}
+                      className="flex h-11 w-11 sm:h-10 sm:w-10 items-center justify-center rounded-full border border-black/10 transition-all hover:bg-palette-navy/10 hover:border-palette-navy/30 hover:scale-110"
+                    >
+                      <Icon className="h-[18px] w-[18px] sm:h-4 sm:w-4 text-black/70" />
+                    </Link>
                   ))}
                 </div>
               </div>
-            ))}
-          </div>
-
-          <div className="relative flex flex-col max-w-[620px] order-2 xl:order-1 mx-8">
-            <div className="absolute inset-0 -z-10 h-full w-full rounded-3xl bg-white bg-[linear-gradient(to_right,#8080801a_0px,transparent_1px),linear-gradient(to_bottom,#8080801a_0px,transparent_1px)] bg-[size:50px_50px]">
-              <div className="absolute left-0 right-0 top-0 -z-10 m-auto h-[310px] w-[210px] rounded-full bg-purple-300 opacity-50 blur-[100px]"></div>
             </div>
-            <div className="relative flex flex-col sm:flex-col sm:justify-center sm:py-10 w-full gap-4 px-8 sm:px-1 pt-9 pb-7 rounded-3xl border-t-8 border-b-8 border-purple-900">
-              <div className="grid place-items-center text-center">
-                <Image src={'/assets/Shah Nawaz.jpg'} draggable={false} className="rounded-full shadow-md" alt="Shah Nawaz's Photo" width={120} height={1000} />
-                <h1 className="text-2xl font-semibold text-gray-600 mt-3">Mohammad Shah Nawaz</h1>
-                <p className="font-light text-gray-500 text-md">Software Engineer</p>
-                <div className="flex items-center flex-row sm:justify-center gap-5 mt-5">
-                  <Link href={'https://github.com/yoursnawaz'} target="_blank" className="hover:scale-125 transition-all">
-                    <FaGithub className="fill-zinc-600 hover:fill-purple-800" size={16} />
-                  </Link>
-                  <Link href={'https://twitter.com/yoursnawaz'} target="_blank" className="hover:scale-125 transition-all">
-                    <FaXTwitter className="fill-zinc-600 hover:fill-purple-800" size={16} />
-                  </Link>
-                  <Link href={'https://www.linkedin.com/in/shahnawazz/'} target="_blank" className="hover:scale-125 transition-all">
-                    <FaLinkedinIn className="fill-zinc-600 hover:fill-purple-800" size={16} />
-                  </Link>
-                  <Link href={'#'} className="hover:scale-125 transition-all">
-                    <FaInstagram className="fill-zinc-600 hover:fill-purple-800" size={16} />
-                  </Link>
-                  <Link href={'#'} className="hover:scale-125 transition-all">
-                    <FaFacebookF className="fill-zinc-600 hover:fill-purple-800" size={16} />
-                  </Link>
-                </div>
+          </AnimatedContent>
+
+          {/* Right: Content */}
+          <div className="flex flex-col gap-6 sm:gap-4">
+            {/* Bio */}
+            <AnimatedContent delay={0.3} direction="up">
+              <div className="space-y-4 sm:space-y-3 text-left min-[1025px]:text-center">
+                <p className={cn('text-lg md:text-base sm:text-sm leading-relaxed text-black/70', ls.className)}>
+                  I&apos;m a <span className="font-semibold text-black">Lead Full-Stack Engineer</span> who 
+                  transforms complex ideas into elegant, high-performance digital products. My expertise spans the entire 
+                  development lifecycle—from architecture design to deployment and beyond.
+                </p>
+                <p className={cn('text-lg md:text-base sm:text-sm leading-relaxed text-black/70', ls.className)}>
+                  I thrive on solving challenging problems and building solutions that make a real impact. Whether it&apos;s 
+                  crafting <span className="font-semibold text-black">AI-powered applications</span>, 
+                  architecting <span className="font-semibold text-black">scalable SaaS platforms</span>, or 
+                  optimizing performance for millions of users—I bring technical excellence and creative thinking to every project.
+                </p>
               </div>
-              <p className="mt-4 text-md leading-normal font-light text-gray-600">
-                <span className="absolute top-[11rem] left-[-30px] -z-10 text-[10rem] text-purple-900/5"></span>
-                I&apos;m a software engineer with 5+ years of work experience delivering top-notch solutions. I started programming in 2010, building foundational programming logic and
-                developing basic apps. After finishing my schooling, I pursued both my bachelor&apos;s and master&apos;s degrees in computer science to deepen my knowledge. During this time, I started
-                building web projects using HTML, CSS and PHP. Now I have skills in building modern apps using JavaScript, TypeScript, React, Next.js, Node.js, Nest.js, Express, GraphQL, and more. My
-                focus is on creating high-quality, scalable applications that meet today’s business demands.
-                <span className="absolute top-[31rem] right-[-20px] -z-10 text-[10rem] text-purple-900/5"></span>
-              </p>
-              <div className="mt-4">
-                <h3 className="text-xl text-purple-900 font-bold sm:underline">Work Experience</h3>
-                <div className="flex gap-6 mt-6 sm:mt-3">
-                  <IoBriefcaseOutline size={50} color="#6b21a8" className="sm:hidden" />
-                  <div className="w-full">
-                    <Link href={'https://www.cloudanalogy.com/'} target="_blank" className="text-xl font-semibold text-purple-800 hover:underline">
-                      Cloud Analogy
-                    </Link>
-                    <div className="flex flex-col gap-1">
-                      <div className="flex justify-between items-center mb-2 mt-1">
-                        <h3 className="text-sm text-gray-700 flex items-center gap-2">
-                          <SendHorizonal className="size-3" color="#6b21a8" />
-                          Lead - Full Stack
-                        </h3>
-                        <p className="text-gray-600 text-sm">Jan, 2026 - Present</p>
-                      </div>
-                      {/* <ul className="list-disc list-outside text-gray-700 text-[1rem]">
-                      <li>Directing a design and development team for multiple enterprise-level projects.</li>
-                      <li>Enhanced UIs with React, achieving a 61% reduction in debugging time and a 33% increase in views.</li>
-                      <li>Involved in product security with penetration testing and vulnerability reporting.</li>
-                    </ul> */}
-                    <div className="flex justify-between items-center mb-2 text-sm font-light text-muted-foreground">
-                        <h3 className="flex items-center gap-2">
-                          <ClipboardCheck className="size-3" />
-                          Senior Developer - I - Full Stack
-                        </h3>
-                        <p className="text-sm">Jan, 2025 - Dec, 2025</p>
-                      </div>
-                      <div className="flex justify-between items-center mb-2 text-sm font-light text-muted-foreground">
-                        <h3 className="flex items-center gap-2">
-                          <ClipboardCheck className="size-3" />
-                          Developer - II - Full Stack
-                        </h3>
-                        <p className="text-sm">Jan, 2024 - Dec, 2024</p>
-                      </div>
-                      <div className="flex justify-between items-center mb-2 font-light text-muted-foreground text-sm">
-                        <h3 className="flex items-center gap-2">
-                          <ClipboardCheck className="size-3" />
-                          Full Stack Developer
-                        </h3>
-                        <p>Dec, 2020 - Dec, 2023</p>
-                      </div>
-                      {/* <ul className="list-disc list-outside text-gray-700 text-[1rem]">
-                      <li>Built both front-end and back-end parts of large software projects.</li>
-                      <li>Created and maintained backend services using Node.js.</li>
-                      <li>Tested and reported security issues to make products safer.</li>
-                    </ul> */}
+            </AnimatedContent>
+
+            {/* Skills Grid */}
+            <div className="grid grid-cols-2 sm:grid-cols-1 xs:grid-cols-1 gap-4 sm:gap-3 xs:gap-2">
+              {skills.map(({ category, Icon, items }, i) => (
+                <AnimatedContent key={category} delay={0.2 + i * 0.1} direction="up">
+                  <SpotlightCard 
+                    className="rounded-3xl sm:rounded-2xl p-5 sm:p-4 border border-palette-beige/50 h-full"
+                    spotlightColor="rgba(18, 52, 88, 0.1)"
+                  >
+                    <div className="flex items-center gap-2 mb-4 sm:mb-3">
+                      <Icon className="h-5 w-5 sm:h-4 sm:w-4 text-palette-navy" />
+                      <p className={cn('text-sm sm:text-xs font-semibold text-black', ls.className)}>{category}</p>
                     </div>
-                  </div>
-                </div>
-              </div>
-              <div className="mt-8 sm:mt-4">
-                <h3 className="text-2xl text-purple-900 font-bold sm:underline">Education</h3>
-                <div className="flex gap-6 mt-6 sm:mt-3">
-                  <LuGraduationCap size={50} color="#6b21a8" className="sm:hidden" />
-                  <div className="w-full">
-                    <Link href={'https://www.iul.ac.in/Program/PG/PG_mca.aspx'} target="_blank" className="text-xl font-semibold text-purple-800 hover:underline">
-                      Master of Computer Applications
-                    </Link>
-                    <div className="flex justify-between items-center mb-2 font-light">
-                      <Link href={'https://www.iul.ac.in/'} target="_blank" className="text-sm text-gray-600 hover:underline">
-                        Integral University
-                      </Link>
-                      <p className="text-gray-600 text-sm">July, 2017 - June, 2020</p>
+                    <div className="flex flex-wrap gap-2 sm:gap-1.5">
+                      {items.map((name) => {
+                        const tech = techIcons[name];
+                        const TechIcon = tech?.icon;
+                        const isBlackIcon = tech?.color === '#000000';
+                        return (
+                          <div
+                            key={name}
+                            className="flex items-center gap-1.5 rounded-lg sm:rounded-md border border-black/10 bg-black/[0.02] px-3 py-1.5 sm:px-2 sm:py-1 transition-all hover:border-palette-navy/30 hover:bg-palette-navy/5"
+                          >
+                            {TechIcon && (
+                              <TechIcon 
+                                className={cn(
+                                  'h-3.5 w-3.5 sm:h-3 sm:w-3',
+                                  isBlackIcon && 'text-black'
+                                )}
+                                style={!isBlackIcon ? { color: tech.color } : undefined}
+                              />
+                            )}
+                            <span className={cn('text-xs sm:text-[10px] font-medium text-black/70', ls.className)}>{name}</span>
+                          </div>
+                        );
+                      })}
                     </div>
-                  </div>
-                </div>
-                <div className="flex gap-6 mt-6">
-                  <LuGraduationCap size={50} color="#6b21a8" className="sm:hidden" />
-                  <div className="w-full">
-                    <Link href={'https://www.iul.ac.in/Program/UG/UG_BCA.aspx'} target="_blank" className="text-xl font-semibold text-purple-800 hover:underline">
-                      Bachelor of Computer Applications
-                    </Link>
-                    <div className="flex justify-between items-center mb-2 font-light">
-                      <Link href={'https://www.iul.ac.in/'} target="_blank" className="text-sm text-gray-600 hover:underline">
-                        Integral University
-                      </Link>
-                      <p className="text-gray-600 text-sm">July, 2014 - June, 2017</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+                  </SpotlightCard>
+                </AnimatedContent>
+              ))}
             </div>
           </div>
         </div>
-      </section>
-    </>
+      </div>
+    </section>
   );
 }

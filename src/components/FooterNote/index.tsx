@@ -46,7 +46,7 @@ export function FooterNote() {
           transition={{ duration: 0.5, ease: [0.4, 0.0, 0.2, 1] }}
           className="text-2xl font-semibold text-center text-purple-900 leading-[70px]"
         >
-          <Highlight className="py-5 px-5 bg-gradient-to-r from-purple-100 to-indigo-100 rounded-none">
+          <Highlight className="py-5 px-5 rounded-none">
             &quot;From elegant user interfaces to robust backend systems, I thrive on solving design challenges.&nbsp;&nbsp;&nbsp;
             <br />
             &nbsp;&nbsp;&nbsp;Let&apos;s collaborate to bring your vision to life with dynamic web applications and intuitive interfaces.&quot;

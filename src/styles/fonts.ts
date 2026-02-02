@@ -1,6 +1,24 @@
-import { Arizonia, DM_Serif_Text, Kaushan_Script, League_Spartan, Mr_Dafoe, Pacifico, Sail } from 'next/font/google';
+import {
+  Arizonia,
+  DM_Serif_Text,
+  Inter,
+  Kaushan_Script,
+  League_Spartan,
+  Mr_Dafoe,
+  Pacifico,
+  Sail,
+} from 'next/font/google';
 
-export const ls = League_Spartan({ weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'], subsets: ['latin'] });
+export const googleSans = Inter({
+  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
+  subsets: ['latin'],
+  variable: '--font-google-sans',
+});
+
+export const ls = League_Spartan({
+  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
+  subsets: ['latin'],
+});
 export const pacifico = Pacifico({ weight: ['400'], subsets: ['latin'] });
 export const dm_serif = DM_Serif_Text({ weight: ['400'], subsets: ['latin'] });
 export const arizonia = Arizonia({ weight: ['400'], subsets: ['latin'] });

@@ -1,106 +1,45 @@
 'use client';
-import { useWindowDimensions } from '@/hooks';
+
 import Link from 'next/link';
-import { useEffect, useState } from 'react';
-import { RxHamburgerMenu } from 'react-icons/rx';
+import { HiArrowUpRight } from 'react-icons/hi2';
+import { ls } from '@/styles/fonts';
+import { cn } from '@/lib/utils';
 
 export function NewHeader() {
-  const [hasScrolled, setHasScrolled] = useState(false);
-  const [mobile, setMobile] = useState(false);
-  const { width } = useWindowDimensions();
-  const fileName = 'Shah_Nawaz_Resume_5+.pdf';
-
-  // Download resume on key press
-  useEffect(() => {
-    const handleKeyPress = (e: KeyboardEvent) => {
-      if (e.key.toLowerCase() === 'd') {
-        const link = document.createElement('a');
-        link.href = '/assets/pdf/Shah_Nawaz_Resume_5+.pdf';
-        link.download = fileName;
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-      }
-    };
-
-    document.addEventListener('keydown', handleKeyPress);
-
-    return () => document.removeEventListener('keydown', handleKeyPress);
-  }, []);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollTop = window.pageYOffset;
-      if (scrollTop > 1) {
-        setHasScrolled(true);
-      } else {
-        setHasScrolled(false);
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
   return (
-    <>
-      <header
-        className={`fixed top-0 z-50 flex justify-center items-center h-28 sm:h-20 w-screen transition-all ease-in-out duration-500
-        ${hasScrolled && 'sm:hidden rounded-full !px-6 !max-w-fit !h-[70px] backdrop-filter backdrop-blur-md top-5 shadow-purple-800/30 shadow-[0px_2px_5px_-1px_rgb(0,0,0,0.1)] bg-gradient-to-r from-gray-100/20 to-gray-100/20'}`}
-      >
-        <div className={`w-[55%] xl:w-[90%] flex justify-between items-center transition-all ease-in-out duration-500 ${hasScrolled && 'sm:fixed flex justify-between w-[90%]'}`}>
-          {!hasScrolled && (
-            <Link href={'#'} className="sm:block text-3xl text-black font-bold tracking-tight">
-              nawaz<span className="text-purple-800">.</span>
-            </Link>
-          )}
-          <button className="hidden sm:block outline-none transition-all ease-in-out duration-500" onClick={() => setMobile(!mobile)}>
-            <RxHamburgerMenu size={18} />
-          </button>
-          {mobile ? (
-            <nav className="hidden absolute right-[5%] top-16 z-30 sm:flex flex-col bg-purple-950/95 px-4 w-48 text-sm font-medium text-white rounded-xl rounded-tr-none transition-all ease-in-out duration-500">
-              <Link href={'#'} onClick={() => (document.body.scrollTop = 0)} onClickCapture={() => setMobile(false)} className="h-10 flex items-center hover:underline underline-offset-8 decoration-1">
-                Home
-              </Link>
-              <Link href={'#about'} onClickCapture={() => setMobile(false)} className="h-10 flex items-center hover:underline underline-offset-8 decoration-1">
-                About
-              </Link>
-              {/* <Link href={'#solutions'} onClickCapture={() => setMobile(false)} className="h-10 flex items-center hover:underline underline-offset-8 decoration-1">
-                Solutions
-              </Link> */}
-              <Link href={'#testimonial'} onClickCapture={() => setMobile(false)} className="h-10 flex items-center hover:underline underline-offset-8 decoration-1">
-                Testimonial
-              </Link>
-            </nav>
-          ) : (
-            <nav
-              className={`sm:hidden flex gap-12 items-center text-purple-900 h-fit text-[16px] tracking-wide font-medium transition-all ease-in-out duration-700
-              ${hasScrolled && 'flex items-center justify-center w-full pt-0'}`}
-            >
-              <Link href={'#'} onClick={() => (document.body.scrollTop = 0)} className="hover:underline underline-offset-8 decoration-1">
-                Home
-              </Link>
-              <Link href={'#about'} className="hover:underline underline-offset-8 decoration-1">
-                About
-              </Link>
-              {hasScrolled && (
-                <Link href={'#'} className="w-36 pb-[4px] text-center text-3xl text-slate-800 font-bold tracking-tight">
-                  nawaz<span className="text-purple-700">.</span>
-                </Link>
-              )}
-              <Link href={'#solutions'} className="hover:underline underline-offset-8 decoration-1">
-                Solutions
-              </Link>
-              <Link href={'#testimonial'} className="hover:underline underline-offset-8 decoration-1">
-                Testimonial
-              </Link>
-            </nav>
-          )}
+    <header className="fixed top-0 left-0 right-0 z-50 w-full py-2 sm:py-2">
+      {/* Full viewport width background */}
+      <div className="absolute inset-0 w-screen left-1/2 -translate-x-1/2 bg-palette-cream border-b border-palette-beige/50" />
+      {/* Content - slightly narrower than hero */}
+      <div className="relative w-full px-6 sm:px-4 xs:px-3">
+        <div className="mx-auto max-w-6xl lg:max-w-none w-full flex items-center justify-between py-1.5 sm:py-1">
+          {/* Logo */}
+          <Link
+            href="#"
+            onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
+            className="flex items-center gap-2"
+          >
+            <span className={cn('text-2xl sm:text-xl xs:text-lg font-bold tracking-tight transition-colors text-palette-navy', ls.className)}>
+              nawaz<span className="text-palette-black">.</span>
+            </span>
+          </Link>
+
+          {/* CTA */}
+          <Link
+            href="https://cal.com/shah-nawaz/15min"
+            target="_blank"
+            className={cn(
+              'flex items-center gap-1.5 leading-none px-4 py-2 sm:px-3 sm:py-1.5 xs:px-3 xs:py-1.5 min-h-[44px] xs:min-h-[44px] rounded-full text-sm xs:text-xs font-medium transition-all duration-300 whitespace-nowrap',
+              'bg-palette-navy/95 backdrop-blur-sm text-palette-cream hover:bg-palette-navy border border-palette-navy/20',
+              'hover:shadow-lg hover:shadow-palette-navy/20 active:scale-[0.98]',
+              ls.className
+            )}
+          >
+            <span className="block translate-y-px">Let&apos;s talk</span>
+            <HiArrowUpRight className="h-3.5 w-3.5" />
+          </Link>
         </div>
-      </header>
-    </>
+      </div>
+    </header>
   );
 }
