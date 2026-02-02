@@ -1,4 +1,4 @@
-import { CustomHead } from '@/components';
+import { JsonLd } from '@/components';
 import { metadataDetails } from '@/config';
 import { ls } from '@/styles/fonts';
 import type { Metadata, Viewport } from 'next';
@@ -11,12 +11,15 @@ export const viewport: Viewport = {
   width: 'device-width',
   initialScale: 1,
   maximumScale: 5,
+  themeColor: '#123458',
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className="scroll-smooth" suppressHydrationWarning>
-      <CustomHead />
+      <head>
+        <JsonLd />
+      </head>
       <body className={`min-h-screen min-h-[100dvh] w-full overflow-x-hidden p-0 m-0 box-border bg-palette-cream ${ls.className}`}>
         <Providers>
           <div className="flex min-h-screen min-h-[100dvh] flex-col items-center w-full">{children}</div>
